@@ -12,12 +12,12 @@ class Dashboard extends React.Component{
 
 let mapStateToProps = (state) => {
   return {
-  }
-}
+  };
+};
 
 let mapDispatchToProps = (dispatch) => {
   return {
-  }
-}
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

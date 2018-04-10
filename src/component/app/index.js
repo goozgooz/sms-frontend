@@ -3,6 +3,7 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import Dashboard from '../dashboard';
+import Inventory from '../inventory';
 
 class App extends React.Component {
   render(){
@@ -11,10 +12,11 @@ class App extends React.Component {
         <BrowserRouter>
           <div>
             <Route exact path='/' component={Dashboard}/>
+            <Route exact path='/goozgooz' component={Inventory}/>
           </div>
         </BrowserRouter>
       </div>
-    )
+    );
   }
 }
 
