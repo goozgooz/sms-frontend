@@ -1,10 +1,18 @@
 import './_inventory.scss';
 import React from 'react';
 
+import CarForm from './car-form';
+
 class Inventory extends React.Component{
+  constructor(props){
+    super(props);
+  }
   render(){
     return(
-      <h1> SMS Inventory </h1>  
+      <React.Fragment>
+        <h1> SMS Inventory </h1>  
+        <CarForm />
+      </React.Fragment>
     );
   }
 }
