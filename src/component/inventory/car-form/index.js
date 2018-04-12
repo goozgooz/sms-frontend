@@ -37,6 +37,7 @@ class CarForm extends React.Component {
     e.preventDefault();
     console.log(this.state);
     this.setState(emptyState);
+    this.props.formSubmit();
   }
   
   render(){

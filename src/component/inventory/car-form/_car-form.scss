@@ -12,8 +12,15 @@ input {
   border: 1px solid black;
   margin: 4px 0px;
   padding: 4px;
+  width: 300px;
 }
 
-.desciption-input {
-  height: 400px;
+button {
+  margin-top: 15px;
+  padding: 5px;
+  width: 400px;
+}
+
+.description-input {
+  height: 300px;
 }
