@@ -1,8 +1,7 @@
-input {
-  width: 300px;
-  border: 1px solid black;
+.field {
+  display: flex;
 }
 
-label {
-  boder: 1px solid black;
+input {
+  border: 1px solid black;
 }
