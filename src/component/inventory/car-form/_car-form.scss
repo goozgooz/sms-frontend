@@ -2,6 +2,18 @@
   display: flex;
 }
 
+label {
+  width: 100px;
+  padding: 4px;
+  text-align: right;
+}
+
 input {
   border: 1px solid black;
+  margin: 4px 0px;
+  padding: 4px;
+}
+
+.desciption-input {
+  height: 400px;
 }

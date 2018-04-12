@@ -31,7 +31,6 @@ class CarForm extends React.Component {
   handleChange(e){
     let {name,value} = e.target;
     this.setState({[name]: value});
-    console.log(this.state);
   };
   
   handleSubmit(e){
@@ -43,8 +42,6 @@ class CarForm extends React.Component {
   render(){
     return(
       <React.Fragment>
-        <h1> Add Car </h1>
-        
         <form 
           className='car-form'
           onSubmit={this.handleSubmit}
@@ -57,18 +54,6 @@ class CarForm extends React.Component {
               type='text'
               name='title'
               value={this.state.title}
-              onChange={this.handleChange}
-            />
-          </div>
-          
-          <div className='field'>
-            <label> desciption </label>
-            <input
-              className='description-input'
-              type='text'
-              name='description'
-              placeholder='long car description'
-              value={this.state.description}
               onChange={this.handleChange}
             />
           </div>
@@ -88,6 +73,7 @@ class CarForm extends React.Component {
             <label> year </label>
             <input
               className='year-input'
+              placeholder=''
               type='number'
               name='year'
               value={this.state.year}
@@ -223,6 +209,17 @@ class CarForm extends React.Component {
               type='text'
               name='transmission'
               value={this.state.transmission}
+              onChange={this.handleChange}
+            />
+          </div>
+          
+          <div className='field'>
+            <label> desciption </label>
+            <input
+              className='description-input'
+              type='text'
+              name='description'
+              value={this.state.description}
               onChange={this.handleChange}
             />
           </div>
