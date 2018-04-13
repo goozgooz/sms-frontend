@@ -28,6 +28,13 @@ class CarForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   };
   
+  componentDidMount(){
+    this.props.formSubmit({
+      title: 'test car',
+      description: 'testing',
+    });
+  };
+  
   handleChange(e){
     let {name,value} = e.target;
     this.setState({[name]: value});
@@ -35,9 +42,7 @@ class CarForm extends React.Component {
   
   handleSubmit(e){
     e.preventDefault();
-    console.log(this.state);
-    this.setState(emptyState);
-    this.props.formSubmit();
+    this.props.formSubmit(this.state);
   }
   
   render(){

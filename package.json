@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/goozgooz/sms-frontend.git"
   },
-  "author": "Ashkaan Jaberi",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goozgooz/sms-frontend/issues"
@@ -23,8 +23,6 @@
     }
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "babel-jest": "^22.0.4",
     "enzyme": "^3.2.0",
@@ -39,7 +37,6 @@
     "watch-work": "webpack-dev-server --inline --hot --public $C9_HOSTNAME --host $IP --port $PORT",
     "build": "webpack"
   },
-
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -60,7 +57,7 @@
     "resolve-url-loader": "^2.2.0",
     "sass-loader": "^6.0.6",
     "superagent": "^3.8.1",
-    "uuid": "^3.1.0",
+    "uuid": "^3.2.1",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.7"
   }
