@@ -10,10 +10,6 @@ import reporter from './lib/redux-reporter.js';
 
 let store = createStore(reducer, applyMiddleware(reporter));
 
-store.subscribe(() => {
-  console.log('__STATE__', store.getState());
-});
-
 const container = document.createElement('div');
 document.body.appendChild(container);
 

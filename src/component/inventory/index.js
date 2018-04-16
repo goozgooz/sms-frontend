@@ -5,7 +5,7 @@ import * as _ from '../../lib/util.js';
 
 // React Components
 import CarForm from './car-form';
-import Car from './car-display/car.js';
+import CarDisplay from './car-display/index.js';
 
 // Import Actions
 import * as action from '../../action/car';
@@ -40,6 +40,12 @@ class Inventory extends React.Component{
           <CarForm formSubmit={this.addCar}/>,
           <button onClick={this.toggleForm}> click me </button>
         )}
+        
+        
+        <CarDisplay 
+          inventory={this.props.cars}
+        /> 
+        
         
       </React.Fragment>
     );
