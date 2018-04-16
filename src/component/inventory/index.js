@@ -29,7 +29,6 @@ class Inventory extends React.Component{
   addCar(data) {
     this.props.carCreate(data);
     this.toggleForm();
-    console.log('__CAR ADDED__', this.props);
   }
   
   render(){
@@ -38,11 +37,7 @@ class Inventory extends React.Component{
         <h1> SMS Inventory </h1>
         
         {_.renderIf(this.state.displayForm, 
-          <CarForm 
-            formSubmit={this.addCar}/>,
-        )}
-        
-        {_.renderIf(!this.state.displayForm, 
+          <CarForm formSubmit={this.addCar}/>,
           <button onClick={this.toggleForm}> click me </button>
         )}
         

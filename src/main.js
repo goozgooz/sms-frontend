@@ -6,8 +6,13 @@ import {Provider} from 'react-redux';
 
 import App from './component/app';
 import reducer from './reducer/index.js';
+import reporter from './lib/redux-reporter.js';
 
-let store = createStore(reducer);
+let store = createStore(reducer, applyMiddleware(reporter));
+
+store.subscribe(() => {
+  console.log('__STATE__', store.getState());
+});
 
 const container = document.createElement('div');
 document.body.appendChild(container);
