@@ -16,6 +16,7 @@ class CarDisplay extends React.Component {
         id={id}
         key={i} 
         remove={this.props.remove}
+        toggleForm={this.props.toggleForm}
       />
     ));
   }

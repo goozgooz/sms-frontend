@@ -16,6 +16,7 @@ class Inventory extends React.Component{
     
     this.state = {
       displayForm: false,
+      displayInventory: true,
     };
     
     this.toggleForm = this.toggleForm.bind(this);
@@ -42,10 +43,13 @@ class Inventory extends React.Component{
         )}
         
         
-        <CarDisplay 
-          inventory={this.props.cars}
-          remove={this.props.carRemove}
-        /> 
+        {_.renderIf(this.state.displayInventory,
+          <CarDisplay 
+            inventory={this.props.cars}
+            remove={this.props.carRemove}
+            toggleForm={this.toggleForm}
+          />
+        )};
         
         
       </React.Fragment>

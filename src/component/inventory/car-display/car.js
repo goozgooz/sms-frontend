@@ -6,11 +6,15 @@ class Car extends React.Component{
     super(props);
     
     this.removeCar = this.removeCar.bind(this);
+    this.toggleForm = this.toggleForm.bind(this);
   }
   
   removeCar(){
-    console.log(this.props.id);
     this.props.remove(this.props.id);
+  }
+  
+  toggleForm(){
+    this.props.toggleForm();
   }
   
   render(){
@@ -18,7 +22,8 @@ class Car extends React.Component{
       <div className='inventory-item'>
         <h3> Car: {this.props.car.title} </h3>
         <h3> Description: {this.props.car.description} </h3>
-        <button onClick={this.removeCar} > X </button>
+        <button onClick={this.removeCar}> X </button>
+        <button onClick={this.toggleForm}> Edit </button>
       </div>
     );
   }
@@ -27,5 +32,3 @@ class Car extends React.Component{
 export default Car;
 
 
-
-// create action / reducer / pass to button 
