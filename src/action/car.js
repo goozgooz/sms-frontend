@@ -7,3 +7,8 @@ export const create = (car) => ({
     car,
   },
 });
+
+export const remove = (id) => ({
+  type: 'CAR_REMOVE',
+  payload: id,
+});

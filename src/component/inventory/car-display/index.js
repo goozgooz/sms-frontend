@@ -10,18 +10,21 @@ class CarDisplay extends React.Component {
   
   displayCar(){
     let {inventory} = this.props;
-    
-    return Object.keys(inventory).map((id,i) => {
-      <Car car={inventory[id].car} key={i} />;
-    });
+    return Object.keys(inventory).map((id,i) => (
+      <Car 
+        car={inventory[id].car} 
+        id={id}
+        key={i} 
+        remove={this.props.remove}
+      />
+    ));
   }
   
   render(){
     return(
-      <React.Fragment>
-        <h3> Current Inventory </h3>  
+      <div className='inventory-wrapper'>
         {this.displayCar()}
-      </React.Fragment>
+      </div>
     );
   }
 }

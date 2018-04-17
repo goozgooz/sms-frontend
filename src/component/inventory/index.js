@@ -44,6 +44,7 @@ class Inventory extends React.Component{
         
         <CarDisplay 
           inventory={this.props.cars}
+          remove={this.props.carRemove}
         /> 
         
         
@@ -61,6 +62,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
   return {
     carCreate: (data) => dispatch(action.create(data)),
+    carRemove: (id) => dispatch(action.remove(id)),
   };
 };
 
