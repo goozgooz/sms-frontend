@@ -12,11 +12,10 @@ class CarDisplay extends React.Component {
     let {inventory} = this.props;
     return Object.keys(inventory).map((id,i) => (
       <Car 
-        car={inventory[id].car} 
+        car={inventory[id]} 
         id={id}
         key={i} 
         remove={this.props.remove}
-        toggleForm={this.props.toggleForm}
       />
     ));
   }

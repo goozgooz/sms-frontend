@@ -26,14 +26,21 @@ class CarForm extends React.Component {
     this.state = emptyState;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    
+    this.quickAdd = this.quickAdd.bind(this);
   };
   
-  componentDidMount(){
+  quickAdd(){
     this.props.formSubmit({
       title: 'test car',
       description: 'testing',
     });
   };
+  
+  componentWillReceiveProps(car){
+    console.log('received props', car);
+    // this.setState({[car.id]:car});
+  }
   
   handleChange(e){
     let {name,value} = e.target;
@@ -48,6 +55,7 @@ class CarForm extends React.Component {
   render(){
     return(
       <React.Fragment>
+        <button onClick={this.quickAdd}> Quick Add </button>
         <form 
           className='car-form'
           onSubmit={this.handleSubmit}

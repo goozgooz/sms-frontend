@@ -47,7 +47,6 @@ class Inventory extends React.Component{
           <CarDisplay 
             inventory={this.props.cars}
             remove={this.props.carRemove}
-            toggleForm={this.toggleForm}
           />
         )};
         
