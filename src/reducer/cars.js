@@ -11,6 +11,12 @@ export default(state = emptyState, {type,payload}) => {
     delete newState[payload];
     return newState;
     
+  case 'CAR_EDIT':
+    let oldCar = state[payload.id].car;
+    let newCar = Object.assign({},oldCar, payload);
+    console.log({newCar});
+    return {...state, [payload.id]:newCar};
+    
   default:
     return state;
   }

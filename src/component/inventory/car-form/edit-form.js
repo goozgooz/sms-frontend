@@ -208,9 +208,6 @@ class EditCarForm extends React.Component {
           <button type='submit'> submit changes </button>
         
         </form>
-        
-        
-        
       </React.Fragment>
     ); 
   }

@@ -25,14 +25,13 @@ class Car extends React.Component{
     this.setState({showEditForm:!this.state.showEditForm});
   }
   
-  formSubmit(data){
+  formSubmit(car){
     this.toggleEdit();
-    console.log({
-      id: this.props.car.id,
-      data: data,
-    });
-    
-    // dispactch action here 
+    let data = {
+      id: this.props.id,
+      car: car,
+    };
+    this.props.edit(data);
   }
   
   render(){

@@ -12,3 +12,8 @@ export const remove = (id) => ({
   type: 'CAR_REMOVE',
   payload: id,
 });
+
+export const edit = (payload) => ({
+  type: 'CAR_EDIT',
+  payload: payload,
+})

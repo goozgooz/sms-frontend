@@ -51,6 +51,7 @@ class Inventory extends React.Component{
         {_.renderIf(this.state.displayInventory,
           <CarDisplay 
             inventory={this.props.cars}
+            edit={this.props.carEdit}
             remove={this.props.carRemove}
           />
         )}
@@ -70,6 +71,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
   return {
     carCreate: (data) => dispatch(action.create(data)),
+    carEdit: (data) => dispatch(action.edit(data)),
     carRemove: (id) => dispatch(action.remove(id)),
   };
 };
