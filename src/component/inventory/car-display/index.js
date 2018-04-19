@@ -9,13 +9,14 @@ class CarDisplay extends React.Component {
   }
   
   displayCar(){
-    let {inventory} = this.props;
+    let {inventory, toggler, remove} = this.props;
     return Object.keys(inventory).map((id,i) => (
       <Car 
         car={inventory[id]} 
         id={id}
         key={i} 
-        remove={this.props.remove}
+        remove={remove}
+        toggler={toggler}
       />
     ));
   }

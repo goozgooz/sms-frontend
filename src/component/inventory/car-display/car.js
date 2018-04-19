@@ -25,10 +25,7 @@ class Car extends React.Component{
     // hide all other cars in inventory
     // populate form with the current car
     // submit -> update state -> show cars 
-    this.setState({
-      displayForm:!this.state.displayForm,
-      editing:!this.state.editing,
-    });
+    this.props.toggler();
   }
   
   render(){
@@ -44,7 +41,7 @@ class Car extends React.Component{
         )}
         
         {_.renderIf(this.state.displayForm, 
-          <CarForm />
+          <CarForm data={car}/>
         )}
       </div>
     );

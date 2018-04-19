@@ -37,9 +37,10 @@ class CarForm extends React.Component {
     });
   };
   
-  componentWillReceiveProps(car){
-    console.log('received props', car);
-    // this.setState({[car.id]:car});
+  componentDidMount(){
+    if(this.props.data) {
+      this.setState(this.props.data);
+    }
   }
   
   handleChange(e){
@@ -49,6 +50,7 @@ class CarForm extends React.Component {
   
   handleSubmit(e){
     e.preventDefault();
+    
     this.props.formSubmit(this.state);
   }
   

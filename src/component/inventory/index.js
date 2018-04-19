@@ -19,17 +19,19 @@ class Inventory extends React.Component{
       displayInventory: true,
     };
     
-    this.toggleForm = this.toggleForm.bind(this);
+    this.toggler = this.toggler.bind(this);
     this.addCar = this.addCar.bind(this);
   }
   
-  toggleForm(){
+  toggler(){
     this.setState({displayForm:!this.state.displayForm});
+    this.setState({displayInventory:!this.state.displayInventory});
   }
+  
   
   addCar(data) {
     this.props.carCreate(data);
-    this.toggleForm();
+    this.toggler();
   }
   
   render(){
@@ -39,7 +41,7 @@ class Inventory extends React.Component{
         
         {_.renderIf(this.state.displayForm, 
           <CarForm formSubmit={this.addCar}/>,
-          <button onClick={this.toggleForm}> click me </button>
+          <button onClick={this.toggler}> Add Car </button>
         )}
         
         
@@ -47,8 +49,9 @@ class Inventory extends React.Component{
           <CarDisplay 
             inventory={this.props.cars}
             remove={this.props.carRemove}
+            toggler={this.toggler}
           />
-        )};
+        )}
         
         
       </React.Fragment>
