@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import * as _ from '../../lib/util.js';
 
 // React Components
-import CarForm from './car-form';
+import AddCarForm from './car-form/add-form.js';
 import CarDisplay from './car-display/index.js';
 
 // Import Actions
@@ -39,9 +39,12 @@ class Inventory extends React.Component{
       <React.Fragment>
         <h1> SMS Inventory </h1>
         
+        {_.renderIf(this.state.displayInventory,
+          <button onClick={this.toggler} id='add-car-button'> Add Car </button>
+        )}
+        
         {_.renderIf(this.state.displayForm, 
-          <CarForm formSubmit={this.addCar}/>,
-          <button onClick={this.toggler}> Add Car </button>
+          <AddCarForm formSubmit={this.addCar}/>,
         )}
         
         
@@ -49,7 +52,6 @@ class Inventory extends React.Component{
           <CarDisplay 
             inventory={this.props.cars}
             remove={this.props.carRemove}
-            toggler={this.toggler}
           />
         )}
         

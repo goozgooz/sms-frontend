@@ -1,47 +1,14 @@
 import './_car-form.scss';
 import React from 'react';
 
-const emptyState = {
-  title: '',
-  description: '',
-  vin: '',
-  year: 0,
-  make: '',
-  model: '',
-  price: 0,
-  condition: '',
-  engine: '',
-  drive: '',
-  fuel: '',
-  odometer: '',
-  exteriorColor: '',
-  interiorColor: '',
-  titleStatus: '',
-  transmission: '',
-};
-
-class CarForm extends React.Component {
+class EditCarForm extends React.Component {
   constructor(props){
     super(props);
-    this.state = emptyState;
+    
+    this.state = this.props.data;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    
-    this.quickAdd = this.quickAdd.bind(this);
   };
-  
-  quickAdd(){
-    this.props.formSubmit({
-      title: 'test car',
-      description: 'testing',
-    });
-  };
-  
-  componentDidMount(){
-    if(this.props.data) {
-      this.setState(this.props.data);
-    }
-  }
   
   handleChange(e){
     let {name,value} = e.target;
@@ -50,14 +17,12 @@ class CarForm extends React.Component {
   
   handleSubmit(e){
     e.preventDefault();
-    
     this.props.formSubmit(this.state);
   }
   
   render(){
     return(
       <React.Fragment>
-        <button onClick={this.quickAdd}> Quick Add </button>
         <form 
           className='car-form'
           onSubmit={this.handleSubmit}
@@ -240,7 +205,7 @@ class CarForm extends React.Component {
             />
           </div>
           
-          <button type='submit'> add car </button>
+          <button type='submit'> submit changes </button>
         
         </form>
         
@@ -253,4 +218,4 @@ class CarForm extends React.Component {
   
 };
 
-export default CarForm;
+export default EditCarForm;
