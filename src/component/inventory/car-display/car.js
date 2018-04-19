@@ -10,6 +10,7 @@ class Car extends React.Component{
     
     this.state = {
       displayForm: false,
+      editing: false,
     };
     
     this.removeCar = this.removeCar.bind(this);
@@ -24,8 +25,10 @@ class Car extends React.Component{
     // hide all other cars in inventory
     // populate form with the current car
     // submit -> update state -> show cars 
-    this.setState({displayForm:!this.state.displayForm});
-    console.log(this.state.displayForm);
+    this.setState({
+      displayForm:!this.state.displayForm,
+      editing:!this.state.editing,
+    });
   }
   
   render(){
@@ -35,7 +38,10 @@ class Car extends React.Component{
         <h3> Car: {car.title} </h3>
         <h3> Description: {car.description} </h3>
         <button onClick={this.removeCar}> X </button>
-        <button onClick={this.toggleForm}> Edit </button>
+        
+        {_.renderIf(!this.state.editing, 
+          <button onClick={this.toggleForm}> Edit </button>
+        )}
         
         {_.renderIf(this.state.displayForm, 
           <CarForm />
