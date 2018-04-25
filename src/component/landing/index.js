@@ -1,8 +1,8 @@
-import './_dashboard.scss';
+import './_landing.scss';
 import React from 'react';
 import {connect} from 'react-redux';
 
-class Dashboard extends React.Component{
+class Landing extends React.Component{
   render(){
     return(
       <h1> sup fam </h1>
@@ -12,12 +12,12 @@ class Dashboard extends React.Component{
 
 let mapStateToProps = (state) => {
   return {
-  }
-}
+  };
+};
 
 let mapDispatchToProps = (dispatch) => {
   return {
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Landing);
