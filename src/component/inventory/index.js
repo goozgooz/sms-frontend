@@ -3,6 +3,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as _ from '../../lib/util.js';
 
+import DropboxChooser from './dropbox/index.js';
+
 // React Components
 import AddCarForm from './car-form/add-form.js';
 import CarDisplay from './car-display/index.js';
@@ -38,6 +40,8 @@ class Inventory extends React.Component{
     return(
       <React.Fragment>
         <h1> SMS Inventory </h1>
+        
+        <DropboxChooser />
         
         {_.renderIf(this.state.displayInventory,
           <button onClick={this.toggler} id='add-car-button'> Add Car </button>
