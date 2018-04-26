@@ -10,9 +10,23 @@ class DropboxChooser extends React.Component{
     this.download = this.download.bind(this);
   }
   
-  download(){
+  download(folder){
     let dbx = new Dropbox.Dropbox({accessToken: token});
-    console.log({dbx});
+    dbx.filesListFolder({path:'/pets'})
+      .then(data => {
+        return data.entries.map(i => {
+          return i.name;
+        });
+      })
+      .then(photos => {
+        for(let photo of photos){
+          dbx.filesDownload({path:`/pets/${photo}`})
+            .then(console.log)
+            .catch(console.log);
+        }
+        
+      })
+      .catch(console.log);
   }
 
   
@@ -27,3 +41,7 @@ class DropboxChooser extends React.Component{
 }
 
 export default DropboxChooser;
+
+
+// https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_shared_link_file
+// https://www.dropbox.com/developers/documentation/http/documentation

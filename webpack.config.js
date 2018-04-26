@@ -7,6 +7,10 @@ const ExtractPlugin = require('extract-text-webpack-plugin');
 const {DefinePlugin} = require('webpack');
 
 module.exports = {
+  node: {
+    fs: 'empty',
+  },
+  
   devtool: 'source-map',
   
   entry: `${__dirname}/src/main.js`,
