@@ -21,10 +21,10 @@ class DropboxChooser extends React.Component{
       .then(photos => {
         for(let photo of photos){
           dbx.filesDownload({path:`/pets/${photo}`})
-            .then(console.log)
-            .catch(console.log);
+            .then(blob => {
+              let image = blob.fileBlob; // this is the image file I want to save 
+            });
         }
-        
       })
       .catch(console.log);
   }
@@ -43,5 +43,13 @@ class DropboxChooser extends React.Component{
 export default DropboxChooser;
 
 
-// https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_shared_link_file
 // https://www.dropbox.com/developers/documentation/http/documentation
+// http://dropbox.github.io/dropbox-sdk-js/Dropbox.html
+
+
+// dbx.filesGetThumbnail({"path": "/test.jpg"})
+//   .then(function(response) {
+//     var img = document.createElement('img');
+//     img.src=window.URL.createObjectURL(response.fileBlob);
+//     document.body.appendChild(img);
+//   })
