@@ -5,7 +5,9 @@ import {connect} from 'react-redux';
 class Landing extends React.Component{
   render(){
     return(
-      <h1> sup fam </h1>
+      <div>
+        <h1> sup fam </h1>
+      </div>
     );
   }
 }
