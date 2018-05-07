@@ -31,33 +31,54 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(woff|woff2|ttf|eot).*/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              name: 'font/[name].[hash].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(jpg|gif|png|svg)$/,
+        exclude: /\.icon\.svg$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: 'image/[name].[hash].[ext]',
+          },
+        }],
+      },
+      {
+        test: /\.icon\.svg$/,
+        loader: 'raw-loader',
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-      },  
+      },
       {
         test: /\.scss$/,
         loader: ExtractPlugin.extract({
           use: [
-            {
-              loader: 'css-loader', 
-              options: {
-                sourceMap:true,
-              },
-            },
+            'css-loader',
             'resolve-url-loader',
             {
               loader: 'sass-loader',
               options: {
-                sourceMap: true,
-                includePaths:[`${__dirname}/src/style`],
+                sourceMap: production ? false : true,
+                includePaths: [`${__dirname}/src/style`],
               },
             },
           ],
         }),
       },
-            
+
     ],
   },
-    
 };
