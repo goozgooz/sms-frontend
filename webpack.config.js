@@ -71,7 +71,7 @@ module.exports = {
             {
               loader: 'sass-loader',
               options: {
-                sourceMap: production ? false : true,
+                sourceMap: true,
                 includePaths: [`${__dirname}/src/style`],
               },
             },
