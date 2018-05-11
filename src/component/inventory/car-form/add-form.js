@@ -48,10 +48,12 @@ class CarForm extends React.Component {
     this.props.formSubmit(this.state);
   }
   
+  //        <button onClick={this.quickAdd}> Quick Add </button>
+  
   render(){
     return(
-      <React.Fragment>
-        <button onClick={this.quickAdd}> Quick Add </button>
+      <div className='car-form'>
+
         <form 
           className='car-form'
           onSubmit={this.handleSubmit}
@@ -234,13 +236,13 @@ class CarForm extends React.Component {
             />
           </div>
           
-          <button type='submit'> submit </button>
+          <button type='submit' className='submit-button'> submit </button>
         
         </form>
         
         
         
-      </React.Fragment>
+      </div>
     ); 
   }
   

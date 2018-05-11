@@ -15,8 +15,8 @@ class Inventory extends React.Component{
     super(props);
     
     this.state = {
-      displayForm: false,
-      displayInventory: true,
+      displayForm: true,
+      displayInventory: false,
     };
     
     this.toggler = this.toggler.bind(this);
@@ -36,7 +36,7 @@ class Inventory extends React.Component{
   
   render(){
     return(
-      <React.Fragment>
+      <div id='inventory-landing'>
         <h1> SMS Inventory </h1>
         
         {_.renderIf(this.state.displayInventory,
@@ -57,7 +57,7 @@ class Inventory extends React.Component{
         )}
         
         
-      </React.Fragment>
+      </div>
     );
   }
 }

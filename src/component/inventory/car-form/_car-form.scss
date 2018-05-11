@@ -1,16 +1,32 @@
+@import 'vars';
+
+.car-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
 .field {
   display: flex;
+  width: auto;
+  margin: 7px;
 }
 
 label {
-  width: 100px;
+  width: 150px;
+  margin-right: 20px;
   padding: 4px;
+  padding-right: 20px;
   text-align: right;
+  font-size: 20px;
 }
 
 input {
-  border: 1px solid black;
   margin: 4px 0px;
+  border: 2px solid #767776;
+  background-color: $color-light-gray;
   padding: 4px;
   width: 300px;
 }
@@ -21,6 +37,8 @@ button {
   width: 400px;
 }
 
-.description-input {
-  height: 300px;
+.field {
+  .description-input {
+    height: 300px;
+  }
 }
