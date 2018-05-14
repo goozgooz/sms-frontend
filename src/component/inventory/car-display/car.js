@@ -36,14 +36,16 @@ class Car extends React.Component{
   
   render(){
     let {car,id} = this.props.car;
+    console.log(car);
     return(
       <div className='inventory-item'>
+        <img src={require('./dev-car.jpg')} /> 
         <h3> Car: {car.title} </h3>
         <h3> Description: {car.description} </h3>
-        <button onClick={this.removeCar}> X </button>
+        <button onClick={this.removeCar} className='submit-button'> X </button>
         
         {_.renderIf(!this.state.showEditForm, 
-          <button onClick={this.toggleEdit}> Edit </button>
+          <button onClick={this.toggleEdit} className='submit-button'> Edit </button>
         )}
         
         {_.renderIf(this.state.showEditForm, 
