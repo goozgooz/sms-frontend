@@ -1,8 +1,18 @@
 @import 'vars';
 
+.inventory-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .inventory-item {
   border: 1px solid $color-green;
   margin: 30px auto;
   padding: 0.5em;
   width: 75%;
+  
+  img{
+    height: auto;
+    width: 200px;
+  }
 }
