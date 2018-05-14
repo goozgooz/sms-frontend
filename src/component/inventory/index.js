@@ -40,7 +40,7 @@ class Inventory extends React.Component{
         <h1> SMS Inventory </h1>
         
         {_.renderIf(this.state.displayInventory,
-          <button onClick={this.toggler} id='add-car-button'> Add Car </button>
+          <button onClick={this.toggler} className='submit-button'> Add Car </button>
         )}
         
         {_.renderIf(this.state.displayForm, 

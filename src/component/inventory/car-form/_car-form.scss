@@ -31,10 +31,8 @@ input {
   width: 300px;
 }
 
-button {
-  margin-top: 15px;
-  padding: 5px;
-  width: 400px;
+input:focus{
+  border: 3px solid $color-green;
 }
 
 .field {

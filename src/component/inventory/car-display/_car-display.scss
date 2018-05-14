@@ -1,6 +1,8 @@
+@import 'vars';
+
 .inventory-item {
-  border: 1px solid black;
-  margin: 1em;
-  padding: 1em;
+  border: 1px solid $color-green;
+  margin: 30px auto;
+  padding: 0.5em;
   width: 75%;
 }

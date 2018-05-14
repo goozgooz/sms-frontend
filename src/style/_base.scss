@@ -12,36 +12,3 @@ h1 {
   text-align: center;
 }
 
-.submit-button {
-  margin-right: 10px;
-  width: 100px;
-  background: #1abc9c;
-  border-bottom: #16a085 3px solid;
-  border-left: #16a085 1px solid;
-  border-right: #16a085 1px solid;
-  border-radius: 6px;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  float: left;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.submit-button:hover {
-  opacity: 0.8; 
-}
-
-.submit-button:active {
-  width: 100px;
-  // background: #18B495;
-  border-bottom: #16a085 1px solid;
-  border-left: #16a085 1px solid;
-  border-right: #16a085 1px solid;
-  border-radius: 6px;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  margin-top: 3px;
-  float: left;
-}
