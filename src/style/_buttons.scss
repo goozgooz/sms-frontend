@@ -1,13 +1,12 @@
+@import 'vars';
+
 .submit-button {
-  margin: auto;
+  margin: 0.5em auto;
   width: 100px;
-  background: #1abc9c;
-  border-bottom: #16a085 3px solid;
-  border-left: #16a085 1px solid;
-  border-right: #16a085 1px solid;
+  background: $color-blue;
   border-radius: 6px;
   text-align: center;
-  color: white;
+  color: $color-white;
   padding: 10px;
   font-size: 12px;
   font-weight: 800;
@@ -19,13 +18,9 @@
 
 .submit-button:active {
   width: 100px;
-  // background: #18B495;
-  border-bottom: #16a085 1px solid;
-  border-left: #16a085 1px solid;
-  border-right: #16a085 1px solid;
   border-radius: 6px;
   text-align: center;
-  color: white;
+  color: $color-white;
   padding: 10px;
   margin-top: 3px;
 }

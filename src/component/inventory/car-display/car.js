@@ -3,6 +3,8 @@ import React from 'react';
 import * as _ from '../../../lib/util.js';
 
 import EditCarForm from '../car-form/edit-form.js';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import {faEdit, faTrashAlt} from '@fortawesome/fontawesome-free-regular';
 
 class Car extends React.Component{
   constructor(props){
@@ -39,14 +41,20 @@ class Car extends React.Component{
     console.log(car);
     return(
       <div className='inventory-item'>
+      
         <img src={require('./dev-car.jpg')} /> 
-        <h3> Car: {car.title} </h3>
-        <h3> Description: {car.description} </h3>
-        <button onClick={this.removeCar} className='submit-button'> X </button>
         
-        {_.renderIf(!this.state.showEditForm, 
-          <button onClick={this.toggleEdit} className='submit-button'> Edit </button>
-        )}
+        <div className='car-info'>
+          <h3> Car: {car.title} </h3>
+          <h3> Description: {car.description} </h3>
+        </div>
+        
+        <div className='car-buttons'>
+          {_.renderIf(!this.state.showEditForm, 
+            <button onClick={this.toggleEdit}> <FontAwesomeIcon icon={faEdit} size='2x' /> </button>
+          )}
+          <button onClick={this.removeCar}> <FontAwesomeIcon icon={faTrashAlt} size='2x' /></button>
+        </div>
         
         {_.renderIf(this.state.showEditForm, 
           <EditCarForm 

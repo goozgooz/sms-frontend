@@ -6,13 +6,35 @@
 }
 
 .inventory-item {
-  border: 1px solid $color-green;
+  background-color: $color-light-gray;
+  border: 2px solid $color-blue;
+  border-radius: 6px;
+  display: flex;
+  max-width: 960px;
+  height: 200px;
   margin: 30px auto;
   padding: 0.5em;
-  width: 75%;
   
   img{
-    height: auto;
-    width: 200px;
+    height: 180px;
+    width: auto;
   }
 }
+
+.car-buttons {
+  display: flex;
+  justify-content: flex-end;
+  
+  button {
+    background: #F2F2F2;
+    color: #296a79;
+    height: 10px;
+    margin: 0.5em 1.3em;
+    width: 10px;
+  }
+  
+  button:hover {
+    transform: scale(1.2);
+  }
+}
+
