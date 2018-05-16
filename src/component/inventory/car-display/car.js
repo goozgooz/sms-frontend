@@ -36,6 +36,8 @@ class Car extends React.Component{
     this.props.edit(data);
   }
   
+
+
   render(){
     let {car,id} = this.props.car;
     console.log(car);
