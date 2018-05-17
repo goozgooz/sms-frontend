@@ -1,10 +1,13 @@
 @import 'vars';
 
 .car-form {
+  align-items: center;
+  background-color: $color-light-gray;
+  border: 1px solid $color-green;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
+  margin: 20px auto;
+  width: 80%;
 }
 
 
@@ -39,4 +42,8 @@ input:focus{
   .description-input {
     height: 300px;
   }
+}
+
+#edit-form{
+  display: block;
 }

@@ -41,22 +41,24 @@ class Car extends React.Component{
   render(){
     let {car,id} = this.props.car;
     return(
-      <div className='inventory-item'>
-      
-        <img src={require('./dev-car.jpg')} /> 
-        
-        <div className='car-info'>
-          <h3> Car: <span> {car.title} </span> </h3>
-          <h3> Description: <span> {car.description} </span> </h3>
+      <React.Fragment>
+        <div className='inventory-item'>
+          <img src={require('./dev-car.jpg')} /> 
+          
+          <div className='car-info'>
+            <h3> Car: <span> {car.title} </span> </h3>
+            <h3> Description: <span> {car.description} </span> </h3>
+          </div>
+          
+          <div className='car-buttons'>
+            {_.renderIf(!this.state.showEditForm, 
+              <button onClick={this.toggleEdit}> <FontAwesomeIcon icon={faEdit} size='2x' /> </button>
+            )}
+            <button onClick={this.removeCar}> <FontAwesomeIcon icon={faTrashAlt} size='2x' /></button>
+          </div>
+          
         </div>
-        
-        <div className='car-buttons'>
-          {_.renderIf(!this.state.showEditForm, 
-            <button onClick={this.toggleEdit}> <FontAwesomeIcon icon={faEdit} size='2x' /> </button>
-          )}
-          <button onClick={this.removeCar}> <FontAwesomeIcon icon={faTrashAlt} size='2x' /></button>
-        </div>
-        
+
         {_.renderIf(this.state.showEditForm, 
           <EditCarForm 
             data={car}
@@ -64,7 +66,8 @@ class Car extends React.Component{
             formSubmit={this.formSubmit}
           />
         )}
-      </div>
+        
+      </React.Fragment>
     );
   }
 };

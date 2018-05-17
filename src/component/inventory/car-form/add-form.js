@@ -54,7 +54,7 @@ class CarForm extends React.Component {
   
   render(){
     return(
-      <div className='car-form'>
+      <React.Fragment>
 
         <form 
           className='car-form'
@@ -244,7 +244,7 @@ class CarForm extends React.Component {
         
         
         
-      </div>
+      </React.Fragment>
     ); 
   }
   
