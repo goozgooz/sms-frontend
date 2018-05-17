@@ -1,6 +1,56 @@
+@import 'vars';
+
+.inventory-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .inventory-item {
-  border: 1px solid black;
-  margin: 1em;
-  padding: 1em;
-  width: 75%;
+  background-color: $color-light-gray;
+  border: 2px solid $color-blue;
+  border-radius: 6px;
+  display: flex;
+  height: 200px;
+  margin: 30px auto;
+  padding: 0.5em;
+  width: 80%;
+  
+  img{
+    height: 180px;
+    width: auto;
+  }
+}
+
+.car-buttons {
+  display: flex;
+  justify-content: flex-end;
+  
+  button {
+    background: $color-light-gray;
+    color: $color-blue;
+    height: 10px;
+    margin: 0.5em 1.3em;
+    width: 10px;
+  }
+  
+  button:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+.car-info{
+  h3{
+    color: $color-blue;
+    display: flex;
+    font-weight: bold;
+    margin: .4em 1em;
+  }
+  
+  span{
+    color: black;
+    margin-left: .2em;
+  }
+  
+  
 }

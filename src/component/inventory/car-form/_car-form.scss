@@ -1,26 +1,49 @@
+@import 'vars';
+
+.car-form {
+  align-items: center;
+  background-color: $color-light-gray;
+  border: 1px solid $color-green;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+}
+
+
 .field {
   display: flex;
+  width: auto;
+  margin: 7px;
 }
 
 label {
-  width: 100px;
+  width: 150px;
+  margin-right: 20px;
   padding: 4px;
+  padding-right: 20px;
   text-align: right;
+  font-size: 20px;
 }
 
 input {
-  border: 1px solid black;
   margin: 4px 0px;
+  border: 2px solid #767776;
+  background-color: $color-light-gray;
   padding: 4px;
   width: 300px;
 }
 
-button {
-  margin-top: 15px;
-  padding: 5px;
-  width: 400px;
+input:focus{
+  border: 3px solid $color-green;
 }
 
-.description-input {
-  height: 300px;
+.field {
+  .description-input {
+    height: 300px;
+  }
+}
+
+#edit-form{
+  display: block;
 }

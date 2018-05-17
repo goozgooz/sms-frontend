@@ -31,6 +31,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,  
+        include: /node_modules/,  
+        loaders: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.(woff|woff2|ttf|eot).*/,
         use: [
           {
@@ -66,7 +71,12 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractPlugin.extract({
           use: [
-            'css-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap:true,
+              },
+            },
             'resolve-url-loader',
             {
               loader: 'sass-loader',

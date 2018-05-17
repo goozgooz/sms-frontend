@@ -1,0 +1,26 @@
+@import 'vars';
+
+.submit-button {
+  margin: 0.5em auto;
+  width: 100px;
+  background: $color-blue;
+  border-radius: 6px;
+  text-align: center;
+  color: $color-white;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.submit-button:hover {
+  opacity: 0.8; 
+}
+
+.submit-button:active {
+  width: 100px;
+  border-radius: 6px;
+  text-align: center;
+  color: $color-white;
+  padding: 10px;
+  margin-top: 3px;
+}

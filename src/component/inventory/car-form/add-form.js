@@ -48,17 +48,21 @@ class CarForm extends React.Component {
     this.props.formSubmit(this.state);
   }
   
+  // componentDidMount(){
+  //   this.quickAdd();
+  // }
+  
   render(){
     return(
       <React.Fragment>
-        <button onClick={this.quickAdd}> Quick Add </button>
+
         <form 
           className='car-form'
           onSubmit={this.handleSubmit}
         >
         
           <div className='field'> 
-            <label> headline </label>
+            <label> Headline: </label>
             <input
               className='title-input'
               type='text'
@@ -69,7 +73,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> vin number </label>
+            <label> Vin Number: </label>
             <input
               className='vin-input'
               type='text'
@@ -80,7 +84,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> year </label>
+            <label> Year: </label>
             <input
               className='year-input'
               placeholder=''
@@ -92,7 +96,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> make </label>
+            <label> Make: </label>
             <input
               className='make-input'
               type='text'
@@ -103,7 +107,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> model </label>
+            <label> Model: </label>
             <input
               className='model-input'
               type='text'
@@ -114,7 +118,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> price </label>
+            <label> Price: </label>
             <input
               className='price-input'
               type='number'
@@ -125,7 +129,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> condition </label>
+            <label> Condition: </label>
             <input
               className='condition-input'
               type='text'
@@ -136,7 +140,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> engine </label>
+            <label> Engine: </label>
             <input
               className='engine-input'
               type='text'
@@ -147,7 +151,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> drive  </label>
+            <label> Drive:  </label>
             <input
               className='drive-input'
               type='text'
@@ -158,7 +162,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> fuel </label>
+            <label> Fuel: </label>
             <input
               className='fuel-input'
               type='text'
@@ -169,7 +173,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> odometer </label>
+            <label> Odometer: </label>
             <input
               className='odometer-input'
               type='number'
@@ -180,7 +184,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> exterior color </label>
+            <label> Exterior Color: </label>
             <input
               className='exterior-color-input'
               type='text'
@@ -191,7 +195,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> interior color </label>
+            <label> Interior Color: </label>
             <input
               className='interior-color-input'
               type='text'
@@ -202,7 +206,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> title status </label>
+            <label> Title Status: </label>
             <input
               className='title-status-input'
               type='text'
@@ -213,7 +217,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> transmission </label>
+            <label> Transmission: </label>
             <input
               className='transmission-input'
               type='text'
@@ -224,7 +228,7 @@ class CarForm extends React.Component {
           </div>
           
           <div className='field'>
-            <label> desciption </label>
+            <label> Description: </label>
             <input
               className='description-input'
               type='text'
@@ -234,7 +238,7 @@ class CarForm extends React.Component {
             />
           </div>
           
-          <button type='submit'> submit </button>
+          <button type='submit' className='submit-button'> Add Car </button>
         
         </form>
         

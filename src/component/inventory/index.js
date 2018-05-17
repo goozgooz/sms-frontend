@@ -5,6 +5,7 @@ import * as _ from '../../lib/util.js';
 
 // React Components
 import AddCarForm from './car-form/add-form.js';
+import EditCarForm from './car-form/edit-form.js';
 import CarDisplay from './car-display/index.js';
 
 // Import Actions
@@ -28,7 +29,6 @@ class Inventory extends React.Component{
     this.setState({displayInventory:!this.state.displayInventory});
   }
   
-  
   addCar(data) {
     this.props.carCreate(data);
     this.toggler();
@@ -36,13 +36,14 @@ class Inventory extends React.Component{
   
   render(){
     return(
-      <React.Fragment>
+      <div id='inventory-landing'>
         <h1> SMS Inventory </h1>
         
         {_.renderIf(this.state.displayInventory,
-          <button onClick={this.toggler} id='add-car-button'> Add Car </button>
+          <button onClick={this.toggler} className='submit-button'> Add Car </button>
         )}
         
+
         {_.renderIf(this.state.displayForm, 
           <AddCarForm formSubmit={this.addCar}/>,
         )}
@@ -57,7 +58,7 @@ class Inventory extends React.Component{
         )}
         
         
-      </React.Fragment>
+      </div>
     );
   }
 }
