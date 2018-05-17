@@ -3,6 +3,8 @@ import React from 'react';
 import * as _ from '../../../lib/util.js';
 
 import EditCarForm from '../car-form/edit-form.js';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import {faEdit, faTrashAlt} from '@fortawesome/fontawesome-free-regular';
 
 class Car extends React.Component{
   constructor(props){
@@ -34,17 +36,26 @@ class Car extends React.Component{
     this.props.edit(data);
   }
   
+
+
   render(){
     let {car,id} = this.props.car;
     return(
       <div className='inventory-item'>
-        <h3> Car: {car.title} </h3>
-        <h3> Description: {car.description} </h3>
-        <button onClick={this.removeCar}> X </button>
+      
+        <img src={require('./dev-car.jpg')} /> 
         
-        {_.renderIf(!this.state.showEditForm, 
-          <button onClick={this.toggleEdit}> Edit </button>
-        )}
+        <div className='car-info'>
+          <h3> Car: <span> {car.title} </span> </h3>
+          <h3> Description: <span> {car.description} </span> </h3>
+        </div>
+        
+        <div className='car-buttons'>
+          {_.renderIf(!this.state.showEditForm, 
+            <button onClick={this.toggleEdit}> <FontAwesomeIcon icon={faEdit} size='2x' /> </button>
+          )}
+          <button onClick={this.removeCar}> <FontAwesomeIcon icon={faTrashAlt} size='2x' /></button>
+        </div>
         
         {_.renderIf(this.state.showEditForm, 
           <EditCarForm 

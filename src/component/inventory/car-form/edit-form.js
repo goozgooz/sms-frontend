@@ -205,7 +205,7 @@ class EditCarForm extends React.Component {
             />
           </div>
           
-          <button type='submit'> submit changes </button>
+          <button type='submit' className='submit-button'> Add Car </button>
         
         </form>
       </React.Fragment>

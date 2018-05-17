@@ -1,7 +1,14 @@
 // this is where all the basic stuff goes - what h1 / button / p / a / hover /click
+@import 'vars';
 
 html {
-    title {
-        display: none;
-    }
+  title {
+    display: none;
+  }
 }
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
