@@ -6,7 +6,6 @@ import {Provider} from 'react-redux';
 
 import App from './component/app';
 import reducer from './reducer/index.js';
-import formValidator from './lib/form-validator.js';
 
 let store = createStore(reducer);
 

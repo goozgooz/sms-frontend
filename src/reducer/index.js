@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
 
-// import reducers
+import carReducer from './car.js';
 
 
 export default combineReducers({
-  // comma separated reducers
+  carReducer
 });

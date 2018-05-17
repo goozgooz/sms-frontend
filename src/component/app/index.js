@@ -5,6 +5,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Dashboard from '../dashboard';
 
 class App extends React.Component {
+
   render(){
     return(
       <div className='app'>
