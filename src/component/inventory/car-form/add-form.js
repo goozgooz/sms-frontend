@@ -48,9 +48,9 @@ class CarForm extends React.Component {
     this.props.formSubmit(this.state);
   }
   
-  componentDidMount(){
-    this.quickAdd();
-  }
+  // componentDidMount(){
+  //   this.quickAdd();
+  // }
   
   render(){
     return(

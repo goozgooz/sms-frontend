@@ -40,15 +40,14 @@ class Car extends React.Component{
 
   render(){
     let {car,id} = this.props.car;
-    console.log(car);
     return(
       <div className='inventory-item'>
       
         <img src={require('./dev-car.jpg')} /> 
         
         <div className='car-info'>
-          <h3> Car: {car.title} </h3>
-          <h3> Description: {car.description} </h3>
+          <h3> Car: <span> {car.title} </span> </h3>
+          <h3> Description: <span> {car.description} </span> </h3>
         </div>
         
         <div className='car-buttons'>

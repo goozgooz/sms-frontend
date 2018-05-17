@@ -9,7 +9,7 @@ class CarDisplay extends React.Component {
   }
   
   displayCar(){
-    let {inventory, remove, edit} = this.props;
+    let {inventory, remove, edit, toggleEdit} = this.props;
     
     return Object.keys(inventory).map((id,i) => (
       <Car 
@@ -18,6 +18,7 @@ class CarDisplay extends React.Component {
         key={i} 
         edit={edit}
         remove={remove}
+        toggleEdit={toggleEdit}
       />
     ));
   }
