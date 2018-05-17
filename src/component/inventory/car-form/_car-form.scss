@@ -1,0 +1,26 @@
+.field {
+  display: flex;
+}
+
+label {
+  width: 100px;
+  padding: 4px;
+  text-align: right;
+}
+
+input {
+  border: 1px solid black;
+  margin: 4px 0px;
+  padding: 4px;
+  width: 300px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 5px;
+  width: 400px;
+}
+
+.description-input {
+  height: 300px;
+}
