@@ -2,7 +2,7 @@
   "name": "sms-frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goozgooz/sms-frontend.git"
