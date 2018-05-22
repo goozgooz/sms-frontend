@@ -1,0 +1,30 @@
+@import 'vars';
+
+.navbar {
+  align-items: center;
+  background-color: $color-light-gray;
+  display: flex;
+  height: 5em;
+  justify-content: space-around;
+  min-width: 100%;
+  position: fixed;
+}
+
+ul {
+  display: flex;
+  width: 50%;
+  
+  a {
+    color: $color-blue;
+    text-decoration: none;
+    
+    &:hover {
+      color: $color-green;
+    }
+  }
+  
+  li {
+    display: inline-block;
+  }
+}
+

@@ -2,12 +2,12 @@ import './_landing.scss';
 import React from 'react';
 import {connect} from 'react-redux';
 
+import Navbar from '../navbar';
+
 class Landing extends React.Component{
   render(){
     return(
-      <div>
-        <h1> sup fam </h1>
-      </div>
+      <Navbar />
     );
   }
 }
