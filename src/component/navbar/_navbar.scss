@@ -1,17 +1,23 @@
 @import 'vars';
 
+#hamburger {
+  height: 5em;
+  width: 5em;
+}
+
 .navbar {
   // align-items: center;
   // background-color: $color-light-gray;
   display: flex;
   height: 5em;
-  justify-content: center;
+  // justify-content: center;  chagned to flexend
+  justify-content: flex-end;
   min-width: 100%;
   position: fixed;
 }
 
 ul {
-  display: flex;
+  display: none;
   flex-direction: column; // added
   width: 100%; // changed from auto
 }
@@ -25,8 +31,9 @@ li {
 
 a {
   color: $color-blue;
-  font-size: 1em;
+  font-size: 2.5em;
   padding: .5em;
+  text-align: center;
   text-decoration: none;
 }
   
