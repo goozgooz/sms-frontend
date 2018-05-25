@@ -1,5 +1,9 @@
 @import 'vars';
 
+#regular-nav{
+  display: none;
+}
+
 #hamburger {
   height: 5em;
   width: 5em;
@@ -17,7 +21,6 @@
 }
 
 ul {
-  display: none;
   flex-direction: column; // added
   width: 100%; // changed from auto
 }
