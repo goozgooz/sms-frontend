@@ -1,43 +1,63 @@
 @import 'vars';
 
-#regular-nav{
+#regular {
   display: none;
 }
 
-#hamburger {
-  height: 5em;
-  width: 5em;
-}
-
-.navbar {
-  // align-items: center;
-  // background-color: $color-light-gray;
+#mobile {
   display: flex;
-  height: 5em;
-  // justify-content: center;  chagned to flexend
-  justify-content: flex-end;
+  flex-direction: column;
   min-width: 100%;
   position: fixed;
-}
-
-ul {
-  flex-direction: column; // added
-  width: 100%; // changed from auto
-}
   
-li {
+  button {
+    align-self: flex-end;
+    height: 5em;
+    position: fixed;
+    width: 5em;
+    z-index: 1;
+  }
+  
+  ul {
+    margin-top: 5em;
+    width: 100%;
+  }
+  
+  li {
   background-color: $color-light-gray;
-  display: inline-block;
-  // margin: 1.5em;
   position: relative;
+  }
+  
+  a {
+    color: $color-blue;
+    font-size: 2.5em;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+  }
 }
 
-a {
-  color: $color-blue;
-  font-size: 2.5em;
-  padding: .5em;
-  text-align: center;
-  text-decoration: none;
+
+
+// #mobile {
+//   // align-items: center;
+//   // background-color: $color-light-gray;
+//   // flex-direction: column;  // added 
+//   // justify-content: center;  chagned to flexend
+//   // justify-content: flex-end;
+
+// }
+
+
+
+
+
+@media (min-width: 768px){
+
+  
+  #mobile {
+    display: none;
+  };
 }
   
 // li > a:before{

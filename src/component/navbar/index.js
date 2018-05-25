@@ -29,29 +29,33 @@ class MyNavbar extends React.Component {
   }
   
   render(){
-    console.log(this.state);
     return(
       <nav className='navbar'>
-        <button id='hamburger' onClick={this.toggleMenu}> 
-          <FontAwesomeIcon icon={faBars} size='xs' /> 
-        </button>
-        {_.renderIf(this.state.showMobileNav,
-          <ul id='hamburger-nav'>
+      
+        <div id='mobile'>
+          <button onClick={this.toggleMenu}> 
+            <FontAwesomeIcon icon={faBars} size='xs' /> 
+          </button>
+          {_.renderIf(this.state.showMobileNav,
+            <ul>
+              <li> <a href='#'> Home </a> </li>
+              <li> <a href='#'> Inventory </a> </li>
+              <li> <a href='#'> Service </a> </li>
+              <li> <a href='#'> About </a> </li>
+              <li> <a href='#'> Contact </a> </li>
+            </ul>
+          )}
+        </div>
+        
+        <div id='regular'>
+          <ul>
             <li> <a href='#'> Home </a> </li>
             <li> <a href='#'> Inventory </a> </li>
             <li> <a href='#'> Service </a> </li>
             <li> <a href='#'> About </a> </li>
             <li> <a href='#'> Contact </a> </li>
           </ul>
-        )}
-        
-        <ul id='regular-nav'>
-          <li> <a href='#'> Home </a> </li>
-          <li> <a href='#'> Inventory </a> </li>
-          <li> <a href='#'> Service </a> </li>
-          <li> <a href='#'> About </a> </li>
-          <li> <a href='#'> Contact </a> </li>
-        </ul>
+        </div>
         
       </nav>
     );
