@@ -13,7 +13,7 @@
   height: 200px;
   margin: 30px auto;
   padding: 0.5em;
-  width: 80%;
+  max-width: 960px;
   
   img{
     height: 180px;
@@ -28,9 +28,9 @@
   button {
     background: $color-light-gray;
     color: $color-blue;
-    height: 10px;
-    margin: 0.5em 1.3em;
-    width: 10px;
+    height: 2em;
+    margin: 0.5em;
+    width: 2em;
   }
   
   button:hover {
