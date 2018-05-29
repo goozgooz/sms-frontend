@@ -3,11 +3,17 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 import Navbar from '../navbar';
+import Header from '../header';
+import Banner from '../banner';
 
 class Landing extends React.Component{
   render(){
     return(
-      <Navbar />
+      <div id='home'>
+        <Navbar />
+        <Header />
+        <Banner />
+      </div>
     );
   }
 }
