@@ -1,6 +1,7 @@
 import './style/main.scss';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 
@@ -8,13 +9,25 @@ import App from './component/app';
 import reducer from './reducer/index.js';
 import reporter from './lib/redux-reporter.js';
 
+
 let store = createStore(reducer, applyMiddleware(reporter));
 
-const container = document.createElement('div');
-document.body.appendChild(container);
+class Main extends React.Component {
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>, 
-  container);
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <App/>
+        </BrowserRouter>
+      </Provider>
+    );
+  }
+
+}
+
+ReactDom.render(<Main/>, document.getElementById('root'));

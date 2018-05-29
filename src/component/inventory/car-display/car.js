@@ -3,8 +3,10 @@ import React from 'react';
 import * as _ from '../../../lib/util.js';
 
 import EditCarForm from '../car-form/edit-form.js';
+import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {faEdit, faTrashAlt} from '@fortawesome/fontawesome-free-regular';
+fontawesome.config = { autoAddCss: false };
 
 class Car extends React.Component{
   constructor(props){
