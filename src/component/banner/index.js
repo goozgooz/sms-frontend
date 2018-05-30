@@ -1,3 +1,5 @@
+import './_banner.scss';
+
 import React from 'react';
 
 class Banner extends React.Component {
