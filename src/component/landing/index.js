@@ -5,6 +5,8 @@ import {connect} from 'react-redux';
 import Navbar from '../navbar';
 import Header from '../header';
 import Banner from '../banner';
+import Tiles from '../tiles';
+import Footer from '../footer';
 
 class Landing extends React.Component{
   render(){
@@ -13,6 +15,8 @@ class Landing extends React.Component{
         <Navbar />
         <Header />
         <Banner />
+        <Tiles />
+        <Footer />
       </div>
     );
   }
