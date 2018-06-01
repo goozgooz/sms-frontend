@@ -2,16 +2,6 @@ import './_navbar.scss';
 import React from 'react';
 import * as _ from '../../lib/util.js';
 
-import fontawesome from '@fortawesome/fontawesome';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/fontawesome-free-solid';
-
-fontawesome.config = { autoAddCss: false };
-
-
-// home | inventory | service depart | about us | contact us
-      
-
 class MyNavbar extends React.Component {
   constructor(props){
     super(props);
@@ -34,7 +24,7 @@ class MyNavbar extends React.Component {
       
         <div id='mobile'>
           <button onClick={this.toggleMenu}> 
-            <FontAwesomeIcon icon={faBars} size='xs' /> 
+            <img src={require('./hamburger.png')} /> 
           </button>
           {_.renderIf(this.state.showMobileNav,
             <ul>
