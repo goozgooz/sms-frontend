@@ -1,7 +1,7 @@
 @import 'vars';
 
 .navbar{
-  margin-bottom: 6em;
+  margin-bottom: 7em;
 }
 
 #regular {
@@ -12,19 +12,21 @@
   background-color: $color-light-gray;
   display: flex;
   flex-direction: column;
-  height: 6em;
+  height: 8em;
   min-width: 100%;
   position: fixed;
   
   button {
     align-self: flex-end;
-    height: 6em;
+    background-color: $color-light-gray;
+    height: 7em;
     position: fixed;
-    width: 5em;
+    width: 8em;
     z-index: 1;
   }
   
   ul {
+    margin-top: 1em;
     width: 100%;
   }
   
@@ -39,7 +41,7 @@
   
   a {
     color: $color-blue;
-    font-size: 2.5em;
+    font-size: 3em;
     padding: .5em;
     text-align: center;
     text-decoration: none;

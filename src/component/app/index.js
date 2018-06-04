@@ -3,7 +3,7 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import Landing from '../landing';
-import Inventory from '../inventory';
+import Inventory from '../admin/inventory';
 
 class App extends React.Component {
 
