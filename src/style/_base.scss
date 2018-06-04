@@ -8,6 +8,13 @@ html {
 }
 
 h1 {
-  font-size: 36px;
+  color: $color-green;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  color: $color-blue;
+  font-size: 2em;
   text-align: center;
 }

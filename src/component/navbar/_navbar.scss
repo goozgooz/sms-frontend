@@ -1,9 +1,5 @@
 @import 'vars';
 
-.navbar{
-  margin-bottom: 7em;
-}
-
 #regular {
   display: none;
 }
@@ -14,7 +10,6 @@
   flex-direction: column;
   height: 8em;
   min-width: 100%;
-  position: fixed;
   
   button {
     align-self: flex-end;

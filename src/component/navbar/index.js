@@ -1,5 +1,7 @@
 import './_navbar.scss';
 import React from 'react';
+
+import {Link} from 'react-router-dom';
 import * as _ from '../../lib/util.js';
 
 class MyNavbar extends React.Component {
@@ -20,7 +22,7 @@ class MyNavbar extends React.Component {
   
   render(){
     return(
-      <nav className='navbar'>
+      <div id='navbar'>
       
         <div id='mobile'>
           <button onClick={this.toggleMenu}> 
@@ -28,11 +30,11 @@ class MyNavbar extends React.Component {
           </button>
           {_.renderIf(this.state.showMobileNav,
             <ul>
-              <li> <a href='#'> Home </a> </li>
-              <li> <a href='#'> Inventory </a> </li>
-              <li> <a href='#'> Service </a> </li>
-              <li> <a href='#'> About </a> </li>
-              <li> <a href='#'> Contact </a> </li>
+              <li> <Link to='/'> Home </Link> </li>
+              <li> <Link to='/inventory'> Inventory </Link> </li>
+              <li> <Link to='/service'> Service </Link> </li>
+              <li> <Link to='/about'> About </Link> </li>
+              <li> <Link to='/contact'> Contact </Link> </li>
             </ul>
           )}
         </div>
@@ -47,7 +49,7 @@ class MyNavbar extends React.Component {
           </ul>
         </div>
         
-      </nav>
+      </div>
     );
   }
 }
