@@ -1,6 +1,6 @@
 import './_car-display.scss';
 import React from 'react';
-import * as _ from '../../../lib/util.js';
+import * as _ from '../../../../lib/util.js';
 
 import EditCarForm from '../car-form/edit-form.js';
 import fontawesome from '@fortawesome/fontawesome';

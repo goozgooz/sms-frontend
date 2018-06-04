@@ -1,7 +1,7 @@
 import './_inventory.scss';
 import React from 'react';
 import {connect} from 'react-redux';
-import * as _ from '../../lib/util.js';
+import * as _ from '../../../lib/util.js';
 
 // React Components
 import AddCarForm from './car-form/add-form.js';
@@ -9,7 +9,7 @@ import EditCarForm from './car-form/edit-form.js';
 import CarDisplay from './car-display/index.js';
 
 // Import Actions
-import * as action from '../../action/car';
+import * as action from '../../../action/car';
 
 class Inventory extends React.Component{
   constructor(props){
