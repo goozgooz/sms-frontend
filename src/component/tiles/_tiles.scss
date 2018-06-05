@@ -17,8 +17,16 @@
     margin: .5em auto;
   }
   
+  div:hover{
+    background-color: darken($color-light-gray, 10%);
+  }
+  
   a {
     color: $color-blue;
     font-size: 3em;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
 }
