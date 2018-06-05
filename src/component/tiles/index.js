@@ -1,21 +1,22 @@
 import './_tiles.scss';
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Tiles extends React.Component {
   render(){
     return (
-      <div id='tiles'>
+      <div className='tiles'>
         <div>
-          <h2> View Inventory </h2>
+          <Link to='/inventory'> View Inventory </Link>
         </div>
         
         <div>
-          <h2> Vehicle Finder </h2>
+          <Link to='/'> Vehicle Finder </Link>
         </div>
         
         <div>
-          <h2> Contact Us </h2>
+          <Link to='/contact'> Contact Us </Link>
         </div>
       </div>
     );

@@ -1,26 +1,20 @@
 @import 'vars';
 
-.navbar{
-  margin-bottom: 7em;
-}
-
-#regular {
+.regular {
   display: none;
 }
 
-#mobile {
+.mobile {
   background-color: $color-light-gray;
   display: flex;
   flex-direction: column;
   height: 8em;
   min-width: 100%;
-  position: fixed;
   
   button {
     align-self: flex-end;
     background-color: $color-light-gray;
     height: 7em;
-    position: fixed;
     width: 8em;
     z-index: 1;
   }
@@ -54,7 +48,7 @@
 
 
 
-// #mobile {
+// .mobile {
 //   // align-items: center;
 //   // background-color: $color-light-gray;
 //   // flex-direction: column;  // added 

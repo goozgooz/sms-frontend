@@ -3,7 +3,11 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import Landing from '../landing';
-import Inventory from '../admin/inventory';
+import Admin from '../admin/inventory';
+import Inventory from '../inventory';
+import Service from '../service';
+import About from '../about';
+import Contact from '../contact';
 
 class App extends React.Component {
 
@@ -13,7 +17,11 @@ class App extends React.Component {
         <BrowserRouter>
           <div>
             <Route exact path='/' component={Landing}/>
-            <Route exact path='/goozgooz' component={Inventory}/>
+            <Route exact path='/goozgooz' component={Admin}/>
+            <Route exact path='/inventory' component={Inventory}/>
+            <Route exact path='/service' component={Service}/>
+            <Route exact path='/about' component={About}/>
+            <Route exact path='/contact' component={Contact}/>
           </div>
         </BrowserRouter>
       </div>
