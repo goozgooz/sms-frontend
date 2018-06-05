@@ -6,9 +6,9 @@ import Navbar from '../navbar';
 class Inventory extends React.Component {
   render(){
     return (
-      <div id='inventory'>
+      <div className='inventory'>
         <Navbar />
-        <h1 id='title'> Source Motor's Inventory Page Coming Soon! </h1>
+        <h1> Source Motor's Inventory Page Coming Soon! </h1>
       </div>
     );
   }

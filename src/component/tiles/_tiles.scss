@@ -1,6 +1,6 @@
 @import 'vars';
 
-#tiles {
+.tiles {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -17,7 +17,7 @@
     margin: .5em auto;
   }
   
-  h2 {
+  a {
     color: $color-blue;
     font-size: 3em;
   }

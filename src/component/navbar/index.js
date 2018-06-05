@@ -22,9 +22,9 @@ class MyNavbar extends React.Component {
   
   render(){
     return(
-      <div id='navbar'>
+      <div className='navbar'>
       
-        <div id='mobile'>
+        <div className='mobile'>
           <button onClick={this.toggleMenu}> 
             <img src={require('./hamburger.png')} /> 
           </button>
@@ -39,7 +39,7 @@ class MyNavbar extends React.Component {
           )}
         </div>
         
-        <div id='regular'>
+        <div className='regular'>
           <ul>
             <li> <a href='#'> Home </a> </li>
             <li> <a href='#'> Inventory </a> </li>
