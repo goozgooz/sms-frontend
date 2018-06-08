@@ -8,25 +8,35 @@
   background-color: $color-light-gray;
   display: flex;
   flex-direction: column;
-  height: 60px;
+  height: 100px;
   width: 100%;
   
   button {
-    align-self: flex-end;
+    align-self: flex-start;
     background-color: $color-light-gray;
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     z-index: 1;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
   
   ul {
-    margin-top: 1em;
+    margin-top: 95px;
     width: 100%;
   }
   
   li {
   background-color: $color-light-gray;
+  border: solid;
+  border-color: $color-medium-gray;
+  border-width: .1px 0;
+  line-height: 100px;
   position: relative;
+  text-align: center;
   }
   
   li:hover {

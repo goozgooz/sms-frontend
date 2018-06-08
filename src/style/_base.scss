@@ -1,10 +1,8 @@
 // this is where all the basic stuff goes - what h1 / button / p / a / hover /click
 @import 'vars';
 
-html {
-  title {
-    display: none;
-  }
+body {
+  font-family: $font-main;
 }
 
 h1 {
