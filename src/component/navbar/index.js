@@ -25,9 +25,17 @@ class MyNavbar extends React.Component {
       <div className='navbar'>
       
         <div className='mobile'>
-          <button onClick={this.toggleMenu}> 
-            <img src={require('./hamburger.png')} /> 
-          </button>
+          {_.renderIf(this.state.showMobileNav, 
+            <button onClick={this.toggleMenu}>
+              <img className='close' src={require('./close.png')} />
+            </button>,
+            <button onClick={this.toggleMenu}> 
+              <img src={require('./hamburger.png')} /> 
+            </button>
+          )}
+          
+          <div className='logo-placeholder'> SMS </div>
+          
           {_.renderIf(this.state.showMobileNav,
             <ul>
               <li> <Link to='/'> Home </Link> </li>
