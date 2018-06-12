@@ -2,9 +2,9 @@ import './_navbar.scss';
 import React from 'react';
 
 import {Link} from 'react-router-dom';
-import * as _ from '../../lib/util.js';
+// import * as _ from '../../lib/util.js';
 
-import {slide as Menu} from 'react-burger-menu';
+import {fallDown as Menu} from 'react-burger-menu';
 
 class MyNavbar extends React.Component {
   showSettings(e){
@@ -28,7 +28,7 @@ class MyNavbar extends React.Component {
   
   render(){
     return(
-      <div className='nav-bar'>
+      <div className='navbar'>
         <Menu width={'100%'}>
           <Link className='menu-item' to='/'> Home </Link>
           <Link className='menu-item' to='/inventory'> Inventory </Link> 
