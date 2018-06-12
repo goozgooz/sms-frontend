@@ -22,13 +22,12 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 94px;
-  width: 94px;
+
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #fff;
 }
 
 /* General sidebar styles */
@@ -46,6 +45,7 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
+  margin-top: 59px;
   padding: 0.8em;
 }
 
@@ -53,16 +53,23 @@
 .bm-item {
   border: solid;
   border-color: $color-medium-gray;
-  border-width: .1px 0;
+  border-width: 0 0 .1px 0;
   color: #fff;
   margin: 5px;
+  margin-left: 40px;
   display: inline-block;
   font-size: 40px;
   padding: 25px;
   text-decoration:  none;
+  width: 75%;
 }
 
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+span.bm-cross {
+  height: 40px;
+  width: 3px;
 }
