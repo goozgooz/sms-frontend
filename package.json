@@ -57,6 +57,7 @@
     "node-sass": "^4.7.2",
     "raw-loader": "^0.5.1",
     "react": "^16.2.0",
+    "react-burger-menu": "^2.5.2",
     "react-devtools": "^3.0.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
