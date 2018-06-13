@@ -9,18 +9,14 @@
   font-weight: bold;
   
   a {
-    color: #fff;
+    color: #2d2d2d;
     font-size: 40px;
     text-decoration: none;
   }
 }
 
-a:hover {
-  color: $color-medium-gray;
-}
-
 .navbar {
-  background-color: $color-dark-gray;
+  background-color: #fff;
   height: 120px;
   width: 100%
 }
@@ -36,23 +32,26 @@ a:hover {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #fff;
+  background: #373a47;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-
+  position: absolute !important;
+  left: 62px !important;
+  top: 37px !important
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #fff;
+  background: #2d2d2d;
+  height: 40px !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: $color-dark-gray;
-  padding: 2.5em 1.5em 0;
+  background: #fff;
+  padding: 2.5em 0 0;
   font-size: 1.15em;
 }
 
@@ -64,8 +63,7 @@ a:hover {
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  margin-top: 59px;
-  padding: 0.8em;
+  margin-top: 80px;
 }
 
 /* Individual item */
@@ -73,14 +71,14 @@ a:hover {
   border: solid;
   border-color: $color-medium-gray;
   border-width: 0 0 .1px 0;
-  color: #fff;
-  margin: 5px;
-  margin-left: 40px;
+  color: #2d2d2d;
+  font-weight: bold;
   display: inline-block;
-  font-size: 40px;
-  padding: 25px;
+  font-size: 45px;
+  padding: 35px;
+  padding-left: 55px;
   text-decoration:  none;
-  width: 75%;
+  width: 100%;
 }
 
 /* Styling of overlay */
@@ -91,4 +89,8 @@ a:hover {
 span.bm-cross {
   height: 40px;
   width: 3px;
+}
+
+.bm-item.menu-item:hover{
+  background-color: $color-light-gray;
 }
