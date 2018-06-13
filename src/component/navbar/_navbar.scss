@@ -17,8 +17,11 @@
 
 .navbar {
   background-color: #fff;
+  border-bottom: solid 1px $color-medium-gray;
   height: 120px;
-  width: 100%
+  width: 100%;
+  z-index: 1500;
+  position: absolute;
 }
 
 /* Position and sizing of burger button */
@@ -79,6 +82,10 @@
   padding-left: 55px;
   text-decoration:  none;
   width: 100%;
+}
+
+.bm-item:first-of-type {
+  border-top: 1px solid $color-medium-gray;
 }
 
 /* Styling of overlay */

@@ -4,17 +4,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 2em auto;
-  width: 90%;
+  margin: 25px auto;
+  width: 100%;
   
   div {
     align-items: center;
     background-color: $color-light-gray;
     border: 1px solid $color-medium-gray;
     display: flex;
-    text-align: center;
-    height: 100px;
+    height: 150px;
     margin: .5em auto;
+    width: 100%;
   }
   
   div:hover{
@@ -24,9 +24,7 @@
   a {
     color: $color-blue;
     font-size: 3em;
-  }
-  
-  a:hover {
-    text-decoration: underline;
+    margin: auto;
+    text-decoration: none;
   }
 }
