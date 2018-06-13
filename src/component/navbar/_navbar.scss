@@ -37,12 +37,15 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-
+  position: absolute !important;
+  left: 62px !important;
+  top: 37px !important
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: #2d2d2d;
+  height: 40px !important;
 }
 
 /* General sidebar styles */
