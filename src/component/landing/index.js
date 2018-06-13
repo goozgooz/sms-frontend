@@ -13,8 +13,8 @@ class Landing extends React.Component{
     return(
       <div id='home'>
         <Navbar />
-        <Header />
         <Banner />
+        <Header />
         <Tiles />
         <Footer />
       </div>
