@@ -2,9 +2,8 @@ import './_navbar.scss';
 import React from 'react';
 
 import {Link} from 'react-router-dom';
-// import * as _ from '../../lib/util.js';
 
-import {slide as Menu} from 'react-burger-menu';
+import {stack as Menu} from 'react-burger-menu';
 
 class MyNavbar extends React.Component {
   showSettings(e){
