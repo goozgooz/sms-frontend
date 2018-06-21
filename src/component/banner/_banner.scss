@@ -1,5 +1,9 @@
 @import 'vars';
 
-#banner {
-  width: 100%;
+.banner {
+  text-align: center;
+
+  img {
+    width: 95%;
+  }
 }

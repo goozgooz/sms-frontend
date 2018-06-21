@@ -11,12 +11,14 @@ import Footer from '../footer';
 class Landing extends React.Component{
   render(){
     return(
-      <div id='home'>
+      <div className='home'>
         <Navbar />
-        <Banner />
-        <Header />
-        <Tiles />
-        <Footer />
+        <div className='layout'>
+          <Header />
+          <Banner />
+          <Tiles />
+          <Footer />
+        </div>
       </div>
     );
   }
