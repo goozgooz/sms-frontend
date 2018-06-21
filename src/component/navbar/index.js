@@ -24,13 +24,13 @@ class MyNavbar extends React.Component {
     e.preventDefault();
     this.setState({showMobileNav:!this.state.showMobileNav});
   }
+  // <div className='logo'>
+  //   <Link to='/'> SMS </Link>
+  // </div>
   
   render(){
     return(
       <div className='navbar'>
-        <div className='logo'>
-          <Link to='/'> SMS </Link>
-        </div>
         <Menu width={'100%'}>
           <Link className='menu-item' to='/'> Home </Link>
           <Link className='menu-item' to='/inventory'> Inventory </Link> 
