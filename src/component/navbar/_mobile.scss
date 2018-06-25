@@ -21,6 +21,7 @@
   border-bottom: solid 1px $color-medium-gray;
   height: 120px;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -75,7 +76,6 @@
   border-color: $color-medium-gray;
   border-width: 0 0 .1px 0;
   color: #2d2d2d;
-  font-weight: bold;
   display: inline-block;
   font-size: 45px;
   padding: 35px;

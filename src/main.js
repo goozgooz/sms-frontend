@@ -5,6 +5,13 @@ import {BrowserRouter} from 'react-router-dom';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 
+// to allow for a responsive site
+import ReactBreakpoints from 'react-breakpoints';
+const breakpoints = {
+  mobile: 200,
+  desktop: 415,
+};
+
 import App from './component/app';
 import reducer from './reducer/index.js';
 import reporter from './lib/redux-reporter.js';
@@ -22,7 +29,9 @@ class Main extends React.Component {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <App/>
+          <ReactBreakpoints breakpoints={breakpoints}>
+            <App/>
+          </ReactBreakpoints>
         </BrowserRouter>
       </Provider>
     );
