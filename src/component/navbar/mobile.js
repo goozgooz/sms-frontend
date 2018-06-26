@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import {stack as Menu} from 'react-burger-menu';
 
-class MyNavbar extends React.Component {
+class MobileNav extends React.Component {
   showSettings(e){
     e.preventDefault();
   }
@@ -44,5 +44,5 @@ class MyNavbar extends React.Component {
   }
 }
 
-export default MyNavbar;
+export default MobileNav;
 
