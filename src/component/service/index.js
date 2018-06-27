@@ -6,7 +6,7 @@ import Navbar from '../navbar';
 class Service extends React.Component {
   render(){
     return (
-      <div id='service'>
+      <div className='service'>
         <Navbar />
         <h1> Source Motor's Service Department Page Coming Soon! </h1>
       </div>
