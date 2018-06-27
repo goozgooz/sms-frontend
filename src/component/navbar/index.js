@@ -2,24 +2,25 @@ import React from 'react';
 import Mobile from './mobile.js';
 import Desktop from './desktop.js';
 
-import {withBreakpoints} from 'react-breakpoints';
+import MediaQuery from 'react-responsive';
 
 class MyNavbar extends React.Component {
 
   render(){
-    const {breakpoints, currentBreakpoint} = this.props;
-    // console.log(breakpoints[currentBreakpoint]);
     return(
       <React.Fragment>
-        {breakpoints[currentBreakpoint] > breakpoints.tablet ? (
+        <MediaQuery minDeviceWidth={768}>
           <Desktop />
-        ) : (
+        </MediaQuery>
+        
+        <MediaQuery maxDeviceWidth={768}>
           <Mobile />
-        )}
+        </MediaQuery>
+        
       </React.Fragment>
     );
   }
 }
 
-export default withBreakpoints(MyNavbar);
+export default MyNavbar;
 
