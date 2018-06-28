@@ -5,11 +5,23 @@
   flex-direction: column;
 }
 
+// MOBILE
+// .layout {
+//   background-color: #fff;
+//   border: 1px solid $color-medium-gray;
+//   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+//   margin: 160px auto;
+//   height: 100%;
+//   width: 95%;
+// }
+
+// Desktop
 .layout {
   background-color: #fff;
   border: 1px solid $color-medium-gray;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-  margin: 160px auto;
+  margin: 90px auto;
+  max-width: 1280px;
   height: 100%;
   width: 95%;
 }

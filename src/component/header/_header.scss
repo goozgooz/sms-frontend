@@ -1,15 +1,30 @@
 @import 'vars';
 
+
+// mobile
+// .header {
+//   padding: 50px;
+  
+//   h1 {
+//     margin-bottom: 20px;
+//   }
+
+//   h2 {
+//     font-size: 34px;
+//   }
+// }
+
 .header {
-  padding: 50px;
+  padding: 20px;
   
   h1 {
-    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
   }
 
   h2 {
-    font-size: 34px;
+    font-size: 20px;
+    letter-spacing: .5px;
   }
-}
-
- 
+} 
