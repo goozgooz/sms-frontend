@@ -4,6 +4,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Map from '../map';
+          
 
 class Tiles extends React.Component {
   render(){
@@ -13,6 +14,7 @@ class Tiles extends React.Component {
           <Link to='/inventory'> View Inventory </Link>
           
           <Map />
+
         </div>
         
 
