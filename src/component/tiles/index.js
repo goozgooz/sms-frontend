@@ -10,12 +10,11 @@ class Tiles extends React.Component {
   render(){
     return (
       <div className='tiles'>
-        <div>
+        <div className='links'>
           <Link to='/inventory'> View Inventory </Link>
-          
-          <Map />
-
         </div>
+        
+        <Map />
         
 
        

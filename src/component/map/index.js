@@ -5,8 +5,8 @@ import React from 'react';
 class MapContainer extends React.Component {
   render(){
     const style = {
-      width: '100%',
-      height: '100%',
+      width: '55%',
+      height: '400px',
     };
     
     return(
@@ -14,8 +14,15 @@ class MapContainer extends React.Component {
         google={this.props.google} 
         initialCenter={{lat:47.6270856, lng:-122.1621511}}
         style={style}
-        zoom={14}
-      />  
+        zoom={14}>
+        
+        <Marker
+          name={'Source Motor Sales'}
+          position={{lat:47.6270856, lng:-122.1621511}}
+        />
+      
+      
+      </Map>  
     );
   }
 }
