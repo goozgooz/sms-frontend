@@ -7,7 +7,8 @@ class Header extends React.Component{
     return (
       <div className='header'>
         <h1> SOURCE MOTOR SALES </h1>
-        <h2> CALL: 425-555-5555 | 2420 NE 21st Belleve, WA 98005 </h2>  
+        <h2> 2420 NE 21st Belleve, WA 98005 </h2>  
+        <h2> 425-555-5555 </h2> 
       </div>
     );
   }

@@ -1,75 +1,75 @@
 @import 'vars';
 
 // Mobile
-// .tiles {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-//   margin: auto;
-//   width: 95%;
-  
-//   div {
-//     align-items: center;
-//     background-color: $color-light-gray;
-//     border: 1px solid $color-medium-gray;
-//     display: flex;
-//     text-align: center;
-//     height: 150px;
-//     margin: .5em auto;
-//     width: 100%;
-//   }
-  
-//   div:hover{
-//     background-color: darken($color-light-gray, 10%);
-//   }
-  
-//   a {
-//     color: $color-blue;
-//     font-size: 3em;
-//     margin: auto;
-//   }
-  
-//   a:hover {
-//     text-decoration: underline;
-//   }
-// }
-
-
 .tiles {
   display: flex;
-  height: 400px;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin: auto;
-  padding: 10px;
   width: 95%;
   
-  .links {
+  div {
     align-items: center;
     background-color: $color-light-gray;
     border: 1px solid $color-medium-gray;
     display: flex;
     text-align: center;
     height: 150px;
-    width: 30%;
+    margin: .5em auto;
+    width: 100%;
   }
   
-  .links:hover{
+  div:hover{
     background-color: darken($color-light-gray, 10%);
   }
   
   a {
     color: $color-blue;
-    font-size: 25px;
-    letter-spacing: .5px;
+    font-size: 3em;
     margin: auto;
   }
   
   a:hover {
     text-decoration: underline;
   }
-  
-  .map-container {
-    height: 300px;
-    width: 65%;
-  }
 }
+
+
+// .tiles {
+//   display: flex;
+//   height: 400px;
+//   margin: auto;
+//   padding: 10px;
+//   width: 95%;
+  
+//   .links {
+//     align-items: center;
+//     background-color: $color-light-gray;
+//     border: 1px solid $color-medium-gray;
+//     display: flex;
+//     text-align: center;
+//     height: 150px;
+//     width: 30%;
+//   }
+  
+//   .links:hover{
+//     background-color: darken($color-light-gray, 10%);
+//   }
+  
+//   a {
+//     color: $color-blue;
+//     font-size: 25px;
+//     letter-spacing: .5px;
+//     margin: auto;
+//   }
+  
+//   a:hover {
+//     text-decoration: underline;
+//   }
+  
+//   .map-container {
+//     height: 300px;
+//     width: 65%;
+//   }
+// }
 

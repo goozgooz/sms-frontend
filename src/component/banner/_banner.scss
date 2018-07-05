@@ -3,11 +3,12 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .banner {
-  margin: auto;
+  margin: 20px auto;
   text-align: center;
   width: 95%;
   
   img {
+    box-shadow:  0 1px  4px        rgba(0, 0, 0, 0.3);
     width: 100%;
   }
 
