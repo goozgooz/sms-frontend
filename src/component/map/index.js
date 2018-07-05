@@ -3,10 +3,16 @@ import {GoogleApiWrapper, Map, Marker, InfoWindow} from 'google-maps-react';
 import React from 'react';
 
 class MapContainer extends React.Component {
+  constructor(props){
+    super(props);
+  };
+  
+
+  
   render(){
     const style = {
-      width: '55%',
-      height: '400px',
+      width: '100%',
+      height: '30%',
     };
     
     return(
@@ -20,8 +26,7 @@ class MapContainer extends React.Component {
           name={'Source Motor Sales'}
           position={{lat:47.6270856, lng:-122.1621511}}
         />
-      
-      
+        
       </Map>  
     );
   }
