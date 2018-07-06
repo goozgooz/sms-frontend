@@ -22,10 +22,22 @@
   
   a {
     color: $color-blue;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
     text-decoration: none;
   }
 }
 
+.call {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+
+  .icon {
+    color: $color-blue;
+  }
+}
 
 // .header {
 //   padding: 20px;
