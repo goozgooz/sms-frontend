@@ -18,12 +18,12 @@ class Header extends React.Component{
           <h2> 2420 NE 21st Belleve, WA 98005 </h2>
         </a>
 
-      <div className='call'>
-        <FontAwesomeIcon icon={faPhone} className='icon' />
-        <h2> 425-555-5555 </h2> 
-      </div>
+        <div className='call'>
+          <FontAwesomeIcon icon={faPhone} className='icon' />
+          <h2> 425-555-5555 </h2> 
+        </div>
 
-    </div>
+      </div>
     );
   }
 }
