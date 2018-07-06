@@ -12,7 +12,6 @@
     align-items: center;
     background-color: $color-light-gray;
     border: 1px solid $color-medium-gray;
-    display: flex;
     text-align: center;
     height: 65px;
     margin: .5em auto;
@@ -34,6 +33,11 @@
   a:hover {
     text-decoration: underline;
   }
+
+}
+.map-container {
+  background-color: black;
+  width: 30%;
 }
 
 

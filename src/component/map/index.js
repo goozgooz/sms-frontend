@@ -10,16 +10,16 @@ class MapContainer extends React.Component {
 
   
   render(){
-    const style = {
-      width: '100%',
-      height: '30%',
-    };
+    // const style = {
+    //   width: '95%',
+    //   height: '30%',
+    // };
+    // style={style}
     
     return(
       <Map 
         google={this.props.google} 
         initialCenter={{lat:47.6270856, lng:-122.1621511}}
-        style={style}
         zoom={14}>
         
         <Marker

@@ -14,7 +14,9 @@ class Tiles extends React.Component {
           <Link to='/inventory'> View Inventory </Link>
         </div>
         
-        <Map />        
+        <div className='map-containter'>
+          <Map />        
+        </div>
 
        
 
