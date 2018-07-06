@@ -11,6 +11,7 @@ class MapContainer extends React.Component {
   
   render(){
     const style = {
+      display: 'block',
       width: '95%',
       height: '30%',
     };

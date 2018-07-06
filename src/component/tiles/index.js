@@ -5,6 +5,9 @@ import {Link} from 'react-router-dom';
 
 import Map from '../map';
           
+        // <div className='map-containter'>
+        //   <Map />        
+        // </div>
 
 class Tiles extends React.Component {
   render(){
@@ -14,9 +17,7 @@ class Tiles extends React.Component {
           <Link to='/inventory'> View Inventory </Link>
         </div>
         
-        <div className='map-containter'>
-          <Map />        
-        </div>
+
 
        
 

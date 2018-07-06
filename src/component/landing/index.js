@@ -11,7 +11,7 @@ import Footer from '../footer';
 class Landing extends React.Component{
   render(){
     return(
-      <div className='home'>
+      <React.Fragment>
         <Navbar />
         <div className='layout'>
           <Header />
@@ -19,7 +19,7 @@ class Landing extends React.Component{
           <Tiles />
           <Footer />
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
