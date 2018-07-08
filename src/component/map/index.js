@@ -1,44 +1,28 @@
-import {GoogleApiWrapper, Map, Marker, InfoWindow} from 'google-maps-react';
+import GoogleMapReact from 'google-map-react';
 
 import React from 'react';
 
-class MapContainer extends React.Component {
+class Map extends React.Component {
   constructor(props){
     super(props);
   };
   
-
-  
   render(){
-    const style = {
-      display: 'block',
-      width: '95%',
-      height: '30%',
-    };
-    
     
     return(
-      <Map 
-        google={this.props.google} 
-        initialCenter={{lat:47.6270856, lng:-122.1621511}}
-        zoom={13}
-        style={style}>
-        
-        <Marker
-          name={'Source Motor Sales'}
-          position={{lat:47.6270856, lng:-122.1621511}}
+      <div style={{height: '200px', width:'100%', border: '1px solid #A6A6A6'}}>
+        <GoogleMapReact
+          bootstrapURLKeys={{key: 'AIzaSyCHsCYLeGX6VmvyGSvRZk7Syo1VWg5Gf2U'}}
+          defaultCenter={{lat:47.6270856, lng:-122.1621511}}
+          defaultZoom={11}
         />
+      </div>
         
-      </Map>  
     );
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCHsCYLeGX6VmvyGSvRZk7Syo1VWg5Gf2U',
-})(MapContainer);
-
-
+export default Map;
      
      
 // AIzaSyCHsCYLeGX6VmvyGSvRZk7Syo1VWg5Gf2U
