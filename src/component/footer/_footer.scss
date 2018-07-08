@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 12px;
+    margin-bottom: 20px;
     
     a {
       color: $color-dark-gray;
@@ -23,7 +24,8 @@
     }
     
     a:hover {
-      color: black;
+      color: $color-blue;
+      text-decoration: underline;
     }
   }
   
@@ -33,7 +35,7 @@
     
     h5 {
       color: $color-dark-gray;
-      font-size: 14px;
+      font-size: 12px;
       margin: 4px;
     }
   }

@@ -13,7 +13,7 @@ class Tiles extends React.Component {
   render(){
     return (
       <div className='tiles'>
-        <div className='links'>
+        <div className='link'>
           <Link to='/inventory'> View Inventory </Link>
         </div>
         
