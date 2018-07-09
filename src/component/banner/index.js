@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 class Banner extends React.Component {
   render(){
     let settings = {
+      arrows: false,
       autoplay: true,
       autoplaySpeed: 5000,
       dots: false,
