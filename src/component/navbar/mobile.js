@@ -12,18 +12,8 @@ class MobileNav extends React.Component {
   
   constructor(props){
     super(props);
-    
-    this.state = {
-      showMobileNav: false,
-    };
-      
-    this.toggleMenu = this.toggleMenu.bind(this);
   }
   
-  toggleMenu(e){
-    e.preventDefault();
-    this.setState({showMobileNav:!this.state.showMobileNav});
-  }
   // <div className='logo'>
   //   <Link to='/'> SMS </Link>
   // </div>
