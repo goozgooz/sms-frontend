@@ -22,15 +22,11 @@ class Banner extends React.Component {
         <Slider {...settings}>
         
           <div>
-            <img src={require('./assets/bmw-desktop.jpg')} />
+            <img src={require('./assets/bmw.jpg')} />
           </div>
   
           <div>
-            <img src={require('./assets/audi.jpg')} />
-          </div>
-          
-          <div>
-            <img src={require('./assets/bmw-suv.jpg')} />
+            <img src={require('./assets/x5.jpg')} />
           </div>
   
         </Slider>

@@ -14,7 +14,13 @@ class Tiles extends React.Component {
     return (
       <div className='tiles'>
         <div className='link'>
-          <Link to='/inventory'> View Inventory </Link>
+          <p> Look to see what we have in stock! </p>
+          <Link className='first' to='/inventory'> View Inventory </Link>
+        </div>
+
+        <div className='link'>
+          <Link className='second' to='/contact'> Car Finder </Link>
+          <p> Reach out to me to find the car for you </p>
         </div>
 
         <Map />

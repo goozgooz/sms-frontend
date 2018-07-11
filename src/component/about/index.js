@@ -10,7 +10,7 @@ class About extends React.Component {
       <div className='about'>
         <Navbar />
         <h1> About Us Page Coming Soon! </h1>
-        <Footer />
+        <Footer style={{position: 'absolute', bottom: '0'}}/>
       </div>
     );
   }
