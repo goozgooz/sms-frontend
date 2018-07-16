@@ -3,10 +3,15 @@
 // Mobile
 .tiles {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
   width: 98%;
+  
+  hr {
+    border-color: $color-medium-gray;
+    margin: 10px;
+  }
   
   .link {
     align-items: center;
@@ -25,20 +30,16 @@
   }
   
   a {
-    background-color: $color-medium-gray;
     color: $color-blue;
     font-size: 16px;
     letter-spacing: .5px;
     margin: auto;
     text-decoration: none;
-    width: 30%;
-  }
-
-  p {
-    font-size: 16px;
-    width: 60%;
   }
   
+  img {
+    width: 100%;
+  }
 }
 
 // .tiles {
