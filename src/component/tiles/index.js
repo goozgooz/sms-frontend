@@ -4,6 +4,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Map from '../map';
+
+//           <img src={require('./assets/showroom.jpg')} />
           
 class Tiles extends React.Component {
   render(){
@@ -13,7 +15,7 @@ class Tiles extends React.Component {
         <hr /> 
         
         <div className='link'>
-          <img src={require('./assets/showroom.jpg')} />
+
           <Link className='first' to='/inventory'> View Inventory </Link>
         </div>
 
