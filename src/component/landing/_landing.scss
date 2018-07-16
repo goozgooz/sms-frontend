@@ -7,7 +7,9 @@
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
   height: 100%;
   margin: 60px auto;
+  position: relative;
   width: 95%;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {

@@ -3,10 +3,15 @@
 // Mobile
 .tiles {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
   width: 98%;
+  
+  hr {
+    border-color: $color-medium-gray;
+    margin: 10px;
+  }
   
   .link {
     align-items: center;
@@ -32,10 +37,9 @@
     text-decoration: none;
   }
   
-  a:hover {
-    text-decoration: underline;
+  img {
+    width: 100%;
   }
-
 }
 
 // .tiles {

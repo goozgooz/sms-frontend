@@ -10,8 +10,7 @@ class Header extends React.Component{
   render(){
     return (
       <div className='header'>
-        <h1> SOURCE MOTOR SALES </h1>
-
+        <h1> SOURCE MOTOR SALES & SERVICE </h1>
       
         <a href='https://www.google.com/maps/dir//Source+Motor+Sales,+13407+NE+20th+St+%233,+Bellevue,+WA+98005/'target='_blank'>
           <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/>
