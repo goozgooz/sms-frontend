@@ -13,14 +13,17 @@ class Landing extends React.Component{
     return(
       <React.Fragment>
         <Navbar />
+        
         <div className='layout'>
           <div className='welcome'>
             <Header />
             <Banner />
           </div>
           <Tiles />
-          <Footer />
         </div>
+        
+        <Footer />
+        
       </React.Fragment>
     );
   }
