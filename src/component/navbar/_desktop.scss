@@ -22,7 +22,7 @@
     align-items: center;
     color: #2d2d2d;
     display: flex;
-    font-size: 14px;
+    font-size: 18px;
     height: 100%;
     padding: 0 20px;
     text-decoration: none;
@@ -30,5 +30,11 @@
   
   a:hover {
     background-color: $color-light-gray;
+  }
+
+  .active {
+    color: #08472D;
+    font-weight: 500;
+    text-decoration: underline;
   }
 }
