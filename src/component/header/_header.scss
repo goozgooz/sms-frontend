@@ -42,6 +42,10 @@
 @media (min-width: 768px) {
   .header {
     padding: 20px;
+
+    a:hover {
+      text-decoration: underline;
+    }
     
     h1 {
       font-size: 50px;
@@ -50,8 +54,15 @@
     }
   
     h2 {
-      font-size: 20px;
-      letter-spacing: .5px;
+      font-size: 30px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .icon {
+      height: 30px;
+      width: 30px;
+      margin-right: 8px;
     }
   } 
 }
