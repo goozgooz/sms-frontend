@@ -14,8 +14,10 @@ class Landing extends React.Component{
       <React.Fragment>
         <Navbar />
         <div className='layout'>
-          <Header />
-          <Banner />
+          <div className='welcome'>
+            <Header />
+            <Banner />
+          </div>
           <Tiles />
           <Footer />
         </div>

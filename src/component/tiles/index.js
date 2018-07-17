@@ -26,8 +26,10 @@ class Tiles extends React.Component {
         </div>
 
         <hr />
-
-        <Map />
+        
+        <div className='map-container'>
+          <Map />
+        </div>
         
       </div>
     );
