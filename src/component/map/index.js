@@ -15,14 +15,14 @@ class Map extends React.Component {
         <GoogleMapReact
           bootstrapURLKeys={{key: __GOOGLE_KEY__}}
           defaultCenter={{lat:47.6270856, lng:-122.1621511}}
-          defaultZoom={12}
+          defaultZoom={13}
         >
           <Marker 
             lat={47.6270856}
             lng={-122.1621511}
-            text={'SMS'}
           />
         </GoogleMapReact>
+        
 
       </div>
         

@@ -18,7 +18,7 @@ class Footer extends React.Component {
         </div>
         
         <div className='info'>
-          <h5> Source Motor Sales </h5>
+          <h5> Source Motor Sales & Service </h5>
           <h5> 2420 NE 21st Bellevue, WA 98005 </h5>
           <h5> 425-666-5000 </h5>
         </div>
