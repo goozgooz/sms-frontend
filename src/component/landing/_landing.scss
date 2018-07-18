@@ -2,8 +2,7 @@
 
 @media (min-width: 768px) {
   .layout {
-    margin: 110px auto;
-    max-width: 1280px;
+    margin: 110px auto 0;
     height: 100%;
   }
   
@@ -26,7 +25,7 @@
     border: 1px solid $color-medium-gray;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     height: 100%;
-    margin: 60px auto;
+    margin: 60px auto 5px;
     position: relative;
     width: 95%;
     z-index: 1;
