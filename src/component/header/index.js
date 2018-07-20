@@ -14,12 +14,12 @@ class Header extends React.Component{
       
         <a href='https://www.google.com/maps/dir//Source+Motor+Sales,+13407+NE+20th+St+%233,+Bellevue,+WA+98005/'target='_blank'>
           <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/>
-          <h2> 2420 NE 21st Belleve, WA 98005 </h2>
+          <h2> 13407 NE 20th St #3 Bellevue, WA 98005 </h2>
         </a>
 
         <div className='call'>
           <FontAwesomeIcon icon={faPhone} className='icon' />
-          <h2> 425-555-5555 </h2> 
+          <h2> 425-562-5131 </h2> 
         </div>
 
       </div>

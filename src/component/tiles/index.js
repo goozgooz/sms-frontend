@@ -14,7 +14,7 @@ class Tiles extends React.Component {
         <hr /> 
         
         <div className='link'>
-          <img src={require('./assets/showroom.jpg')} />
+          <img src={require('./assets/bmw.jpg')} />
           <Link className='first' to='/inventory'> View Inventory </Link>
         </div>
 
