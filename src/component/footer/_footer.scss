@@ -1,7 +1,7 @@
 @import 'vars';
 
 .footer {
-  margin: 20px auto;
+  margin: 20px auto 0;
   text-align: center;
   width: 100%;
   
@@ -38,3 +38,34 @@
 
 }
 
+@media (min-width: 768px) {
+  .footer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    
+    hr {
+      display: none;
+    }
+
+    .links {
+      margin: 40px auto 0;
+      width: 50%;
+
+      a {
+        font-size: 18px;
+      }
+    }
+
+    .info {
+      margin: 40px auto;
+
+      h5{
+        font-size: 18px;
+        letter-spacing: .5px;
+        margin: 8px;
+      }
+    }
+  }
+}

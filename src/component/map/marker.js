@@ -6,7 +6,9 @@ import React from 'react';
 class Marker extends React.Component {
   render(){
     return(
-      <img className='marker' src={require('./marker.png')} />
+      <div>
+        <img className='marker' src={require('./marker.png')} />
+      </div>
     );
   }
 }
