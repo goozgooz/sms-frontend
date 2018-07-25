@@ -34,10 +34,6 @@ if(production){
 module.exports = {
   plugins,
   
-  node: {
-    fs: 'empty',
-  },
-  
   devtool: production ? undefined : 'source-map',
   
   entry: `${__dirname}/src/main.js`,
