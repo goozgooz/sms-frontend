@@ -32,10 +32,12 @@
     "react-test-renderer": "^16.2.0"
   },
   "scripts": {
+    "start": " node index.js",
     "test": "jest -i --verbose",
     "watch": "webpack-dev-server --inline --hot",
     "watch-work": "webpack-dev-server --inline --hot --public $C9_HOSTNAME --host $IP --port $PORT",
-    "build": "webpack"
+    "build": "webpack",
+    "heroku-postbuild": "npm build"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.1",
