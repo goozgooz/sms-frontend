@@ -31,6 +31,9 @@
     "jest-css-modules": "^1.1.0",
     "react-test-renderer": "^16.2.0"
   },
+  "engines": {
+    "node": "8.4.0"
+  },
   "scripts": {
     "start": " node index.js",
     "test": "jest -i --verbose",
