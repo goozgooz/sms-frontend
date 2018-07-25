@@ -2,16 +2,43 @@
 
 require('dotenv').config();
 
+const CleanPlugin = require('clean-webpack-plugin');
+const UglifyPlugin = require('uglifyjs-webpack-plugin');
 const HTMLPlugin = require('html-webpack-plugin');
 const ExtractPlugin = require('extract-text-webpack-plugin');
-const {DefinePlugin} = require('webpack');
+const {DefinePlugin, EnvironmentPlugin} = require('webpack');
+
+const production = process.env.NODE_ENV === 'production';
+
+let plugins = [
+  new HTMLPlugin({
+    template: `${__dirname}/src/index.html`,
+  }),
+  new ExtractPlugin('bundle.[hash].css'),
+  new DefinePlugin({
+    __API_URL__: JSON.stringify(process.env.API_URL),
+    __GOOGLE_KEY__: JSON.stringify(process.env.GOOGLE_TOKEN), 
+  }),
+  new EnvironmentPlugin({
+    NODE_ENV: process.env.NODE_ENV,
+  }),
+];
+
+if(production){
+  plugins = plugins.concat([
+    new UglifyPlugin(),
+    new CleanPlugin(),
+  ]);
+};
 
 module.exports = {
+  plugins,
+  
   node: {
     fs: 'empty',
   },
   
-  devtool: 'source-map',
+  devtool: production ? undefined : 'source-map',
   
   entry: `${__dirname}/src/main.js`,
 
@@ -22,17 +49,8 @@ module.exports = {
   output: {
     filename: 'bundle.[hash].js',
     path: `${__dirname}/build`,
+    publicPath: process.env.CDN_URL,
   },
-    
-  plugins: [
-    new HTMLPlugin({
-      template: `${__dirname}/src/index.html`,
-    }),
-    new ExtractPlugin('bundle.[hash].css'),
-    new DefinePlugin({
-      '__GOOGLE_KEY__': JSON.stringify((process.env.GOOGLE_TOKEN)),
-    }),
-  ],
     
   module: {
     rules: [
