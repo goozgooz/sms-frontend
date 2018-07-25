@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 const CleanPlugin = require('clean-webpack-plugin');
-const UglifyPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HTMLPlugin = require('html-webpack-plugin');
 const ExtractPlugin = require('extract-text-webpack-plugin');
 const {DefinePlugin, EnvironmentPlugin} = require('webpack');
@@ -26,7 +26,7 @@ let plugins = [
 
 if(production){
   plugins = plugins.concat([
-    new UglifyPlugin(),
+    new UglifyJsPlugin(),
     new CleanPlugin(),
   ]);
 };
