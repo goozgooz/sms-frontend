@@ -2,6 +2,7 @@ import './_banner.scss';
 
 import React from 'react';
 import Slider from 'react-slick';
+import MediaQuery from 'react-responsive';
 
 class Banner extends React.Component {
   render(){
@@ -19,17 +20,31 @@ class Banner extends React.Component {
     
     return(
       <div className='banner'>
-        <Slider {...settings}>
-        
-          <div>
-            <img src={require('./assets/bmw.jpg')} />
-          </div>
+          <MediaQuery maxDeviceWidth={768}>
+            <Slider {...settings}>
+
+              <div>
+                <img src={require('./assets/bmw.jpg')} />
+              </div>
+    
+              <div>
+                <img src={require('./assets/x5.jpg')} />
+              </div>
+            </Slider>
+          </MediaQuery>
+
+        <MediaQuery minDeviceWidth={768}>
+          <Slider {...settings}>
+            <div>
+              <img src={require('./assets/bmw-desktop.jpg')} />
+            </div>
+
+            {/* <div>
+              <img src={require('./assets/x5.jpg')} />
+            </div> */}
+          </Slider>
+        </MediaQuery>
   
-          <div>
-            <img src={require('./assets/x5.jpg')} />
-          </div>
-  
-        </Slider>
       </div>
     );
   }

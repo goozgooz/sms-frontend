@@ -23,8 +23,13 @@ class Footer extends React.Component {
 
         <div className='info'>
           <h5> Source Motor Sales & Service </h5>
-          <h5> 13407 NE 20th St #3 Bellevue, WA 98005 </h5>
-          <h5> 425-562-5131 </h5>
+          <a href='https://www.google.com/maps/dir//Source+Motor+Sales,+13407+NE+20th+St+%233,+Bellevue,+WA+98005/'target='_blank'>
+            <h5> 13407 NE 20th St #3 Bellevue, WA 98005 </h5>
+          </a>
+          
+          <a href="tel: +14255625131">
+            <h5> 425-562-5131 </h5>
+          </a>        
         </div>
 
       </div>
