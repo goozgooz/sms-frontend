@@ -17,10 +17,10 @@ class Header extends React.Component{
           <h2> 13407 NE 20th St #3 Bellevue, WA 98005 </h2>
         </a>
 
-        <div className='call'>
+        <a className='call' href="tel: +14255625131">
           <FontAwesomeIcon icon={faPhone} className='icon' />
           <h2> 425-562-5131 </h2> 
-        </div>
+        </a>
 
       </div>
     );
