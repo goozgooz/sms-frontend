@@ -15,19 +15,14 @@
   ul {
     text-align: center;
     margin-bottom: 15px;
-  }
 
-  li {
-    color: $color-dark-gray;
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: .5px;
-    padding: 5px;
-  }
-
-  .emphasis {
-    color: $color-green;
-    font-weight:400;
+    li {
+      color: $color-dark-gray;
+      font-size: 18px;
+      font-weight: 100;
+      letter-spacing: .5px;
+      padding: 5px;
+    }
   }
 
   h4 {
@@ -35,10 +30,40 @@
     font-size: 18px;
     font-weight: 100;
     letter-spacing: .5px;
-    margin-left: 10px
+    margin: 0 0 7px 10px;
+  }
+  
+  h5 {
+    color: $color-medium-gray;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    margin: 5px 0 0 10px;
   }
 
+  .emphasis {
+    color: $color-green;
+    font-weight:400;
+  }
 
+}
+
+.contact-info{
+  margin: 30px auto;
+  
+  .contact-header{
+    display: flex;
+
+    hr {
+      border: .5px solid $color-medium-gray;
+      margin-left: 10px;
+      width: 35%
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .map-container {

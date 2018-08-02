@@ -15,34 +15,38 @@ class Contact extends React.Component {
           
           <h1> Contact Me </h1>
           
-          <hr/>
-          
           <ul>
             <li> Buying or selling a car? </li>
-            {/* <li> Selling a car? </li> */}
-            <li> Want help finding a car? </li>
+            <li> Need help finding a car? </li>
             <li> Need some work done to your car? </li>
             <li className='emphasis'> Don't hesitate to reach out to me! </li>
           </ul>
           
           <div className='contact-info'> 
-            <h4> Contact Information </h4>
-            <h5> Phone: </h5> 
-            <h5> Email: </h5>
+            <div className='contact-header'>
+              <h4> Contact Information </h4>
+              <hr />
+            </div>
+
+            <a href="tel: +14255625131">
+              <h5> Phone: 425-562-5131 </h5>
+            </a>        
+
+            <h5> Email: sourcemotors@gmail.com </h5>
           </div>
           
           <div className='office-info'>
             <h4> Business Hours: </h4>
             <div className='map-container'>
+              <h5> Monday-Friday 8am-5pm </h5>
+              <h5> Saturdays by Appointment Only </h5>
               <Map />
             </div>
           </div>
         
-      
-        
-        </div>
-        
         <Footer />
+
+        </div>
       </div>
     );
   }
