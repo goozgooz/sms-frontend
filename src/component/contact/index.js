@@ -13,24 +13,26 @@ class Contact extends React.Component {
         
         <div className='layout'>
           
-          <h1> Contact Me! </h1>
+          <h1> Contact Me </h1>
+          
+          <hr/>
           
           <ul>
-            <li> Buying a car? </li>
-            <li> Selling a car? </li>
+            <li> Buying or selling a car? </li>
+            {/* <li> Selling a car? </li> */}
             <li> Want help finding a car? </li>
             <li> Need some work done to your car? </li>
-            <li> Don't hesitate to reach out to me! </li>
+            <li className='emphasis'> Don't hesitate to reach out to me! </li>
           </ul>
           
           <div className='contact-info'> 
-            <h3> Contact Information </h3>
-            <h3> Phone: </h3> 
-            <h3> Email: </h3>
+            <h4> Contact Information </h4>
+            <h5> Phone: </h5> 
+            <h5> Email: </h5>
           </div>
           
           <div className='office-info'>
-            <h3> Business Hours: </h3>
+            <h4> Business Hours: </h4>
             <div className='map-container'>
               <Map />
             </div>
