@@ -22,8 +22,8 @@ class Contact extends React.Component {
             <li className='emphasis'> Don't hesitate to reach out to me! </li>
           </ul>
           
-          <div className='contact-info'> 
-            <div className='contact-header'>
+          <div className='contact-section'> 
+            <div className='section-header'>
               <h4> Contact Information </h4>
               <span className='line' />
             </div>
@@ -35,8 +35,12 @@ class Contact extends React.Component {
             <h5> Email: sourcemotors@gmail.com </h5>
           </div>
           
-          <div className='office-info'>
-            <h4> Business Hours: </h4>
+          <div className='contact-section'>
+            <div className='section-header'>
+              <h4> Business Hours </h4>
+              <span className='line' />
+            </div>
+
             <h5> Monday-Friday: 8am-5pm </h5>
             <h5> Saturday: By Appointment Only </h5>
             <div className='map-container'>

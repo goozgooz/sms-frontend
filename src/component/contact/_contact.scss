@@ -9,9 +9,8 @@
 
   .line {
     border-bottom: .5px solid $color-medium-gray;
-    margin-left: 10px;
     height: 1px;
-    width: 35%;
+    width: 95%;
   }
 
   ul {
@@ -28,19 +27,18 @@
   }
 
   h4 {
+    color: $color-blue;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .5px;
+  }
+  
+  h5 {
     color: $color-dark-gray;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: .5px;
-    margin: 0 0 7px 10px;
-  }
-  
-  h5 {
-    color: $color-medium-gray;
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: .5px;
-    margin: 5px 0 0 10px;
+    margin-top: 5px;
   }
 
   .emphasis {
@@ -48,25 +46,21 @@
     font-weight:400;
   }
 
-}
-
-.contact-info{
-  margin: 30px auto;
-  
-  .contact-header{
-    align-items: center;
-    display: flex;
+    .contact-section{
+      margin: 30px 0px 0px 10px;
+      
+      .section-header{
+        align-items: center;
+        display: flex;
+        margin-bottom: 10px;
+      }
+    
+      a {
+        text-decoration: none;
+      }
   }
-
-  a {
-    text-decoration: none;
-  }
 }
 
-.office-info {
-  display: flex;
-  flex-direction: column;
-}
 
 .map-container {
   display: flex;
