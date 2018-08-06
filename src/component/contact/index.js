@@ -25,7 +25,7 @@ class Contact extends React.Component {
           <div className='contact-info'> 
             <div className='contact-header'>
               <h4> Contact Information </h4>
-              <hr />
+              <span className='line' />
             </div>
 
             <a href="tel: +14255625131">
@@ -37,9 +37,9 @@ class Contact extends React.Component {
           
           <div className='office-info'>
             <h4> Business Hours: </h4>
+            <h5> Monday-Friday: 8am-5pm </h5>
+            <h5> Saturday: By Appointment Only </h5>
             <div className='map-container'>
-              <h5> Monday-Friday 8am-5pm </h5>
-              <h5> Saturdays by Appointment Only </h5>
               <Map />
             </div>
           </div>

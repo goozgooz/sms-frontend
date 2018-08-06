@@ -4,12 +4,14 @@
   h1 {
     font-size: 28px;
     letter-spacing: 1.5px;
-    margin: 15px auto 2px;
+    margin: 15px auto;
   }
 
-  hr {
-    width: 60%;
-    margin-bottom: 8px;
+  .line {
+    border-bottom: .5px solid $color-medium-gray;
+    margin-left: 10px;
+    height: 1px;
+    width: 35%;
   }
 
   ul {
@@ -52,13 +54,8 @@
   margin: 30px auto;
   
   .contact-header{
+    align-items: center;
     display: flex;
-
-    hr {
-      border: .5px solid $color-medium-gray;
-      margin-left: 10px;
-      width: 35%
-    }
   }
 
   a {
@@ -66,11 +63,16 @@
   }
 }
 
+.office-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .map-container {
   display: flex;
   height: 200px;
   justify-content: center;
-  margin: auto;
+  margin: 15px auto 0;
   width: 100%;
 }
 
