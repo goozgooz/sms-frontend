@@ -71,6 +71,19 @@
 }
 
 @media (min-width: 768px) {
+
+  .contact-layout {
+    background-color: #fff;
+    border: 1px solid $color-medium-gray;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    margin: 110px auto 0;
+    height: 100%;
+    position: relative;
+    max-width: 1440px;
+    width: 95%;
+    z-index: 1;
+  }
+
   .map-container {
     background-color: #fff;
     border: 1px solid $color-medium-gray;
