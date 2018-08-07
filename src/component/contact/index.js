@@ -24,8 +24,8 @@ class Contact extends React.Component {
           
           <div className='contact-section'> 
             <div className='section-header'>
-              <h4> Contact Information </h4>
-              <span className='line' />
+              <h4> Contact Information: </h4>
+              {/* <span className='line' /> */}
             </div>
 
             <a href="tel: +14255625131">
@@ -37,8 +37,8 @@ class Contact extends React.Component {
           
           <div className='contact-section'>
             <div className='section-header'>
-              <h4> Business Hours </h4>
-              <span className='line' />
+              <h4> Business Hours: </h4>
+              {/* <span className='line' /> */}
             </div>
 
             <h5> Monday-Friday: 8am-5pm </h5>
