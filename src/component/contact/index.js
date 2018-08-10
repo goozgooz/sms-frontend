@@ -28,6 +28,8 @@ class Contact extends React.Component {
               {/* <span className='line' /> */}
             </div>
 
+            <h5> Reza Jaberi </h5>
+
             <a href="tel: +14255625131">
               <h5> Phone: 425-562-5131 </h5>
             </a>        
