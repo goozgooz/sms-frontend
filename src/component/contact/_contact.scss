@@ -68,9 +68,9 @@
 @media (min-width: 768px) {
 
   .contact-layout {
-    background-color: #fff;
-    border: 1px solid $color-medium-gray;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    // background-color: #fff;
+    // border: 1px solid $color-medium-gray;
+    // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     margin: 110px auto 0;
     height: 100%;
     padding: 20px;
@@ -79,14 +79,30 @@
     width: 95%;
     z-index: 1;
   }
-
-  .contact-page{
+  
+  .contact-header {    
+    background-color: #fff;
+    border: 1px solid $color-medium-gray;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     ul  {
       margin: 20px auto;
       li {
         font-size: 22px;
       }
     }
+  }
+
+  .contact-section {
+    background-color: #fff;
+    border: 1px solid $color-medium-gray;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 45%;
+  }
+
+  .contact-page{
 
     h4 {
       font-size: 24px;
@@ -101,7 +117,7 @@
 
   .contact-info {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .map-container {

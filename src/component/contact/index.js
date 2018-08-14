@@ -13,14 +13,16 @@ class Contact extends React.Component {
         
         <div className='layout contact-layout'>
           
-          <h1> Contact Me </h1>
-          
-          <ul>
-            <li> Buying or selling a car? </li>
-            <li> Need help finding a car? </li>
-            <li> Need some work done to your car? </li>
-            <li className='emphasis'> Don't hesitate to reach out to me! </li>
-          </ul>
+          <div className='contact-header'>
+            <h1> Contact Me </h1>
+            
+            <ul>
+              <li> Buying or selling a car? </li>
+              <li> Need help finding a car? </li>
+              <li> Need some work done to your car? </li>
+              <li className='emphasis'> Don't hesitate to reach out to me! </li>
+            </ul>
+          </div>
           
           <div className='contact-info'>
             <div className='contact-section'> 
