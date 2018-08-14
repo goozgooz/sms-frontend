@@ -1,12 +1,6 @@
 @import 'vars';
 
 .contact-page {
-  h1 {
-    font-size: 28px;
-    letter-spacing: 1.5px;
-    margin: 15px auto;
-  }
-
   .line {
     border-bottom: .5px solid $color-medium-gray;
     height: 1px;
@@ -35,6 +29,7 @@
   
   h5 {
     color: $color-dark-gray;
+    display: inline;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: .5px;
@@ -78,16 +73,39 @@
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     margin: 110px auto 0;
     height: 100%;
+    padding: 20px;
     position: relative;
     max-width: 1440px;
     width: 95%;
     z-index: 1;
   }
 
+  .contact-page{
+    ul  {
+      margin: 20px auto;
+      li {
+        font-size: 22px;
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    
+    h5 {
+      font-size: 20px;
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .map-container {
     background-color: #fff;
-    border: 1px solid $color-medium-gray;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     height: 500px;
     margin: 60px auto;
     max-width: 1440px;
