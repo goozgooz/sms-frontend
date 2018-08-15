@@ -25,6 +25,7 @@ class Contact extends React.Component {
           </div>
           
           <div className='contact-info'>
+          
             <div className='contact-section'> 
               <div className='section-header'>
                 <h4> Contact Information: </h4>
@@ -54,10 +55,9 @@ class Contact extends React.Component {
           <div className='map-container'>
             <Map />
           </div>
-
-        <Footer />
-
         </div>
+        
+        <Footer />
       </div>
     );
   }
