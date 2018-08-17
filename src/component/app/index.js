@@ -8,6 +8,7 @@ import Inventory from '../inventory';
 import Service from '../service';
 import About from '../about';
 import Contact from '../contact';
+import Construction from '../construction';
 
 class App extends React.Component {
 
@@ -21,7 +22,7 @@ class App extends React.Component {
             <Route exact path='/inventory' component={Inventory}/>
             <Route exact path='/service' component={Service}/>
             <Route exact path='/about' component={About}/>
-            <Route exact path='/contact' component={Contact}/>
+            <Route exact path='/contact' component={Construction}/>
           </div>
         </BrowserRouter>
       </div>
