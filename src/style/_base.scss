@@ -3,33 +3,16 @@
 
 body {
   font-family: $font-main;
-  background-color: $color-light-gray;
 }
 
 h1 {
-  color: $color-blue;
-  font-size: 21px;
-  letter-spacing: .5px;
-  margin: 15px auto 5px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
 h2 {
-  color: $color-green;
-  font-size: 36px;
+  letter-spacing: 1px;
   text-align: center;
-}
-
-
-
-h5 {
-  font-size: 12px;
-}
-
-hr {
-  color: $color-medium-gray;
-  margin: auto;
-  width: 90%;
 }
 
 @media(min-width: 768px) {

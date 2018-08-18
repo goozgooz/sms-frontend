@@ -1,78 +1,78 @@
-@import 'vars';
+// @import 'vars';
 
-.footer {
-  margin: 20px auto 0;
-  text-align: center;
-  width: 100%;
+// .footer {
+//   margin: 20px auto 0;
+//   text-align: center;
+//   width: 100%;
   
   
-  .links {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 12px;
-    margin-bottom: 20px;
+//   .links {
+//     display: flex;
+//     justify-content: space-evenly;
+//     margin-top: 12px;
+//     margin-bottom: 20px;
     
-    a {
-      color: $color-dark-gray;
-      font-size: 13px;
-      text-decoration: none;
-    }
+//     a {
+//       color: $color-dark-gray;
+//       font-size: 13px;
+//       text-decoration: none;
+//     }
     
-    a:hover {
-      color: $color-blue;
-      text-decoration: underline;
-    }
-  }
+//     a:hover {
+//       color: $color-blue;
+//       text-decoration: underline;
+//     }
+//   }
   
-  .info {
-    margin-top: 15px;
+//   .info {
+//     margin-top: 15px;
     
-    a {
-      text-decoration: none;
-    }
+//     a {
+//       text-decoration: none;
+//     }
     
-    a:hover {
-      text-decoration: underline;
-    }
+//     a:hover {
+//       text-decoration: underline;
+//     }
     
-    h5 {
-      color: $color-dark-gray;
-      font-size: 12px;
-      margin: 4px;
-    }
-  }
+//     h5 {
+//       color: $color-dark-gray;
+//       font-size: 12px;
+//       margin: 4px;
+//     }
+//   }
 
 
-}
+// }
 
-@media (min-width: 768px) {
-  .footer {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
+// @media (min-width: 768px) {
+//   .footer {
+//     background-color: #fff;
+//     display: flex;
+//     flex-direction: column;
+//     height: 200px;
     
-    hr {
-      display: none;
-    }
+//     hr {
+//       display: none;
+//     }
 
-    .links {
-      margin: 40px auto 0;
-      width: 50%;
+//     .links {
+//       margin: 40px auto 0;
+//       width: 50%;
 
-      a {
-        font-size: 18px;
-      }
-    }
+//       a {
+//         font-size: 18px;
+//       }
+//     }
 
-    .info {
-      margin: 40px auto;
+//     .info {
+//       margin: 40px auto;
 
-      h5{
-        font-size: 18px;
-        letter-spacing: .5px;
-        margin: 8px;
-      }
-    }
-  }
-}
+//       h5{
+//         font-size: 18px;
+//         letter-spacing: .5px;
+//         margin: 8px;
+//       }
+//     }
+//   }
+// }

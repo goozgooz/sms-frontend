@@ -1,56 +1,56 @@
-@import 'vars';
+// @import 'vars';
 
-.inventory-wrapper {
-  display: flex;
-  flex-direction: column;
-}
+// .inventory-wrapper {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.inventory-item {
-  background-color: $color-light-gray;
-  border: 2px solid $color-blue;
-  border-radius: 6px;
-  display: flex;
-  height: 200px;
-  margin: 30px auto;
-  padding: 0.5em;
-  max-width: 960px;
+// .inventory-item {
+//   background-color: $color-light-gray;
+//   border: 2px solid $color-blue;
+//   border-radius: 6px;
+//   display: flex;
+//   height: 200px;
+//   margin: 30px auto;
+//   padding: 0.5em;
+//   max-width: 960px;
   
-  img{
-    height: 180px;
-    width: auto;
-  }
-}
+//   img{
+//     height: 180px;
+//     width: auto;
+//   }
+// }
 
-.car-buttons {
-  display: flex;
-  justify-content: flex-end;
+// .car-buttons {
+//   display: flex;
+//   justify-content: flex-end;
   
-  button {
-    background: $color-light-gray;
-    color: $color-blue;
-    height: 2em;
-    margin: 0.5em;
-    width: 2em;
-  }
+//   button {
+//     background: $color-light-gray;
+//     color: $color-blue;
+//     height: 2em;
+//     margin: 0.5em;
+//     width: 2em;
+//   }
   
-  button:hover {
-    transform: scale(1.2);
-  }
-}
+//   button:hover {
+//     transform: scale(1.2);
+//   }
+// }
 
 
-.car-info{
-  h3{
-    color: $color-blue;
-    display: flex;
-    font-weight: bold;
-    margin: .4em 1em;
-  }
+// .car-info{
+//   h3{
+//     color: $color-blue;
+//     display: flex;
+//     font-weight: bold;
+//     margin: .4em 1em;
+//   }
   
-  span{
-    color: black;
-    margin-left: .2em;
-  }
+//   span{
+//     color: black;
+//     margin-left: .2em;
+//   }
   
   
-}
+// }

@@ -1,23 +1,8 @@
 @import 'vars';
 
-// .logo {
-//   z-index: 1500;
-//   position: absolute;
-//   top: 40px;
-//   margin: auto;
-//   right: 449px;
-//   font-weight: bold;
-  
-//   a {
-//     color: #2d2d2d;
-//     font-size: 40px;
-//     text-decoration: none;
-//   }
-// }
-
 .navbar {
-  background-color: #fff;
-  border-bottom: $color-medium-gray;
+  background-color: $color-dark;
+  // border-bottom: $color-medium-gray;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
   height: 50px;
   position: fixed;
@@ -37,7 +22,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: $color-dark-gray;
+  background: $color-dark;
 }
 
 /* Position and sizing of clickable cross button */
@@ -49,7 +34,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: $color-dark-gray;
+  background: $color-blue;
   height: 25px !important;
 }
 
@@ -74,7 +59,7 @@
 /* Individual item */
 .bm-item {
   border: solid;
-  border-color: $color-medium-gray;
+  border-color: $color-white;
   border-width: 0 0 .1px 0;
   color: #2d2d2d;
   display: inline-block;
@@ -86,7 +71,7 @@
 }
 
 .bm-item:first-of-type {
-  border-top: 1px solid $color-medium-gray;
+  border-top: 1px solid $color-white;
 }
 
 /* Styling of overlay */
@@ -100,5 +85,5 @@ span.bm-cross {
 }
 
 .bm-item.menu-item:hover{
-  background-color: $color-light-gray;
+  color: $color-blue;
 }

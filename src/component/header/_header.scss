@@ -1,56 +1,56 @@
-@import 'vars';
+// @import 'vars';
 
 
-// mobile
-.header {
-  h2 {
-    font-size: 14px;
-    letter-spacing: .5px;
-    padding: 2px;
-  }
+// // mobile
+// .header {
+//   h2 {
+//     font-size: 14px;
+//     letter-spacing: .5px;
+//     padding: 2px;
+//   }
   
-  .icon {
-    height: 16px;
-    width: 16px;
-  }
+//   .icon {
+//     height: 16px;
+//     width: 16px;
+//   }
   
-  a {
-    color: $color-blue;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-    text-decoration: none;
-  }
-}
+//   a {
+//     color: $color-blue;
+//     display: flex;
+//     justify-content: center;
+//     padding: 2px;
+//     text-decoration: none;
+//   }
+// }
 
-.call {
-  display: flex;
-  justify-content: center;
-  padding: 2px;
+// .call {
+//   display: flex;
+//   justify-content: center;
+//   padding: 2px;
 
-  .icon {
-    color: $color-blue;
-  }
-}
+//   .icon {
+//     color: $color-blue;
+//   }
+// }
 
-@media (min-width: 768px) {
-  .header {
-    padding: 20px;
+// @media (min-width: 768px) {
+//   .header {
+//     padding: 20px;
 
-    a:hover {
-      text-decoration: underline;
-    }
+//     a:hover {
+//       text-decoration: underline;
+//     }
       
-    h2 {
-      font-size: 22px;
-      font-weight: 300;
-      letter-spacing: 1.5px;
-    }
+//     h2 {
+//       font-size: 22px;
+//       font-weight: 300;
+//       letter-spacing: 1.5px;
+//     }
 
-    .icon {
-      height: 30px;
-      width: 30px;
-      margin-right: 8px;
-    }
-  } 
-}
+//     .icon {
+//       height: 30px;
+//       width: 30px;
+//       margin-right: 8px;
+//     }
+//   } 
+// }
