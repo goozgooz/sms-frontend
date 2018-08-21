@@ -4,23 +4,13 @@ import {connect} from 'react-redux';
 
 import Navbar from '../navbar';
 import Header from '../header';
-import Banner from '../banner';
-import Tiles from '../tiles';
-import Footer from '../footer';
 
 class Landing extends React.Component{
   render(){
     return(
       <React.Fragment>
         <Navbar />
-        {/* <div className='layout'>
-          <div className='top'>
-            <Header />
-            <Banner />
-          </div>
-          <Tiles />
-          <Footer />
-        </div> */}
+        <Header />
       </React.Fragment>
     );
   }

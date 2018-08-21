@@ -13,11 +13,7 @@ class MobileNav extends React.Component {
   constructor(props){
     super(props);
   }
-  
-  // <div className='logo'>
-  //   <Link to='/'> SMS </Link>
-  // </div>
-  
+    
   render(){
     return(
       <div className='navbar'>
