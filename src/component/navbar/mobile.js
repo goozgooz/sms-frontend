@@ -17,6 +17,7 @@ class MobileNav extends React.Component {
   render(){
     return(
       <div className='navbar'>
+        <div className='derp'> </div>
         <Menu width={'100%'}>
           <Link className='menu-item' to='/'> Home </Link>
           <Link className='menu-item' to='/inventory'> Inventory </Link> 

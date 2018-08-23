@@ -1,5 +1,12 @@
 @import 'vars';
 
+.derp {
+  border: 1px solid white;
+  height: 15px;
+  position: fixed;
+  width: 15px;
+}
+
 .navbar {
   background-color: $color-dark;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
