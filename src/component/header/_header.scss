@@ -2,7 +2,21 @@
 
 .header {
   height: 500px;
-  background: url('audi.jpg');
+  background: url('audi-edit.jpg') center;
   background-size: cover;
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin-top: 80px;
+  width: 100%;
+
+  h1 {
+    margin: 0 0 35px 10px;
+    text-align: left;
+  }
+
+  h1:first-of-type{
+    margin-top: 65px;
+  }
 }
+

@@ -10,7 +10,7 @@ class Landing extends React.Component{
     return(
       <React.Fragment>
         <Navbar />
-        <Header />
+        <Header />  
       </React.Fragment>
     );
   }
