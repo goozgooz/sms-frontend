@@ -1,49 +1,45 @@
-// @import 'vars';
+@import 'vars';
 
-// .footer {
-//   margin: 20px auto 0;
-//   text-align: center;
-//   width: 100%;
+.footer {
+  background-color: $color-dark;
+  text-align: center;
+  width: 100%;
+}
   
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 12px;
+  margin-bottom: 20px;
   
-//   .links {
-//     display: flex;
-//     justify-content: space-evenly;
-//     margin-top: 12px;
-//     margin-bottom: 20px;
-    
-//     a {
-//       color: $color-dark-gray;
-//       font-size: 13px;
-//       text-decoration: none;
-//     }
-    
-//     a:hover {
-//       color: $color-blue;
-//       text-decoration: underline;
-//     }
-//   }
+  a {
+    color: $color-white;
+    font-size: 13px;
+  }
   
-//   .info {
-//     margin-top: 15px;
-    
-//     a {
-//       text-decoration: none;
-//     }
-    
-//     a:hover {
-//       text-decoration: underline;
-//     }
-    
-//     h5 {
-//       color: $color-dark-gray;
-//       font-size: 12px;
-//       margin: 4px;
-//     }
-//   }
+  a:hover {
+    color: $color-blue;
+    text-decoration: underline;
+  }
+}
 
-
-// }
+span {
+  color: $color-white;
+}
+  
+.info {
+  margin-top: 15px;
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h5 {
+    color: $color-white;
+    font-size: 12px;
+    margin: 4px;
+  }
+}
 
 // @media (min-width: 768px) {
 //   .footer {
