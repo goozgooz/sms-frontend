@@ -1,0 +1,15 @@
+@import 'vars';
+
+.welcome {
+  margin: 50px auto;
+
+  h3:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+
+.welcome-message{
+  text-align: justify;
+  margin: 30px auto 0;
+  width: 80%;
+}
