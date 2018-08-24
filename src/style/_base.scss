@@ -18,6 +18,20 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: $color-gray;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p {
+  color: $color-gray;
+  font-weight: 200;
+  line-height: 22px;
+}
+
 @media(min-width: 768px) {
   h1 {
     font-size: 40px;

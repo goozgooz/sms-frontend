@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 
 import Navbar from '../navbar';
 import Header from '../header';
+import Welcome from '../welcome';
 
 class Landing extends React.Component{
   render(){
@@ -11,6 +12,7 @@ class Landing extends React.Component{
       <React.Fragment>
         <Navbar />
         <Header />  
+        <Welcome />
       </React.Fragment>
     );
   }
