@@ -1,31 +1,35 @@
-import GoogleMapReact from 'google-map-react';
+import './_map.scss';
 
 import React from 'react';
-import Marker from './marker.js';
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import {faMapMarkerAlt, faPhone} from '@fortawesome/fontawesome-free-solid';
+fontawesome.config = { autoAddCss: false };
 
-class Map extends React.Component {
-  constructor(props){
-    super(props);
-  };
-  
+import GoogleMap from './google-map.js';
+
+class Map extends React.Component{
   render(){
-    
     return(
-      <div style={{height: '100%', width:'90%', border: '1px solid #A6A6A6'}}>
-        <GoogleMapReact
-          bootstrapURLKeys={{key: __GOOGLE_KEY__}}
-          defaultCenter={{lat:47.6270856, lng:-122.1621511}}
-          defaultZoom={13}
-        >
-          <Marker 
-            lat={47.6270856}
-            lng={-122.1621511}
-          />
-        </GoogleMapReact>
-        
+      <div className='map'>
+        <a href='https://www.google.com/maps/dir//Source+Motor+Sales,+13407+NE+20th+St+%233,+Bellevue,+WA+98005/'target='_blank'>
+          <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/> 
+          <div className='location'>
+            <h3> 13407 NE 20th St #3 </h3>
+            <h3> Bellevue, WA 98005 </h3>
+          </div>
+        </a>
 
+        <a href='https://www.google.com/maps/dir//Source+Motor+Sales,+13407+NE+20th+St+%233,+Bellevue,+WA+98005/'target='_blank'>
+          <FontAwesomeIcon icon={faPhone} className='icon'/> 
+          <h3> 425-562-5131 </h3>
+        </a>
+         
+     
+        <div className='map-container'>
+          <GoogleMap />  
+        </div>
       </div>
-        
     );
   }
 }

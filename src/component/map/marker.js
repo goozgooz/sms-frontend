@@ -1,4 +1,4 @@
-import './_maps.scss';
+import './_map.scss';
 
 import React from 'react';
 
