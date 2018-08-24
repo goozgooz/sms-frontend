@@ -6,6 +6,7 @@ import Navbar from '../navbar';
 import Header from '../header';
 import Welcome from '../welcome';
 import Tiles from '../tiles';
+import Map from '../map';
 
 class Landing extends React.Component{
   render(){
@@ -15,6 +16,7 @@ class Landing extends React.Component{
         <Header />  
         <Welcome />
         <Tiles />
+        <Map />
       </React.Fragment>
     );
   }
