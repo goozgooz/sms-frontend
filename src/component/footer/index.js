@@ -1,7 +1,7 @@
 import './_footer.scss';
 
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 class Footer extends React.Component {
   render(){
@@ -10,15 +10,15 @@ class Footer extends React.Component {
         <hr />
         
         <div className='links'>
-          <Link className='menu-item' to='/'> Home </Link>
+          <NavLink exact activeClassName='active' className='menu-item' to='/'> Home </NavLink>
           <span> | </span>
-          <Link className='menu-item' to='/inventory'> Inventory </Link> 
+          <NavLink activeClassName='active' className='menu-item' to='/inventory'> Inventory </NavLink>
           <span> | </span>
-          <Link className='menu-item' to='/service'> Service </Link> 
+          <NavLink activeClassName='active' className='menu-item' to='/service'> Service </NavLink> 
           <span> | </span>
-          <Link className='menu-item' to='/about'> About </Link> 
+          <NavLink activeClassName='active' className='menu-item' to='/about'> About </NavLink> 
           <span> | </span>
-          <Link className='menu-item' to='/contact'> Contact </Link> 
+          <NavLink activeClassName='active' className='menu-item' to='/contact'> Contact </NavLink>
         </div>
 
         <div className='info'>
