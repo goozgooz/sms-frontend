@@ -34,17 +34,6 @@ class Tiles extends React.Component {
             <FontAwesomeIcon icon={faPhone} className='icon' />
           </Link>
         </div>
-
-
-        {/* // <div className='tile-item'>
-        //   <h4> Service Department </h4>
-        //   <Link className='second' to='/service'> Service Department </Link>
-        // </div>
-        
-        // <div className='tile-item'>
-        //   <h4> Contact Me </h4>
-        //   <Link className='second' to='/service'> Service Department </Link>
-        // </div> */}
         
       </div>
     );
