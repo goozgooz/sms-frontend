@@ -1,24 +1,23 @@
 import './_footer.scss';
 
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class Footer extends React.Component {
   render(){
     return (
       <div className='footer'>
-        <hr />
         
         <div className='links'>
-          <NavLink exact activeClassName='active' className='menu-item' to='/'> Home </NavLink>
+          <Link exact activeClassName='active' className='menu-item' to='/'> Home </Link>
           <span> | </span>
-          <NavLink activeClassName='active' className='menu-item' to='/inventory'> Inventory </NavLink>
+          <Link activeClassName='active' className='menu-item' to='/inventory'> Inventory </Link>
           <span> | </span>
-          <NavLink activeClassName='active' className='menu-item' to='/service'> Service </NavLink> 
+          <Link activeClassName='active' className='menu-item' to='/service'> Service </Link> 
           <span> | </span>
-          <NavLink activeClassName='active' className='menu-item' to='/about'> About </NavLink> 
+          <Link activeClassName='active' className='menu-item' to='/about'> About </Link> 
           <span> | </span>
-          <NavLink activeClassName='active' className='menu-item' to='/contact'> Contact </NavLink>
+          <Link activeClassName='active' className='menu-item' to='/contact'> Contact </Link>
         </div>
 
         <div className='info'>
