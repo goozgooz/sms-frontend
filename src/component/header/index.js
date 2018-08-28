@@ -9,7 +9,6 @@ class Header extends React.Component{
         <h1>SOURCE MOTOR</h1>
         <h1>SALES</h1>
         <h1>& SERVICE</h1>
-        
       </div>
     );
   }
