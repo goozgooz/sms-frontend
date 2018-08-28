@@ -48,17 +48,23 @@ p {
 }
 
 a {
+  color: $color-white;
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
 }
 
 // NavLink active class styling
 .active {
-    color: #08472D;
-    font-weight: 500;
-    text-decoration: underline;
+    color: $color-blue;
   }
 
 @media(min-width: 768px) {
+  a:hover {
+    color: lightgray;
+  }
+
   h1 {
     font-size: 40px;
     letter-spacing: 3px;
