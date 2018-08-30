@@ -6,10 +6,11 @@ class Header extends React.Component{
   render(){
     return (
       <div className='header'>
-        <h1>SOURCE MOTOR</h1>
-        <h1>SALES</h1>
-        <h1>& SERVICE</h1>
-        
+        <div className='header-text'>
+          <h1>SOURCE MOTOR</h1>
+          <h1>SALES</h1>
+          <h1>& SERVICE</h1>
+        </div>
       </div>
     );
   }
