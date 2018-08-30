@@ -1,7 +1,6 @@
 import './_welcome.scss';
 
 import React from 'react';
-import { faDivide } from '@fortawesome/fontawesome-free-solid';
 
 class Welcome extends React.Component {
   render(){

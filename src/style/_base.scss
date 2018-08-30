@@ -23,6 +23,7 @@ h3 {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 1px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -44,6 +45,7 @@ h5 {
 p {
   color: $color-gray;
   font-weight: 200;
+  letter-spacing: .5px;
   line-height: 22px;
 }
 
@@ -69,5 +71,20 @@ a {
     font-size: 60px;
     letter-spacing: 3px;
     // margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 36px;    
+    line-height: 45px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 33px;
   }
 }

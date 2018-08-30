@@ -11,6 +11,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 40px;
 
   h4 {
@@ -28,4 +29,31 @@
 
 .tile-item:first-of-type{
   margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .tile-item:first-of-type{
+    margin-top: 0;
+  }
+  
+  .tiles {
+    flex-direction: row;
+    height: 440px;
+    align-items: center;;
+    justify-content: space-evenly;
+  }
+
+  .tile-item{
+    margin-bottom: 0;
+
+    h4 {
+      margin-bottom: 28px;
+    }
+    
+    .icon {
+      height: 100px;
+      width: 100px;
+      padding: 30px;
+    }
+  }
 }
