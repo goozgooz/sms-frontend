@@ -2,10 +2,6 @@
 
 .welcome {
   margin: 50px auto;
-
-  h3:first-of-type {
-    margin-bottom: 5px;
-  }
 }
 
 .welcome-message{
@@ -13,3 +9,13 @@
   margin: 30px auto 0;
   width: 80%;
 }
+
+@media(min-width: 768px){
+  .welcome {
+    margin: 80px auto;
+  }
+  .welcome-message{
+    margin-top: 40px;
+  }
+}
+
