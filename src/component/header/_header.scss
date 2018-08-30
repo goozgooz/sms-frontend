@@ -22,10 +22,18 @@
 
 @media (min-width: 768px) {
   .header {
+    display: flex;
     margin-top: 0;
+
     h1 {
-      text-align: center;
+      margin: 15px 0kj;
+      text-align: left;
     }
+  }
+
+  .header-text {
+    max-width: 1080px;
+    margin-left: 25%;
   }
 
 }
