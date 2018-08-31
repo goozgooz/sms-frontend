@@ -16,10 +16,6 @@
   a:first-child {
     margin-bottom: 15px;
   }
-  
-  h3 {
-    line-height: 25px;
-  }
 }
 
 .map-container {
@@ -31,4 +27,29 @@
 .marker {
   height: 22px;
   width: 22px;
+}
+
+@media(min-width: 768px) {
+  .map {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    
+    .icon {
+      height: 30px;
+      margin: 5px 5px 0 0;
+      width: 30px;
+    }
+  }
+
+    
+  .location-info{
+    width: 50%;
+  }
+
+  .map-container {
+    margin: 0;
+    height: 440px;
+    width: 50%;
+  }
 }
