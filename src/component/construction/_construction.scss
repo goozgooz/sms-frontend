@@ -2,17 +2,16 @@
 
 .construction {
   
-  h1 {
+  .construction-text {
+    color: $color-gray;
     margin-top: 20%;
+    font-size: 60px;
   }
   
   .footer {
-    background-color: white;
+    background-color: $color-dark;
     position: fixed;
     bottom: 0;
     
-    hr {
-      display: none;
-    }
   }
 }
