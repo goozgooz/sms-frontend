@@ -16,12 +16,7 @@
   position: fixed;
 }
 
-.icon {
-  color: $color-blue;
-  height: 22px;
-  margin-right: 15px;
-  width: 22px;
-}
+
 
 .navbar {
   background-color: $color-dark;
@@ -32,6 +27,10 @@
   top: 0;
   width: 100%;
   z-index: 2;
+  
+  .icon {
+    margin-right: 15px;
+  }
 }
 
 /* Position and sizing of burger button */

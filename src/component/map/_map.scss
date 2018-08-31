@@ -2,21 +2,36 @@
 
 .map {
   margin-top: 50px;
+}
   
-  .location {
-    display: flex;
-    flex-direction: column;
+.location-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+  h3 {
+    text-align: left;
   }
   
   a {
     display: flex;
     justify-content: center;
   }
-  
+
   a:first-child {
     margin-bottom: 15px;
   }
 }
+
+.shop-hours{
+  display: flex;
+  
+  h3:first-of-type {
+    color: $color-blue;
+  }
+}
+
+
 
 .map-container {
   height: 300px;
