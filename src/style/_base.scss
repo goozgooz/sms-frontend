@@ -28,8 +28,8 @@ h3 {
 }
 
 h4 {
-  color: $color-white;
-  font-size: 22px;
+  color: $color-dark;
+  font-size: 18px;
   font-weight: 200;
   letter-spacing: 1px;
   text-align: center;
@@ -56,6 +56,14 @@ a {
   font-weight: 200;
   letter-spacing: 1.5px;
 }
+
+// font awesome icons
+.icon {
+  color: $color-blue;
+  height: 22px;
+  width: 22px;  
+}
+
 
 // NavLink active class styling
 .active {

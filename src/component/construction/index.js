@@ -9,7 +9,7 @@ class Construction extends React.Component {
     return (
       <div className='construction'>
         <Navbar />
-        <h1> This Page is Under Construction </h1>
+        <h1 className='construction-text'> This Page is Under Construction </h1>
         <Footer className='footer' />
       </div>
     );

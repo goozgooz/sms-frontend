@@ -15,21 +15,21 @@ class Tiles extends React.Component {
       
       
         <div className='tile-item'>
-          <h4> View Inventory </h4>
+          <h3> View Inventory </h3>
           <Link to='/inventory'>  
             <FontAwesomeIcon icon={faCar} className='icon' />
           </Link>
         </div>
 
         <div className='tile-item'>
-          <h4> Service Department </h4>
+          <h3> Service Department </h3>
           <Link to='/service'>  
             <FontAwesomeIcon icon={faWrench} className='icon' />
           </Link>
         </div>
 
         <div className='tile-item'>
-          <h4> Contact Me </h4>
+          <h3> Contact Me </h3>
           <Link to='/contact'>  
             <FontAwesomeIcon icon={faPhone} className='icon' />
           </Link>

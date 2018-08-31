@@ -14,7 +14,8 @@
   justify-content: center;
   margin-bottom: 40px;
 
-  h4 {
+  h3 {
+    color: $color-white;
     margin-bottom: 15px;
   }
 
@@ -54,6 +55,14 @@
       height: 100px;
       width: 100px;
       padding: 30px;
+    }
+  }
+
+  .tile-item:hover{
+    transform: scale(1.05);
+    
+    h3{
+      color: $color-blue;
     }
   }
 }
