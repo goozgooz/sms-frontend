@@ -71,11 +71,22 @@
     
     .icon {
       height: 30px;
-      margin: 5px 5px 0 0;
       width: 30px;
+    }
+
+    a:hover{
+      h4{
+        color: $color-blue;
+        font-weight: 300;
+      }
     }
   }
 
+  .location{
+    h4{
+      line-height: 30px;
+    }
+  }
     
   .location-info{
     width: 50%;
