@@ -77,7 +77,7 @@
     a:hover{
       h4{
         color: $color-blue;
-        font-weight: 300;
+        text-decoration: underline;
       }
     }
   }
@@ -96,5 +96,10 @@
     margin: 0;
     height: 440px;
     width: 50%;
+  }
+
+  .marker {
+    height: 40px;
+    width: 40px;
   }
 }

@@ -59,10 +59,11 @@
   }
 
   .tile-item:hover{
-    transform: scale(1.05);
-    
+    .icon {
+      color: lightgray;
+    }
     h3{
       color: $color-blue;
-    }
+    }  
   }
 }
