@@ -1,56 +1,40 @@
 @import 'vars';
 
-
-// mobile
 .header {
-  h2 {
-    font-size: 14px;
-    letter-spacing: .5px;
-    padding: 2px;
-  }
-  
-  .icon {
-    height: 16px;
-    width: 16px;
-  }
-  
-  a {
-    color: $color-blue;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-    text-decoration: none;
-  }
-}
-
-.call {
+  height: 500px;
+  background: url('audi-edit.jpg') center;
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  padding: 2px;
+  flex-direction: column;
+  height: 350px;
+  margin-top: 80px;
+  width: 100%;
 
-  .icon {
-    color: $color-blue;
+  h1 {
+    margin: 0 0 35px 10px;
+    text-align: left;
+  }
+
+  h1:first-of-type{
+    margin-top: 65px;
   }
 }
 
 @media (min-width: 768px) {
   .header {
-    padding: 20px;
+    display: flex;
+    margin-top: 0;
+    padding-top: 80px;
 
-    a:hover {
-      text-decoration: underline;
+    h1 {
+      margin: 15px 0;
+      text-align: left;
     }
-      
-    h2 {
-      font-size: 22px;
-      font-weight: 300;
-      letter-spacing: 1.5px;
-    }
+  }
 
-    .icon {
-      height: 30px;
-      width: 30px;
-      margin-right: 8px;
-    }
-  } 
+  .header-text {
+    max-width: 1080px;
+    margin-left: 25%;
+  }
+
 }

@@ -1,40 +1,42 @@
 @import 'vars';
 
-.desktop-nav {
-  background-color: #fff;
-  box-shadow: -3px -3px 3px 0 rgba(0,0,0,0.19), 3px 0 3px 0 rgba(0,0,0,0.19), 0 3px 3px 0 rgba(0,0,0,0.23);
-  border-bottom: solid 1px $color-medium-gray;
-  height: 80px;
+
+.desktop-wrapper{
+  background-color: $color-dark;
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 69;
 }
 
-.nav-wrapper {
+.desktop-nav {
+  align-items: center;
   display: flex;
-  height: 100%;
+  height: 60px;
   justify-content: space-evenly;
   margin: auto;
-  width: 50%;
-    
-  a {
-    align-items: center;
-    color: #2d2d2d;
-    display: flex;
-    font-size: 18px;
-    height: 100%;
-    padding: 0 20px;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-color: $color-light-gray;
+  max-width: 80%;
+
+  .sms {
+    border: 2px solid $color-blue;
+    border-radius: 100%;
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
   }
 
-  .active {
-    color: #08472D;
-    font-weight: 500;
-    text-decoration: underline;
+  .menu-item {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+
+  .nav-icons{
+    .icon {
+      margin: 0 10px;
+    }
+
+    .icon:hover {
+      transform: scale(1.3);
+    }
   }
 }

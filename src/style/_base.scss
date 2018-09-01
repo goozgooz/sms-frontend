@@ -3,39 +3,96 @@
 
 body {
   font-family: $font-main;
-  background-color: $color-light-gray;
 }
 
 h1 {
-  color: $color-blue;
-  font-size: 21px;
-  letter-spacing: .5px;
-  margin: 15px auto 5px;
+  color: $color-white;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
   text-align: center;
 }
 
 h2 {
-  color: $color-green;
-  font-size: 36px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
+h3 {
+  color: $color-gray;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+}
 
+h4 {
+  color: $color-dark;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+}
 
 h5 {
+  color: $color-white;
   font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
-hr {
-  color: $color-medium-gray;
-  margin: auto;
-  width: 90%;
+p {
+  color: $color-gray;
+  font-weight: 200;
+  letter-spacing: .5px;
+  line-height: 22px;
 }
+
+a {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+// font awesome icons
+.icon {
+  color: $color-blue;
+  height: 22px;
+  width: 22px;  
+}
+
+
+// NavLink active class styling
+.active {
+    color: $color-blue;
+  }
 
 @media(min-width: 768px) {
+  a:hover {
+    color: lightgray;
+  }
+
   h1 {
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 36px;    
+    line-height: 45px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 33px;
   }
 }

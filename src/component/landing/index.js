@@ -4,8 +4,9 @@ import {connect} from 'react-redux';
 
 import Navbar from '../navbar';
 import Header from '../header';
-import Banner from '../banner';
+import Welcome from '../welcome';
 import Tiles from '../tiles';
+import Map from '../map';
 import Footer from '../footer';
 
 class Landing extends React.Component{
@@ -13,14 +14,11 @@ class Landing extends React.Component{
     return(
       <React.Fragment>
         <Navbar />
-        <div className='layout'>
-          <div className='top'>
-            <Header />
-            <Banner />
-          </div>
-          <Tiles />
-          <Footer />
-        </div>
+        <Header />  
+        <Welcome />
+        <Tiles />
+        <Map />
+        <Footer />
       </React.Fragment>
     );
   }

@@ -7,18 +7,17 @@ class Footer extends React.Component {
   render(){
     return (
       <div className='footer'>
-        <hr />
         
         <div className='links'>
-          <Link className='menu-item' to='/'> Home </Link>
+          <Link exact activeClassName='active' className='menu-item' to='/'> Home </Link>
           <span> | </span>
-          <Link className='menu-item' to='/inventory'> Inventory </Link> 
+          <Link activeClassName='active' className='menu-item' to='/inventory'> Inventory </Link>
           <span> | </span>
-          <Link className='menu-item' to='/service'> Service </Link> 
+          <Link activeClassName='active' className='menu-item' to='/service'> Service </Link> 
           <span> | </span>
-          <Link className='menu-item' to='/about'> About </Link> 
+          <Link activeClassName='active' className='menu-item' to='/about'> About </Link> 
           <span> | </span>
-          <Link className='menu-item' to='/contact'> Contact </Link> 
+          <Link activeClassName='active' className='menu-item' to='/contact'> Contact </Link>
         </div>
 
         <div className='info'>
