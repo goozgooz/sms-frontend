@@ -2,6 +2,9 @@ const emptyState = {};
 
 export default(state = emptyState, {type,payload}) => {
   switch(type){
+  
+  case 'CARS_GET':
+    return Object.assign({}, state, payload);
     
   case 'CAR_CREATE':
     return {...state, [payload.id]: payload};
