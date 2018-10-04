@@ -1,7 +1,8 @@
 import './_inventory.scss';
 import React from 'react';
 
-import Construction from '../construction';
+import Navbar from '../navbar';
+import Footer from '../footer';
 
 class Inventory extends React.Component {
   constructor(props){
@@ -9,9 +10,15 @@ class Inventory extends React.Component {
   }
   
   render(){
-    console.log('INVENTORY', this.props.cars);
     return (
-      <Construction />
+      <React.Fragment>
+        <Navbar />
+        <div className = 'inventory-container'>
+          <h2> Inventory Page </h2>
+        </div>
+        <Footer />
+      </React.Fragment>
+ 
     );
   }
 }
