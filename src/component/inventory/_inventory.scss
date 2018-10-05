@@ -1,5 +1,13 @@
 @import 'vars';
 
 .inventory-container{
-  margin-top: 80px;
+  margin: 130px auto 50px;
 }
+
+.inline-link{
+  color: $color-blue;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: underline;
+}
+

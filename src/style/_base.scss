@@ -46,7 +46,9 @@ p {
   color: $color-gray;
   font-weight: 200;
   letter-spacing: .5px;
-  line-height: 22px;
+  line-height: 28px;
+  text-align: justify;
+  width: 80%;
 }
 
 a {
@@ -93,6 +95,6 @@ a {
   p {
     font-size: 20px;
     letter-spacing: 1px;
-    line-height: 33px;
+    line-height: 40px;
   }
 }

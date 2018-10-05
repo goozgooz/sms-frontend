@@ -5,10 +5,7 @@
 }
 
 .welcome-message{
-  text-align: justify;
-  line-height: 28px;
-  margin: 30px auto 0;
-  width: 80%;
+   margin: 30px auto 0;
 }
 
 @media(min-width: 768px){
@@ -18,7 +15,6 @@
   .welcome-message{
     margin-top: 40px;
     max-width: 980px;
-    line-height: 40px;
   }
 }
 
