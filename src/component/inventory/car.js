@@ -7,10 +7,12 @@ class Car extends React.Component {
   }
   
   render(){
-    console.log('hi');
+    let {car} =  this.props;
+    
     return(
       <div className='car-item'>
-        <h2> This is a car </h2>
+        <img src={require('./dev-car.jpg')} />
+        <h2> {car.headline} </h2>
       </div>
     );
   }

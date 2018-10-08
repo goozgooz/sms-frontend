@@ -1,0 +1,11 @@
+@import 'vars';
+
+.car-item {
+  border: 1px solid $color-dark;
+  width: 99%;
+  
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

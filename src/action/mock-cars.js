@@ -1,5 +1,6 @@
 export  default {
   1001: {
+    headline: '2007 Audi A4 2.0T Quattro All Wheel Drive 2 Owner History Premium Package Heated Seats Moonroof',
     year: '2010',
     make: 'BMW',
     model: 'M3',
@@ -10,6 +11,7 @@ export  default {
     interiorColor: 'BLACK',
   },
   1002: {
+    headline: '2007 Audi A4 2.0T Quattro All Wheel Drive 2 Owner History Premium Package Heated Seats Moonroof',
     year: '1996',
     make: 'Toyota',
     model: 'COROLLA',
@@ -20,6 +22,7 @@ export  default {
     interiorColor: 'GRAY',
   },
   1003: {
+    headline: '2007 Audi A4 2.0T Quattro All Wheel Drive 2 Owner History Premium Package Heated Seats Moonroof',
     year: '2001',
     make: 'AUDI',
     model: 'A4',
@@ -30,6 +33,7 @@ export  default {
     interiorColor: 'BLACK',
   },
   1004: {
+    headline: '2007 Audi A4 2.0T Quattro All Wheel Drive 2 Owner History Premium Package Heated Seats Moonroof',
     year: '2015',
     make: 'FORD',
     model: 'EXPLORER',
@@ -39,6 +43,7 @@ export  default {
     interiorColor: 'BLACK',
   },
   1005: {
+    headline: '2007 Audi A4 2.0T Quattro All Wheel Drive 2 Owner History Premium Package Heated Seats Moonroof',
     year: '2013',
     make: 'PORSCHE',
     model: '911',
