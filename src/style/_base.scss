@@ -19,7 +19,7 @@ h2 {
 }
 
 h3 {
-  color: $color-gray;
+  color: $color-dark;
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -30,7 +30,7 @@ h3 {
 h4 {
   color: $color-dark;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -44,7 +44,7 @@ h5 {
 
 p {
   color: $color-gray;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: .5px;
   line-height: 28px;
   text-align: justify;
@@ -57,6 +57,11 @@ a {
   font-size: 22px;
   font-weight: 200;
   letter-spacing: 1.5px;
+}
+
+hr {
+  color: $color-dark;
+  width: 75%;
 }
 
 // font awesome icons

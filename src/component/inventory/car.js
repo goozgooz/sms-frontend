@@ -7,12 +7,17 @@ class Car extends React.Component {
   }
   
   render(){
-    let {car} =  this.props;
+    let {car} = this.props;
+    console.log('CAR COMPONENT', this.props);
     
     return(
       <div className='car-item'>
+        <h3>  {car.year} {car.make} {car.model} - ${car.price} </h3>
         <img src={require('./dev-car.jpg')} />
-        <h2> {car.headline} </h2>
+        <p> {car.headline} </p>
+        <hr />
+        <p> {car.exteriorColor} Exterior - {car.interiorColor} Interior </p>
+        <p> {car.miles} Miles - {car.transmission} Transmission </p>
       </div>
     );
   }
