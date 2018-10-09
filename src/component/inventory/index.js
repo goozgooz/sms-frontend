@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Car from './car.js';
+import Map from '../map';
 
 import * as _ from '../../lib/util.js';
 import * as actions from '../../action/car.js';
@@ -32,11 +33,14 @@ class Inventory extends React.Component {
           
           {_.renderIf(Object.keys(cars).length,
             <div className='car-list'>
-              <Car car={cars[1001]} />
+              {Object.keys(cars).map((car, i) => (
+                <Car car={cars[car]} key={i} />
+              ))}
             </div>
           )}
         </div>
         
+        <Map />
         <Footer />
         
       </React.Fragment>

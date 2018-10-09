@@ -5,12 +5,13 @@
   background-color: $color-dark;
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
-
+  margin: 50px 0;
+  padding-bottom: 25px;
+  
   h3 {
     color: $color-blue;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin: 25px 0;
   }
   
   img {
