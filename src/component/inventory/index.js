@@ -40,7 +40,7 @@ class Inventory extends React.Component {
           )}
         </div>
         
-        <Map />
+        <Map className='map' />
         <Footer />
         
       </React.Fragment>
