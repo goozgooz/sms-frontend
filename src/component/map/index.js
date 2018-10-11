@@ -34,8 +34,6 @@ class Map extends React.Component{
             <FontAwesomeIcon icon={faPhone} className='icon'/> 
             <h4> 425-562-5131 </h4>
           </a>
-          
-          
         </div>     
 
         <div className='map-container'>

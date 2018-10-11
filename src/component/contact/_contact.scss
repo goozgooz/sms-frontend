@@ -18,22 +18,30 @@
     margin: 25px auto;
   }
   
+  span {
+    color: $color-blue;
+    font-weight: 400;
+  }
+  
   .special {
     color: $color-blue;
     font-weight: 400;
     font-size: 22px;
     margin-top: 50px;
   }
-  
-  span {
-    color: $color-blue;
-    font-weight: 400;
-  }
 }
+
+
 
 @media(min-width: 768px) {
   .contact-container {
     margin-top: 60px;
   }
   
+  .contact-header{
+    .special {
+      color: $color-blue;
+      font-size: 35px;
+    } 
+  }
 }

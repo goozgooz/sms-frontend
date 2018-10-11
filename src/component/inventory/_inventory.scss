@@ -1,7 +1,16 @@
 @import 'vars';
 
 .inventory-container{
-  margin: 130px auto 50px;
+  margin-top: 80px;
+  padding: 50px 0;
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  p {
+    margin: 25px auto 0;
+  }
 }
 
 .inline-link{
@@ -15,3 +24,9 @@
   margin: 50px auto;
 }
 
+
+@media(min-width: 768px){
+  .inventory-container {
+    margin-top: 60px;
+  }
+}
