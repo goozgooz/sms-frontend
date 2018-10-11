@@ -14,7 +14,7 @@ import * as actions from '../../action/car.js';
 class Inventory extends React.Component {
   constructor(props){
     super(props);
-    // this.props.getCars();
+    this.props.getCars();
   }
 
   render(){
