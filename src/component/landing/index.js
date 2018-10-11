@@ -9,7 +9,7 @@ import Tiles from '../tiles';
 import Map from '../map';
 import Footer from '../footer';
 
-class Landing extends React.Component{
+class Landing extends React.Component {
   render(){
     return(
       <React.Fragment>
@@ -24,14 +24,4 @@ class Landing extends React.Component{
   }
 }
 
-let mapStateToProps = (state) => {
-  return {
-  };
-};
-
-let mapDispatchToProps = (dispatch) => {
-  return {
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Landing);
+export default Landing;

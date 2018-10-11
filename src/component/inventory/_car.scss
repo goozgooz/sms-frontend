@@ -1,0 +1,27 @@
+@import 'vars';
+
+.car-item {
+  align-items: center;
+  background-color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  padding-bottom: 25px;
+  
+  h3 {
+    color: $color-blue;
+    font-weight: 400;
+    margin: 25px 0;
+  }
+  
+  img {
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  p {
+    color: $color-white;
+    text-align: center;
+  }
+}

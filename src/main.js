@@ -9,9 +9,10 @@ import {Provider} from 'react-redux';
 import App from './component/app';
 import reducer from './reducer/index.js';
 import reporter from './lib/redux-reporter.js';
+import thunk from './lib/redux-thunk.js';
 
 
-let store = createStore(reducer, applyMiddleware(reporter));
+let store = createStore(reducer, applyMiddleware(thunk, reporter));
 
 class Main extends React.Component {
 

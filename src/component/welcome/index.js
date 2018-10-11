@@ -1,5 +1,4 @@
 import './_welcome.scss';
-
 import React from 'react';
 
 class Welcome extends React.Component {

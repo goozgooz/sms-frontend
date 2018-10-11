@@ -1,24 +1,20 @@
 @import 'vars';
 
 .welcome {
-  margin: 50px auto;
+  padding: 50px 0;
 }
 
 .welcome-message{
-  text-align: justify;
-  line-height: 28px;
-  margin: 30px auto 0;
-  width: 80%;
+   margin: 30px auto 0;
 }
 
 @media(min-width: 768px){
   .welcome {
-    margin: 80px auto;
+    padding: 80px 0;
   }
   .welcome-message{
     margin-top: 40px;
     max-width: 980px;
-    line-height: 40px;
   }
 }
 
