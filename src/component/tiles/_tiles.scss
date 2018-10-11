@@ -4,6 +4,7 @@
   background-color: $color-dark;
   display: flex;
   flex-direction: column;
+  padding: 50px 0;
   width: 100%;
 }
 
@@ -28,15 +29,7 @@
     padding: 20px;  }
 }
 
-.tile-item:first-of-type{
-  margin-top: 50px;
-}
-
 @media (min-width: 768px) {
-  .tile-item:first-of-type{
-    margin-top: 0;
-  }
-  
   .tiles {
     flex-direction: row;
     height: 440px;

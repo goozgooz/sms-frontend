@@ -4,21 +4,36 @@
   margin-top: 80px;
 }
 
+.title {
+  font-size: 30px;
+  padding: 50px;
+}
+
 .contact-header{
   background-color: $color-dark;
   padding: 50px 0;
-
-  h3 {
-    color: white;
-  }
   
   h4 {
     color: white;
     margin: 25px auto;
-
-    &:last-of-type {
-      color: $color-blue;
-      font-weight: 400;
-    }
   }
+  
+  .special {
+    color: $color-blue;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 50px;
+  }
+  
+  span {
+    color: $color-blue;
+    font-weight: 400;
+  }
+}
+
+@media(min-width: 768px) {
+  .contact-container {
+    margin-top: 60px;
+  }
+  
 }

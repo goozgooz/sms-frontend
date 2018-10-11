@@ -12,6 +12,7 @@ class Contact extends React.Component {
         <Navbar />
         
         <div className='contact-container'>
+          <h3 className='title'> Contact Me </h3>
           
           <div className='contact-header'>
             <h4> Buying or selling a car? </h4>
@@ -19,13 +20,13 @@ class Contact extends React.Component {
             <h4> Need some work done to your car? </h4>
             <h4> Don't hesitate to reach out to me! </h4>
         
-            <h4> Reza Jaberi </h4>
+            <h4 className='special'> Reza Jaberi </h4>
 
             <a href="tel: +14255625131">
-              <h4> Phone: 425-562-5131 </h4>
+              <h4> <span> Phone: </span> 425-562-5131 </h4>
             </a>        
 
-            <h4> Email: sourcemotors@gmail.com </h4>
+            <h4> <span> Email: </span> sourcemotors@gmail.com </h4>
           </div>
 
 

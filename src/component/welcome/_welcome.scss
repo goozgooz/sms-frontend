@@ -1,7 +1,7 @@
 @import 'vars';
 
 .welcome {
-  margin: 50px auto;
+  padding: 50px 0;
 }
 
 .welcome-message{
@@ -10,7 +10,7 @@
 
 @media(min-width: 768px){
   .welcome {
-    margin: 80px auto;
+    padding: 80px 0;
   }
   .welcome-message{
     margin-top: 40px;
