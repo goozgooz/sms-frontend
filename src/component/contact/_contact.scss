@@ -1,133 +1,24 @@
-// @import 'vars';
+@import 'vars';
 
-// .contact-page {
-//   .line {
-//     border-bottom: .5px solid $color-medium-gray;
-//     height: 1px;
-//     width: 95%;
-//   }
+.contact-container {
+  margin-top: 80px;
+}
 
-//   ul {
-//     text-align: center;
-//     margin-bottom: 15px;
+.contact-header{
+  background-color: $color-dark;
+  padding: 50px 0;
 
-//     li {
-//       color: $color-dark-gray;
-//       font-size: 18px;
-//       font-weight: 100;
-//       letter-spacing: .5px;
-//       padding: 5px;
-//     }
-//   }
-
-//   h4 {
-//     color: $color-blue;
-//     font-size: 18px;
-//     font-weight: 300;
-//     letter-spacing: .5px;
-//   }
+  h3 {
+    color: white;
+  }
   
-//   h5 {
-//     color: $color-dark-gray;
-//     display: inline;
-//     font-size: 18px;
-//     font-weight: 100;
-//     letter-spacing: .5px;
-//     margin-top: 5px;
-//   }
+  h4 {
+    color: white;
+    margin: 25px auto;
 
-//   .emphasis {
-//     color: $color-green;
-//     font-weight:400;
-//   }
-
-//     .contact-section{
-//       margin: 30px 0px 0px 10px;
-      
-//       .section-header{
-//         align-items: center;
-//         display: flex;
-//         margin-bottom: 10px;
-//       }
-    
-//       a {
-//         text-decoration: none;
-//       }
-//   }
-// }
-
-
-// .map-container {
-//   display: flex;
-//   height: 200px;
-//   justify-content: center;
-//   margin: 15px auto 0;
-//   width: 100%;
-// }
-
-// @media (min-width: 768px) {
-
-//   .contact-layout {
-//     // background-color: #fff;
-//     // border: 1px solid $color-medium-gray;
-//     // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-//     margin: 110px auto 0;
-//     height: 100%;
-//     padding: 20px;
-//     position: relative;
-//     max-width: 1440px;
-//     width: 95%;
-//     z-index: 1;
-//   }
-  
-//   .contact-header {    
-//     background-color: #fff;
-//     border: 1px solid $color-medium-gray;
-//     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-//     ul  {
-//       margin: 20px auto;
-//       li {
-//         font-size: 22px;
-//       }
-//     }
-//   }
-
-//   .contact-page{
-//     h4 {
-//       font-size: 24px;
-//       font-weight: 400;
-//       margin-bottom: 5px;
-//     }
-//     h5 {
-//       font-size: 20px;
-//     }
-    
-//     .contact-section {
-//       background-color: #fff;
-//       border: 1px solid $color-medium-gray;
-//       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-//       display: flex;
-//       flex-direction: column;
-//       margin-left: 0;
-//       height: 250px;
-//       width: 48%;
-//     }
-//   }
-  
-  
-
-
-//   .contact-info {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
-//   .map-container {
-//     background-color: #fff;
-//     height: 500px;
-//     margin: 60px auto;
-//     max-width: 1440px;
-//     padding: 20px;
-//     width: 100%;
-//   }
-// }
+    &:last-of-type {
+      color: $color-blue;
+      font-weight: 400;
+    }
+  }
+}
