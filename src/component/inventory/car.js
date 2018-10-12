@@ -10,14 +10,15 @@ class Car extends React.Component {
     let {car} = this.props;
  
     return(
-      <div className='car-item'>
+      <React.Fragment>
         <h3>  {car.year} {car.make} {car.model} - ${car.price} </h3>
         <img src={require('./dev-car.jpg')} />
         <p> {car.headline} </p>
         <hr />
         <p> {car.exteriorColor} Exterior - {car.interiorColor} Interior </p>
         <p> {car.miles} Miles - {car.transmission} Transmission </p>
-      </div>
+        <p> VIN: {car.vin} </p>
+      </React.Fragment>
     );
   }
 };
