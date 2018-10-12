@@ -24,23 +24,29 @@ class Inventory extends React.Component {
     this.props.getCars();
     
     this.handleCarClick = this.handleCarClick.bind(this);
+    this.handleBack = this.handleBack.bind(this);
+  }
+  
+  handleBack(){
+    this.setState({focusCar: !this.state.focusCar});
+    this.setState({activeCar: {}});
   }
 
   handleCarClick(car, e){
-    console.log(car);
     this.setState({focusCar: !this.state.focusCar});
+    this.setState({activeCar: car});
   }
 
   render(){
     let {cars} = this.props;
-    
+    console.log(this.state.activeCar);
     return (
       <React.Fragment>
       
         <Navbar />
         
         <div className = 'inventory-container'>
-          <button onClick={this.handleCarClick}> click me </button>
+          <button onClick={this.handleBack}> back </button>
           
           {_.renderIf(!this.state.focusCar,
             <React.Fragment>
@@ -56,7 +62,7 @@ class Inventory extends React.Component {
                     <div 
                       key={i} 
                       className='car-item'
-                      onClick={(e) => this.handleCarClick(cars[car])}
+                      onClick={(car) => this.handleCarClick(cars[car])}
                     >
                     
                       <Car car={cars[car]}  />
