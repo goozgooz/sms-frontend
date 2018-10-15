@@ -27,28 +27,33 @@ class Inventory extends React.Component {
     this.handleBack = this.handleBack.bind(this);
   }
   
-  handleBack(){
-    this.setState({focusCar: !this.state.focusCar});
-    this.setState({activeCar: {}});
+  handleBack(e){
+    window.scrollTo(0,0);
+    this.setState({
+      focusCar: !this.state.focusCar,
+      activeCar: {},
+    });
   }
 
   handleCarClick(car, e){
-    this.setState({focusCar: !this.state.focusCar});
-    this.setState({activeCar: car});
+    window.scrollTo(0,0);
+    this.setState({
+      focusCar: !this.state.focusCar, 
+      activeCar: car,
+    });
   }
 
   render(){
     let {cars} = this.props;
-    console.log(this.state.activeCar);
+    let {activeCar, focusCar} = this.state;
     return (
       <React.Fragment>
       
         <Navbar />
         
         <div className = 'inventory-container'>
-          <button onClick={this.handleBack}> back </button>
           
-          {_.renderIf(!this.state.focusCar,
+          {_.renderIf(!focusCar,
             <React.Fragment>
               <h3> Inventory </h3>
               
@@ -62,16 +67,27 @@ class Inventory extends React.Component {
                     <div 
                       key={i} 
                       className='car-item'
-                      onClick={(car) => this.handleCarClick(cars[car])}
+                      onClick={(data) => this.handleCarClick(cars[car])}
                     >
                     
-                      <Car car={cars[car]}  />
-                      
+                      <Car car={cars[car]} displayFull={false}  />
+                    
                     </div>
                   ))}
                 </div>
               )}
             </React.Fragment>
+            
+            ,
+            
+            <div className='car-item focus'>
+              <Car 
+                car={activeCar} 
+                displayFull={true}  
+                back={this.handleBack}
+              />
+            </div>
+            
           )}
   
         </div>

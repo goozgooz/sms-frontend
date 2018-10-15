@@ -5,8 +5,12 @@
   background-color: $color-dark;
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 25px 0;
   padding-bottom: 25px;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   
   h3 {
     color: $color-blue;
@@ -24,5 +28,20 @@
     color: $color-white;
     margin: 0;
     text-align: center;
+  }
+}
+
+.focus {
+  margin: -50px 0;
+}
+
+.back-button {
+  display: flex;
+  left: 8px;
+  position: fixed;
+  
+  .icon{
+    height: 30px;
+    width: 30px;
   }
 }
