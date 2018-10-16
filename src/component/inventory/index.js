@@ -26,9 +26,17 @@ class Inventory extends React.Component {
     this.handleCarClick = this.handleCarClick.bind(this);
     this.handleBack = this.handleBack.bind(this);
   }
+
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  
+  componentDidUpdate(){
+    window.scrollTo(0,0);
+  }
   
   handleBack(e){
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     this.setState({
       focusCar: !this.state.focusCar,
       activeCar: {},
@@ -36,7 +44,6 @@ class Inventory extends React.Component {
   }
 
   handleCarClick(car, e){
-    window.scrollTo(0,0);
     this.setState({
       focusCar: !this.state.focusCar, 
       activeCar: car,

@@ -10,6 +10,18 @@ import Map from '../map';
 import Footer from '../footer';
 
 class Landing extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  
+  componentDidUpdate(){
+    window.scrollTo(0,0);
+  }
+  
   render(){
     return(
       <React.Fragment>
