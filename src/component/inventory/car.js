@@ -1,6 +1,8 @@
 import './_car.scss';
 import React from 'react';
 
+import CarPhotos from './car-photo.js';
+
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {faArrowLeft} from '@fortawesome/fontawesome-free-solid';
@@ -25,7 +27,7 @@ class Car extends React.Component {
         )}
             
         <h3>  {car.year} {car.make} {car.model} ${car.price} </h3>
-        <img src={require('./dev-car.jpg')} />
+        <CarPhotos />
         
         <div className='car-description'>
           <p> {car.headline} </p>
@@ -34,9 +36,15 @@ class Car extends React.Component {
           <p> <span>Exterior: </span> {car.exteriorColor} </p>
           <p> <span>Interior: </span> {car.interiorColor} </p>
           <p> <span>Transmission: </span> {car.transmission} </p>
-          <p> <span>Drive: </span> {car.drive} </p>
-          <p> <span>Title: </span> {car.title} </p>
-          <p> <span>VIN: </span> {car.vin} </p>
+          {_.renderIf(displayFull,
+            <React.Fragment>
+              <p> <span>Drive: </span> {car.drive} </p>
+              <p> <span>Title: </span> {car.titleStatus} </p>
+              <p> <span>VIN: </span> {car.vin} </p>
+              <p> <span>Car Description: </span>{car.description} </p>
+            </React.Fragment>
+          )}
+          
         </div>
         
       </React.Fragment>
