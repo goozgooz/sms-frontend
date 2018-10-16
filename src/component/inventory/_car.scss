@@ -27,7 +27,8 @@
   p {
     color: $color-white;
     margin: 0;
-    text-align: center;
+    text-align: left;
+    width: 100%;
   }
 }
 
@@ -41,7 +42,14 @@
   position: fixed;
   
   .icon{
-    height: 30px;
-    width: 30px;
+    height: 22px;
+    width: 22px;
+  }
+}
+
+.car-description {
+  span {
+    color: $color-blue;
+    font-weight: 400;
   }
 }
