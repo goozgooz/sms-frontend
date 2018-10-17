@@ -64,3 +64,13 @@
     font-weight: 400;
   }
 }
+
+@media(min-width: 768px){
+  .photo-carousel{
+    max-width: 1080px;
+  }
+  
+  .car-description{
+    max-width: 1080px;
+  }
+}
