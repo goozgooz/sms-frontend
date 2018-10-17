@@ -55,11 +55,9 @@ class Inventory extends React.Component {
     let {activeCar, focusCar} = this.state;
     return (
       <React.Fragment>
-      
         <Navbar />
         
         <div className = 'inventory-container'>
-          
           {_.renderIf(!focusCar,
             <React.Fragment>
               <h3> Inventory </h3>
