@@ -30,7 +30,7 @@ class Car extends React.Component {
         <CarPhotos />
         
         <div className='car-description'>
-          <p> {car.headline} </p>
+          <h3> {car.headline} </h3>
           <p> <span>Price: </span> ${car.price} </p>
           <p> <span>Miles: </span> {car.miles} </p>
           <p> <span>Exterior: </span> {car.exteriorColor} </p>
