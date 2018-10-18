@@ -1,5 +1,6 @@
 export  default {
   1001: {
+    folder: '2014 fiat 500l',
     headline: '2014 Mini Cooper S - Only 23,000 Miles',
     year: '2014',
     make: 'Mini',
@@ -16,6 +17,7 @@ export  default {
     description: 'Local Trade, Excellent Condition, ONLY 23500 MILES, 6-speed Manual Transmission, Fully Loaded, None Smoker, Sport PKG, Sport Seats, Heated Seats, Navigation, Xenon Lights, New tires, Panoramic Roof, carfax Certified. '
   },
   1002: {
+    folder: '2014 mini cooper s',
     headline: '2014 Fiat 500L Trekking - Only 14,500 Miles',
     year: '2014',
     make: 'Fiat',
