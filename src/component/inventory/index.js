@@ -36,7 +36,6 @@ class Inventory extends React.Component {
   }
   
   handleBack(e){
-    // window.scrollTo(0,0);
     this.setState({
       focusCar: !this.state.focusCar,
       activeCar: {},
