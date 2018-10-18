@@ -11,8 +11,8 @@ export default class Test extends React.Component {
           Click Me
         </button>
       </React.Fragment>
-    )
+    );
   }
- };
+};
 
  

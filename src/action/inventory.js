@@ -14,7 +14,7 @@ export  default {
     titleStatus: 'Clean',
     cylinders: '4',
     drive: 'FWD',
-    description: 'Local Trade, Excellent Condition, ONLY 23500 MILES, 6-speed Manual Transmission, Fully Loaded, None Smoker, Sport PKG, Sport Seats, Heated Seats, Navigation, Xenon Lights, New tires, Panoramic Roof, carfax Certified. '
+    description: 'Local Trade, Excellent Condition, ONLY 23500 MILES, 6-speed Manual Transmission, Fully Loaded, None Smoker, Sport PKG, Sport Seats, Heated Seats, Navigation, Xenon Lights, New tires, Panoramic Roof, carfax Certified. ',
   },
   1002: {
     folder: '2014 mini cooper s',
@@ -31,6 +31,6 @@ export  default {
     titleStatus: 'Clean',
     cylinders: '4',
     drive: 'FWD',
-    description: 'Purchased And Serviced At Fiat Of Kirkland, Full Service Records, Excellent Condition, Trekking Premier PKG Plus, Beats Audio/Sirius XM, Navigation, Panoramic roof, Back-Up Camera, Rear Park Assist, Carfax certified.'
+    description: 'Purchased And Serviced At Fiat Of Kirkland, Full Service Records, Excellent Condition, Trekking Premier PKG Plus, Beats Audio/Sirius XM, Navigation, Panoramic roof, Back-Up Camera, Rear Park Assist, Carfax certified.',
   },
 };
