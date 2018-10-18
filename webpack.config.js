@@ -18,6 +18,7 @@ let plugins = [
   new DefinePlugin({
     __API_URL__: JSON.stringify(process.env.API_URL),
     __GOOGLE_KEY__: JSON.stringify(process.env.GOOGLE_TOKEN), 
+    __DROPBOX_KEY__: JSON.stringify(process.env.DROPBOX_TOKEN), 
   }),
   new EnvironmentPlugin({
     NODE_ENV: process.env.NODE_ENV,

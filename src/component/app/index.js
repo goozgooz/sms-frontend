@@ -9,6 +9,7 @@ import Service from '../service';
 import About from '../about';
 import Contact from '../contact';
 import Construction from '../construction';
+import Test from '../test';
 
 class App extends React.Component {
   render(){
@@ -22,7 +23,7 @@ class App extends React.Component {
             <Route exact path='/service' component={Service}/>
             <Route exact path='/about' component={About}/>
             <Route exact path='/contact' component={Contact}/>
-            <Route exact path='/test' component={test}/>
+            <Route exact path='/test' component={Test}/>
           </div>
         </BrowserRouter>
       </div>
