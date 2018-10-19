@@ -10,22 +10,31 @@ const dbx = new Dropbox({
   fetch: fetch,
 });
 
-export default () => {
+export const fetchPhotos = () => {
   Promise.all(folders.map(getPaths))
     .then(folders => {
       Promise.all(folders.map(createImageArray))
         .then(data => {
           console.log(data);
+          return store.dispatch(get(data));
         })
         .catch(console.error);
     })
     .catch(console.error);
 };
 
+const get = (photos) => ({
+  type: 'PHOTOS_GET',
+  payload: photos,
+});
 
 
 let createImageArray = (folder) => {
-  return Promise.all(folder.paths.map(getImg));
+  return Promise.all(folder.paths.map(getImg))
+    .then(array => {
+      folder.images = array;
+      return folder;
+    });
 };
 
 let getImg = (file) => {
@@ -37,7 +46,6 @@ let getImg = (file) => {
       .catch(console.error);
   });
 };
-
 
 let getPaths = (folder) => {
   return new Promise((resolve,reject) => {
@@ -51,19 +59,3 @@ let getPaths = (folder) => {
       .catch(console.error);
   });
 };
-
-
-// let createImageArray  = (folder) => {
-//   Promise.all(folder.paths.map(i => {
-//     return new Promise((resolve, reject) => {
-//       dbx.filesGetTemporaryLink({path: i.path_display})
-//         .then(data => {
-//           resolve(data.link);
-//         })
-//         .catch(console.error);
-//     });
-//   }))
-//     .then(results => {
-//       return folder.images = results;
-//     });
-// };

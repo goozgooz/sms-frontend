@@ -1,5 +1,5 @@
 import React from 'react';
-import getPhotos from '../../action/photos';
+import * as photos from '../../action/photos';
 
 export default class Test extends React.Component {
   render(){
@@ -7,7 +7,7 @@ export default class Test extends React.Component {
       <React.Fragment>
         <h2> test page </h2>
 
-        <button onClick={getPhotos}>
+        <button onClick={photos.fetchPhotos}>
           Click Me
         </button>
       </React.Fragment>
