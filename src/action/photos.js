@@ -10,44 +10,35 @@ const dbx = new Dropbox({
   fetch: fetch,
 });
 
-export const fetchPhotos = () => {
-  Promise.all(folders.map(getPaths))
+// exported action creator 
+export const fetchPhotos = () => (store) => {
+  return Promise.all(folders.map(getPaths))
     .then(folders => {
       Promise.all(folders.map(createImageArray))
         .then(data => {
-          console.log(data);
-          return store.dispatch(get(data));
+          let results = {};
+          for(let i of data) {
+            results[i.car] = i;
+          };
+          return store.dispatch(get(results));
         })
         .catch(console.error);
     })
     .catch(console.error);
 };
 
+// action sent to reducer
 const get = (photos) => ({
   type: 'PHOTOS_GET',
   payload: photos,
 });
 
 
-let createImageArray = (folder) => {
-  return Promise.all(folder.paths.map(getImg))
-    .then(array => {
-      folder.images = array;
-      return folder;
-    });
-};
 
-let getImg = (file) => {
-  return new Promise((resolve, reject) => {
-    dbx.filesGetTemporaryLink({path: file.path_display})
-      .then(data => {
-        resolve(data.link);
-      })
-      .catch(console.error);
-  });
-};
+// DROPBOX API CALLS BELOW
 
-let getPaths = (folder) => {
+// goes into the specific dropbox folder and gets the path to each image
+const getPaths = (folder) => {
   return new Promise((resolve,reject) => {
     dbx.filesListFolder({path: `/${folder}`})
       .then(data => {
@@ -59,3 +50,31 @@ let getPaths = (folder) => {
       .catch(console.error);
   });
 };
+
+// for each path in the given folder - call the getImageUrl function below
+const createImageArray = (folder) => {
+  return Promise.all(folder.paths.map(getImgUrl))
+    .then(array => {
+      folder.images = array;
+      return folder;
+    });
+};
+
+
+// gets temporary link to stream given file path
+const getImgUrl = (file) => {
+  return new Promise((resolve, reject) => {
+    dbx.filesGetTemporaryLink({path: file.path_display})
+      .then(data => {
+        resolve(data.link);
+      })
+      .catch(console.error);
+  });
+};
+
+
+
+
+
+
+
