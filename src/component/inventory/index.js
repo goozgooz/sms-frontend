@@ -4,13 +4,16 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
+import Loader from 'react-loader-spinner';
+
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Car from './car.js';
 import Map from '../map';
 
 import * as _ from '../../lib/util.js';
-import * as actions from '../../action/car.js';
+import * as cars from '../../action/car.js';
+import * as photos from '../../action/photos.js';
 
 class Inventory extends React.Component {
   constructor(props){
@@ -20,11 +23,6 @@ class Inventory extends React.Component {
       focusCar: false,
       activeCar: {},
     };
-    
-    this.props.getCars();
-    
-    this.handleCarClick = this.handleCarClick.bind(this);
-    this.handleBack = this.handleBack.bind(this);
   }
 
   componentDidMount(){
@@ -50,7 +48,7 @@ class Inventory extends React.Component {
   }
 
   render(){
-    let {cars} = this.props;
+    let {cars, photos} = this.props;
     let {activeCar, focusCar} = this.state;
     return (
       <React.Fragment>
@@ -65,7 +63,7 @@ class Inventory extends React.Component {
                 At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
               </p>
               
-              {_.renderIf(Object.keys(cars).length,
+              {_.renderIf(Object.keys(cars).length && Object.keys(photos).length,
                 <div className='car-list'>
                   {Object.keys(cars).map((car, i) => (
                     <div 
@@ -79,6 +77,18 @@ class Inventory extends React.Component {
                     </div>
                   ))}
                 </div>
+                
+                ,
+                
+                <div className='spinner'>
+                  <Loader 
+                    type="Oval"
+                    color="#258e9f"
+                    height="100"	
+                    width="100"
+                  />   
+                </div>
+                
               )}
             </React.Fragment>
             
@@ -109,12 +119,14 @@ class Inventory extends React.Component {
 let mapStateToProps = (state) => {
   return {
     cars: state.cars,
+    photos: state.photos,
   };
 };
 
 let mapDispatchToProps = (dispatch) => {
   return {
-    getCars: () => dispatch(actions.getCars()),
+    getCars: () => dispatch(cars.getCars()),
+    getPhotos: () => dispatch(photos.fetchPhotos()),
   };
 };
 

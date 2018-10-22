@@ -1,28 +1,18 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import * as photos from '../../action/photos';
+import Loader from 'react-loader-spinner';
 
 class Test extends React.Component {
   render(){
     return(
-      <React.Fragment>
-        <h2> test page </h2>
-
-        <button onClick={this.props.fetchPhotos}>
-          Click Me
-        </button>
-      </React.Fragment>
+      <Loader 
+        type="Oval"
+        color="#258e9f"
+        height="100"	
+        width="100"
+      />   
     );
   }
 };
 
 
-const mapStateToProps = (state) => ({
-  photos: state.photos,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  fetchPhotos: () => dispatch(photos.fetchPhotos()),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Test);
+export default Test;

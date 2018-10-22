@@ -1,6 +1,7 @@
 import './_app.scss';
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
+import {connect} from 'react-redux';
 
 import Landing from '../landing';
 import Admin from '../admin/inventory';
@@ -11,7 +12,17 @@ import Contact from '../contact';
 import Construction from '../construction';
 import Test from '../test';
 
+import * as cars from '../../action/car.js';
+import * as photos from '../../action/photos.js';
+
 class App extends React.Component {
+  constructor(props){
+    super(props);
+    
+    this.props.getCars();
+    this.props.getPhotos();
+  }
+  
   render(){
     return(
       <div className='app'>
@@ -31,4 +42,19 @@ class App extends React.Component {
   }
 }
 
-export default App;
+let mapStateToProps = (state) => {
+  return {
+    cars: state.cars,
+    photos: state.photos,
+  };
+};
+
+let mapDispatchToProps = (dispatch) => {
+  return {
+    getCars: () => dispatch(cars.getCars()),
+    getPhotos: () => dispatch(photos.fetchPhotos()),
+  };
+};
+
+// export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
