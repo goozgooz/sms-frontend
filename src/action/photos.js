@@ -55,6 +55,13 @@ const getPaths = (folder) => {
 const createImageArray = (folder) => {
   return Promise.all(folder.paths.map(getImgUrl))
     .then(array => {
+      array.forEach((path, i) => {
+        if(path.hasOwnProperty('main')) {
+          let main = path;
+          array.splice(i,1);
+          array.unshift(main);
+        };        
+      });
       folder.images = array;
       return folder;
     });
@@ -66,8 +73,11 @@ const getImgUrl = (file) => {
   return new Promise((resolve, reject) => {
     dbx.filesGetTemporaryLink({path: file.path_display})
       .then(data => {
-        console.log(data);
-        resolve(data.link);
+        if(file.name === 'main.JPG') {
+          resolve({main: data.link});
+        } else {
+          resolve({images: data.link});
+        }
       })
       .catch(console.error);
   });
