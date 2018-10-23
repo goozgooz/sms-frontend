@@ -1,18 +1,21 @@
 import React from 'react';
-import Loader from 'react-loader-spinner';
+import {connect} from 'react-redux';
+import * as _ from '../../lib/util.js';
 
 class Test extends React.Component {
   render(){
     return(
-      <Loader 
-        type="Oval"
-        color="#258e9f"
-        height="100"	
-        width="100"
-      />   
+      <div />
     );
   }
 };
 
 
-export default Test;
+let mapStateToProps = (state) => {
+  return {
+    inventory: state.cars,
+    photos: state.photos,
+  };
+};
+
+export default connect(mapStateToProps)(Test);
