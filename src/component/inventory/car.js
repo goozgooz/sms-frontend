@@ -16,7 +16,8 @@ class Car extends React.Component {
   }
   
   render(){
-    let {car, displayFull, back} = this.props;
+    let {car, displayFull, back, folders} = this.props;
+    let folder = folders[car.folder];
  
     return(
       <React.Fragment>
@@ -27,7 +28,7 @@ class Car extends React.Component {
         )}
             
         <h3>  {car.year} {car.make} {car.model} ${car.price} </h3>
-        <CarPhotos />
+        <CarPhotos folder={folder}/>
         
         <div className='car-description'>
           <h3> {car.headline} </h3>

@@ -48,7 +48,7 @@ class Inventory extends React.Component {
   }
 
   render(){
-    let {cars, photos} = this.props;
+    let {inventory, photos} = this.props;
     let {activeCar, focusCar} = this.state;
     return (
       <React.Fragment>
@@ -63,17 +63,21 @@ class Inventory extends React.Component {
                 At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
               </p>
               
-              {_.renderIf(Object.keys(cars).length && Object.keys(photos).length,
+              {_.renderIf(Object.keys(inventory).length && Object.keys(photos).length,
                 <div className='car-list'>
-                  {Object.keys(cars).map((car, i) => (
+                  {Object.keys(inventory).map((car, i) => (
                     <div 
                       key={i} 
                       className='car-item'
-                      onClick={(data) => this.handleCarClick(cars[car])}
+                      onClick={(data) => this.handleCarClick(inventory[car])}
                     >
                     
-                      <Car car={cars[car]} displayFull={false}  />
-                    
+                      <Car 
+                        car={inventory[car]} 
+                        folders={photos}
+                        displayFull={false} 
+                      />
+
                     </div>
                   ))}
                 </div>
@@ -118,7 +122,7 @@ class Inventory extends React.Component {
 
 let mapStateToProps = (state) => {
   return {
-    cars: state.cars,
+    inventory: state.cars,
     photos: state.photos,
   };
 };

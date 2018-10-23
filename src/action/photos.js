@@ -66,6 +66,7 @@ const getImgUrl = (file) => {
   return new Promise((resolve, reject) => {
     dbx.filesGetTemporaryLink({path: file.path_display})
       .then(data => {
+        console.log(data);
         resolve(data.link);
       })
       .catch(console.error);

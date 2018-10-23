@@ -8,6 +8,8 @@ class CarPhotos extends React.Component{
   }
   
   render(){
+    let {images} = this.props.folder;
+    // console.log(images);
     const settings = {
       dots: false,
       infinite: true,
@@ -15,15 +17,17 @@ class CarPhotos extends React.Component{
       slidesToShow: 1,
       slidesToScroll: 1,
     };
+        // <div>
+        //   <img src={require('./dev-car.jpg')} />
+        // </div>
     
     return(
       <Slider {...settings} className='photo-carousel'>
-        <div>
-          <img src={require('./dev-car.jpg')} />
-        </div>
-        <div>
-          <img src={require('./dev-car.jpg')} />
-        </div>
+        {images.map((url, i) => {(
+          <div>
+            <a href={url} />
+          </div>
+        )})}
       </Slider>
     );
   }
