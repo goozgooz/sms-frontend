@@ -9,11 +9,14 @@ class CarPhotos extends React.Component{
   }
   
   render(){
+    let {displayAll} = this.props;
     let {images} = this.props.folder;
+    
     const carPhotos = images.map((url,i) => {
       if(i === 0) {
         return <div key={i}> <img src={url.main} /> </div>
-      } else {
+      }
+      if(i > 0 && displayAll) {
         return <div key={i}> <img src={url.images} /> </div>
       }
     })

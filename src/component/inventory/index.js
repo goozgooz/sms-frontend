@@ -23,6 +23,9 @@ class Inventory extends React.Component {
       focusCar: false,
       activeCar: {},
     };
+    
+    this.handleCarClick = this.handleCarClick.bind(this);
+    this.handleBack = this.handleBack.bind(this);
   }
 
   componentDidMount(){
@@ -41,6 +44,7 @@ class Inventory extends React.Component {
   }
 
   handleCarClick(car, e){
+    console.log(car);
     this.setState({
       focusCar: !this.state.focusCar, 
       activeCar: car,
@@ -66,6 +70,7 @@ class Inventory extends React.Component {
                 <InventoryDisplay 
                   inventory={inventory}
                   photos={photos}
+                  handleCarClick={this.handleCarClick}
                 />
 
                 ,
@@ -81,6 +86,7 @@ class Inventory extends React.Component {
                 car={activeCar} 
                 displayFull={true}  
                 back={this.handleBack}
+                folders={photos}
               />
             </div>
             

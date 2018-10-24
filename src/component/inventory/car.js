@@ -28,7 +28,8 @@ class Car extends React.Component {
         )}
             
         <h3>  {car.year} {car.make} {car.model} ${car.price} </h3>
-        <CarPhotos folder={folder}/>
+        
+        <CarPhotos folder={folder} displayAll={displayFull} />
         
         <div className='car-description'>
           <h3> {car.headline} </h3>
