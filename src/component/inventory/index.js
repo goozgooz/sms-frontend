@@ -67,13 +67,14 @@ class Inventory extends React.Component {
                     <div 
                       key={i} 
                       className='car-item'
-                      // onClick={(data) => this.handleCarClick(inventory[car])}
+                      // onClick={(data) => this.handleCarClick(inventory[car])}`
                     >
                     
                       <Car 
                         car={inventory[car]} 
                         folders={photos}
                         displayFull={false} 
+
                       />
 
                     </div>
