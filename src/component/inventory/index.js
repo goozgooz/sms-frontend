@@ -44,7 +44,6 @@ class Inventory extends React.Component {
   }
 
   handleCarClick(car, e){
-    console.log(car);
     this.setState({
       focusCar: !this.state.focusCar, 
       activeCar: car,
