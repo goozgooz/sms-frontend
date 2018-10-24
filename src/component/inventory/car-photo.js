@@ -10,19 +10,22 @@ class CarPhotos extends React.Component{
   }
   
   imageCarousel(images) {
-    images.map((url, i) => {
-      if(i === 0) {
-        return (
-          <div>
-            <img src={url.main} />
-          </div>
-        );
-      }
-    });
+    images.map((url,i) => (
+        <h1 key={i}> hi </h1>
+      ));
   }
+
   
   render(){
     let {images} = this.props.folder;
+
+    const carPhotos = images.map((url,i) => {
+      if(i === 0) {
+        return <div key={i}> <img src={url.main} /> </div>
+      } else {
+        return <div key={i}> <img src={url.images} /> </div>
+      }
+    })
     
     const settings = {
       dots: false,
@@ -34,7 +37,7 @@ class CarPhotos extends React.Component{
 
     return(
       <Slider {...settings} className='photo-carousel'>
-        {this.imageCarousel(images)}
+        {carPhotos}
       </Slider>
     );
   }

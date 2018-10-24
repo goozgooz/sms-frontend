@@ -57,10 +57,8 @@ class Inventory extends React.Component {
         <div className = 'inventory-container'>
           {_.renderIf(!focusCar,
             <React.Fragment>
-              <h3> Inventory </h3>
-              
-              <p> 
-                At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
+              <h3> Inventory </h3>              
+              <p> At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
               </p>
               
               {_.renderIf(Object.keys(inventory).length && Object.keys(photos).length,
@@ -69,7 +67,7 @@ class Inventory extends React.Component {
                     <div 
                       key={i} 
                       className='car-item'
-                      onClick={(data) => this.handleCarClick(inventory[car])}
+                      // onClick={(data) => this.handleCarClick(inventory[car])}
                     >
                     
                       <Car 
