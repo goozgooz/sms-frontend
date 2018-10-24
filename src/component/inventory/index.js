@@ -4,12 +4,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
-import Loader from 'react-loader-spinner';
-
 import Navbar from '../navbar';
 import Footer from '../footer';
 import Car from './car.js';
 import Map from '../map';
+import InventoryDisplay from './inventory-display.js';
+import LoadingIcon from '../loader';
 
 import * as _ from '../../lib/util.js';
 import * as cars from '../../action/car.js';
@@ -50,6 +50,7 @@ class Inventory extends React.Component {
   render(){
     let {inventory, photos} = this.props;
     let {activeCar, focusCar} = this.state;
+    
     return (
       <React.Fragment>
         <Navbar />
@@ -62,36 +63,14 @@ class Inventory extends React.Component {
               </p>
               
               {_.renderIf(Object.keys(inventory).length && Object.keys(photos).length,
-                <div className='car-list'>
-                  {Object.keys(inventory).map((car, i) => (
-                    <div 
-                      key={i} 
-                      className='car-item'
-                      // onClick={(data) => this.handleCarClick(inventory[car])}`
-                    >
-                    
-                      <Car 
-                        car={inventory[car]} 
-                        folders={photos}
-                        displayFull={false} 
+                <InventoryDisplay 
+                  inventory={inventory}
+                  photos={photos}
+                />
 
-                      />
-
-                    </div>
-                  ))}
-                </div>
-                
                 ,
                 
-                <div className='spinner'>
-                  <Loader 
-                    type="Oval"
-                    color="#258e9f"
-                    height="100"	
-                    width="100"
-                  />   
-                </div>
-                
+                <LoadingIcon />
               )}
             </React.Fragment>
             
