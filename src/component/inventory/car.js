@@ -5,7 +5,7 @@ import CarPhotos from './car-photo.js';
 
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import {faArrowLeft} from '@fortawesome/fontawesome-free-solid';
+import {faArrowLeft, faCaretDown, faAarowUp} from '@fortawesome/fontawesome-free-solid';
 fontawesome.config = { autoAddCss: false };
 
 import * as _ from '../../lib/util.js';
@@ -38,6 +38,11 @@ class Car extends React.Component {
           <p> <span>Exterior: </span> {car.exteriorColor} </p>
           <p> <span>Interior: </span> {car.interiorColor} </p>
           <p> <span>Transmission: </span> {car.transmission} </p>
+          <div className='down'>
+            <span> More </span>
+            <FontAwesomeIcon icon={faCaretDown} className='icon down' /> 
+          </div>
+
           {_.renderIf(displayFull,
             <React.Fragment>
               <p> <span>Drive: </span> {car.drive} </p>

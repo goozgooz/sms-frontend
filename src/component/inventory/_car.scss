@@ -30,6 +30,8 @@
 }
 
 .car-description{
+  width: 80%;
+
   h3 {
     color: white;
     font-size: 15px;
@@ -41,7 +43,26 @@
     margin: 0;
     text-align: left;
     width: 100%;
+
+    &:last-of-type{
+      margin-bottom: 15px;
+    }
   } 
+  .down {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    .icon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  
+  span {
+    color: $color-blue;
+    font-weight: 400;
+  }
 }
 
 .focus {
@@ -52,19 +73,11 @@
   display: flex;
   left: 8px;
   position: fixed;
+  z-index: 69;
   
   .icon{
     height: 22px;
     width: 22px;
-  }
-}
-
-.car-description {
-  width: 80%;
-  
-  span {
-    color: $color-blue;
-    font-weight: 400;
   }
 }
 
