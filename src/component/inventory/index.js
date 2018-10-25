@@ -23,10 +23,6 @@ class Inventory extends React.Component {
     window.scrollTo(0,0);
   }
   
-  // componentDidUpdate(){
-  //   window.scrollTo(0,0);
-  // }
-  
   render(){
     let {inventory, photos} = this.props;
     

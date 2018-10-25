@@ -4,5 +4,11 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 450px;
+  height: 280px;
+}
+
+@media(min-width: 768px) {
+  .spinner{
+    height: 500px;
+  }
 }

@@ -29,8 +29,8 @@ class Car extends React.Component {
   
   render(){
     let {car, folders} = this.props;
-    let folder = folders[car.folder];
     let {displayAll} = this.state;
+    let folder = folders[car.folder];
  
     return(
       <React.Fragment>
