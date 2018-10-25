@@ -1,3 +1,3 @@
 # sms-frontend
 
-GOOGLE_TOKEN
+mobile photo carousel

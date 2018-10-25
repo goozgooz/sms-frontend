@@ -16,7 +16,8 @@ class CarPhotos extends React.Component{
       if(i === 0) {
         return <div key={i}> <img src={url.main} /> </div>
       }
-      if(i > 0 && displayAll) {
+      // if(i > 0 && displayAll) {
+      if(i > 0) {
         return <div key={i}> <img src={url.images} /> </div>
       }
     })
@@ -24,6 +25,7 @@ class CarPhotos extends React.Component{
     const settings = {
       dots: false,
       infinite: true,
+      lazyLoad: true, 
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
