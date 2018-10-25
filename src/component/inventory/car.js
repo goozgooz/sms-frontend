@@ -60,6 +60,9 @@ class Car extends React.Component {
               <p> <span>Title: </span> {car.titleStatus} </p>
               <p> <span>VIN: </span> {car.vin} </p>
               <p> <span>Car Description: </span>{car.description} </p>
+              
+              
+              
               <div className='down' onClick={this.handleCarClick}>
                 <FontAwesomeIcon icon={faCaretUp} className='icon down' /> 
                 <span> Less </span>
