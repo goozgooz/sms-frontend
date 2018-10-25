@@ -8,11 +8,11 @@ import {Provider} from 'react-redux';
 
 import App from './component/app';
 import reducer from './reducer/index.js';
-import reporter from './lib/redux-reporter.js';
+// import reporter from './lib/redux-reporter.js';
 import thunk from './lib/redux-thunk.js';
 
 
-const store = createStore(reducer, applyMiddleware(thunk, reporter));
+const store = createStore(reducer, applyMiddleware(thunk));
 
 class Main extends React.Component {
 
