@@ -6,7 +6,6 @@ import {connect} from 'react-redux';
 
 import Navbar from '../navbar';
 import Footer from '../footer';
-import Car from './car.js';
 import Map from '../map';
 import InventoryDisplay from './inventory-display.js';
 import LoadingIcon from '../loader';
@@ -18,79 +17,40 @@ import * as photos from '../../action/photos.js';
 class Inventory extends React.Component {
   constructor(props){
     super(props);
-    
-    this.state = {
-      focusCar: false,
-      activeCar: {},
-    };
-    
-    this.handleCarClick = this.handleCarClick.bind(this);
-    this.handleBack = this.handleBack.bind(this);
   }
 
   componentDidMount(){
     window.scrollTo(0,0);
   }
   
-  componentDidUpdate(){
-    window.scrollTo(0,0);
-  }
+  // componentDidUpdate(){
+  //   window.scrollTo(0,0);
+  // }
   
-  handleBack(e){
-    this.setState({
-      focusCar: !this.state.focusCar,
-      activeCar: {},
-    });
-  }
-
-  handleCarClick(car, e){
-    this.setState({
-      focusCar: !this.state.focusCar, 
-      activeCar: car,
-    });
-  }
-
   render(){
     let {inventory, photos} = this.props;
-    let {activeCar, focusCar} = this.state;
     
     return (
       <React.Fragment>
         <Navbar />
         
         <div className = 'inventory-container'>
-          {_.renderIf(!focusCar,
-            <React.Fragment>
-              <h3> Inventory </h3>              
-              <p> At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
-              </p>
-              
-              {_.renderIf(Object.keys(inventory).length && Object.keys(photos).length,
-                <InventoryDisplay 
-                  inventory={inventory}
-                  photos={photos}
-                  handleCarClick={this.handleCarClick}
-                />
+          <h3> Inventory </h3>              
+          <p> At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
+          </p>
+          
+          {_.renderIf(Object.keys(inventory).length && Object.keys(photos).length,
+            <InventoryDisplay 
+              inventory={inventory}
+              photos={photos}
+              handleCarClick={this.handleCarClick}
+            />
 
-                ,
-                
-                <LoadingIcon />
-              )}
-            </React.Fragment>
-            
             ,
             
-            <div className='car-item focus'>
-              <Car 
-                car={activeCar} 
-                displayFull={true}  
-                back={this.handleBack}
-                folders={photos}
-              />
-            </div>
-            
+            <LoadingIcon />
           )}
-  
+           
         </div>
         
         <Map />
