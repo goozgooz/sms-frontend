@@ -1,4 +1,4 @@
-import cars from './mock-cars.js';
+import cars from './inventory.js';
 
 // export const create = (car) => ({
 //   type: 'CAR_CREATE',

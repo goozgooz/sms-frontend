@@ -1,46 +1,57 @@
 import './_inventory.scss';
+import './_car.scss';
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 import Navbar from '../navbar';
 import Footer from '../footer';
-import Car from './car.js';
 import Map from '../map';
+import InventoryDisplay from './inventory-display.js';
+import LoadingIcon from '../loader';
 
 import * as _ from '../../lib/util.js';
-import * as actions from '../../action/car.js';
+import * as cars from '../../action/car.js';
+import * as photos from '../../action/photos.js';
 
 class Inventory extends React.Component {
   constructor(props){
     super(props);
-    // this.props.getCars();
   }
 
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  
+  // componentDidUpdate(){
+  //   window.scrollTo(0,0);
+  // }
+  
   render(){
-    let {cars} = this.props;
-
+    let {inventory, photos} = this.props;
+    
     return (
       <React.Fragment>
-      
         <Navbar />
         
         <div className = 'inventory-container'>
-          <h3> Inventory </h3>
-          
-          <p> 
-            At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
+          <h3> Inventory </h3>              
+          <p> At Source Motors, I specialize in tracking down and finding the exact right car for you. As a result, I keep a relatively small inventory, so if you don't see what you like please reach out and <Link to='/contact' className='inline-link'>contact me</Link> today, and together we can find the exact right car for you. 
           </p>
           
-          {_.renderIf(Object.keys(cars).length,
-            <div className='car-list'>
-              {Object.keys(cars).map((car, i) => (
-                <Car car={cars[car]} key={i} />
-              ))}
-            </div>
+          {_.renderIf(Object.keys(inventory).length && Object.keys(photos).length,
+            <InventoryDisplay 
+              inventory={inventory}
+              photos={photos}
+              handleCarClick={this.handleCarClick}
+            />
+
+            ,
+            
+            <LoadingIcon />
           )}
+           
         </div>
-  
         
         <Map />
         <Footer />
@@ -54,13 +65,15 @@ class Inventory extends React.Component {
 
 let mapStateToProps = (state) => {
   return {
-    cars: state.cars,
+    inventory: state.cars,
+    photos: state.photos,
   };
 };
 
 let mapDispatchToProps = (dispatch) => {
   return {
-    getCars: () => dispatch(actions.getCars()),
+    getCars: () => dispatch(cars.getCars()),
+    getPhotos: () => dispatch(photos.fetchPhotos()),
   };
 };
 

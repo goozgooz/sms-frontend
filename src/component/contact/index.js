@@ -6,6 +6,18 @@ import Footer from '../footer';
 import Map from '../map';
 
 class Contact extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  
+  componentDidUpdate(){
+    window.scrollTo(0,0);
+  }
+  
   render(){
     return (
       <React.Fragment>

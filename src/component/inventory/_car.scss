@@ -1,27 +1,101 @@
 @import 'vars';
 
+.photo-carousel {
+  height: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  
+  img {
+    width: 100%;
+  }
+}
+
 .car-item {
   align-items: center;
   background-color: $color-dark;
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 25px 0;
   padding-bottom: 25px;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   
   h3 {
     color: $color-blue;
     font-weight: 400;
     margin: 25px 0;
   }
-  
-  img {
-    height: auto;
-    margin-bottom: 20px;
-    width: 100%;
+}
+
+.car-description{
+  width: 80%;
+
+  h3 {
+    color: white;
+    font-size: 15px;
+    margin: 0;
   }
   
-  p {
+   p {
     color: $color-white;
-    text-align: center;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+
+    &:last-of-type{
+      margin-bottom: 15px;
+    }
+  } 
+  .down {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+    .icon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  
+  span {
+    color: $color-blue;
+    font-weight: 400;
+  }
+}
+
+.focus {
+  margin: -50px 0;
+}
+
+.back-button {
+  display: flex;
+  left: 8px;
+  position: fixed;
+  z-index: 69;
+  
+  .icon{
+    height: 22px;
+    width: 22px;
+  }
+}
+
+@media(min-width: 768px){
+  .photo-carousel{
+    max-width: 1080px;
+  }
+  
+  .car-description{
+    max-width: 1080px;
+    
+    h3 {
+      font-size: 25px;
+    }
+    
+    p {
+      margin: auto;
+      text-align: left;   
+    }
   }
 }
