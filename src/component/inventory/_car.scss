@@ -27,6 +27,18 @@
     font-weight: 400;
     margin: 25px 0;
   }
+  
+  .slick-prev {
+    left: 5px;
+    z-index: 200;
+  }
+  
+  .slick-next {
+    right: 5px;
+    z-index: 200;
+  }
+  
+  
 }
 
 .car-description{
