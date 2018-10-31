@@ -25,7 +25,7 @@ class CarPhotos extends React.Component{
     const settings = {
       dots: false,
       infinite: true,
-      lazyLoad: true, 
+      // lazyLoad: true, 
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,

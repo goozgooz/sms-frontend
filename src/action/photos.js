@@ -73,7 +73,7 @@ const getImgUrl = (file) => {
   return new Promise((resolve, reject) => {
     dbx.filesGetTemporaryLink({path: file.path_display})
       .then(data => {
-        if(file.name === 'main.JPG') {
+        if(file.name === 'main.JPG' || file.name === 'main.jpg' ) {
           resolve({main: data.link});
         } else {
           resolve({images: data.link});
