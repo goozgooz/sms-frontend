@@ -28,5 +28,11 @@
 @media(min-width: 768px){
   .inventory-container {
     margin-top: 60px;
+    
+    p {
+      max-width: 980px;
+    }
   }
+  
+  
 }
