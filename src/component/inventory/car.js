@@ -36,8 +36,8 @@ class Car extends React.Component {
     return(
       <React.Fragment>
         <div className = 'headline'>
-          <h3 className={soldCar}>  {car.year} {car.make} {car.model} ${car.price} </h3>
-          {_.renderIf(car.sold === 'yes', <h3> SOLD! </h3>)}
+          {_.renderIf(car.sold === 'yes', <h3 className='car-sold'> SOLD! </h3>)}
+          <h3 className = {soldCar}>  {car.year} {car.make} {car.model} ${car.price} </h3>
         </div>
         
 

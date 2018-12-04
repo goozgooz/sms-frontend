@@ -12,15 +12,16 @@
 
 .headline {
   display: flex;
+  flex-direction: column;
 
-  .sold {
-    text-decoration: line-through;
-  }
-
-  h3:last-of-type{
+  .car-sold{
     color: white;
-    margin-left: 20px;
+    margin-bottom: -10px;
   }
+
+}
+.sold {
+  text-decoration: line-through;
 }
 
 .car-item {
