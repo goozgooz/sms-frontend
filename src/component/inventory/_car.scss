@@ -10,6 +10,19 @@
   }
 }
 
+.headline {
+  display: flex;
+
+  .sold {
+    text-decoration: line-through;
+  }
+
+  h3:last-of-type{
+    color: white;
+    margin-left: 20px;
+  }
+}
+
 .car-item {
   align-items: center;
   background-color: $color-dark;
@@ -37,8 +50,6 @@
     right: 5px;
     z-index: 200;
   }
-  
-  
 }
 
 .car-description{

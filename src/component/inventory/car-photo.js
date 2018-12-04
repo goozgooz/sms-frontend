@@ -9,9 +9,9 @@ class CarPhotos extends React.Component{
   }
   
   render(){
-    let {displayAll} = this.props;
+    let {displayAll, sold} = this.props;
     let {images} = this.props.folder;
-    
+
     const carPhotos = images.map((url,i) => {
       if(i === 0) {
         return <div key={i}> <img src={url.main} /> </div>
@@ -25,16 +25,17 @@ class CarPhotos extends React.Component{
     const settings = {
       dots: false,
       infinite: true,
-      // lazyLoad: true, 
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
 
     return(
-      <Slider {...settings} className='photo-carousel'>
-        {carPhotos}
-      </Slider>
+      <React.Fragment>
+        <Slider {...settings} className='photo-carousel'>
+          {carPhotos}
+        </Slider>
+      </React.Fragment>
     );
   }
 }
