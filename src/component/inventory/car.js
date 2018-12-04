@@ -31,11 +31,16 @@ class Car extends React.Component {
     let {car, folders} = this.props;
     let {displayAll} = this.state;
     let folder = folders[car.folder];
- 
+    let soldCar = car.sold === 'yes' ? 'sold' : '';
+
     return(
       <React.Fragment>
-        <h3>  {car.year} {car.make} {car.model} ${car.price} </h3>
+        <div className = 'headline'>
+          {_.renderIf(car.sold === 'yes', <h3 className='car-sold'> SOLD! </h3>)}
+          <h3 className = {soldCar}>  {car.year} {car.make} {car.model} ${car.price} </h3>
+        </div>
         
+
         <CarPhotos folder={folder} displayAll={displayAll} />
         
         <div className='car-description'>

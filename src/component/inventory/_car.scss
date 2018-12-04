@@ -10,6 +10,20 @@
   }
 }
 
+.headline {
+  display: flex;
+  flex-direction: column;
+
+  .car-sold{
+    color: white;
+    margin-bottom: -10px;
+  }
+
+}
+.sold {
+  text-decoration: line-through;
+}
+
 .car-item {
   align-items: center;
   background-color: $color-dark;
@@ -37,8 +51,6 @@
     right: 5px;
     z-index: 200;
   }
-  
-  
 }
 
 .car-description{
@@ -96,6 +108,14 @@
 @media(min-width: 768px){
   .photo-carousel{
     max-width: 1080px;
+  }
+
+  .headline{
+    flex-direction: row;
+
+    .car-sold{
+      margin-right: 20px;
+    }
   }
   
   .car-description{
