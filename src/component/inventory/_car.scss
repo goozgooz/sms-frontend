@@ -109,6 +109,14 @@
   .photo-carousel{
     max-width: 1080px;
   }
+
+  .headline{
+    flex-direction: row;
+
+    .car-sold{
+      margin-right: 20px;
+    }
+  }
   
   .car-description{
     max-width: 1080px;

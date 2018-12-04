@@ -18,7 +18,7 @@ export  default {
     description: '2008 BMW 335Xi, Excellent Condition, Local Car, None Smoker, ONLY 59K Miles, Sport Package, Heated Seats, Xenon Lights, Excellent Service Records, Carfax Certified.',
   },
   1001: {
-    sold: 'no',
+    sold: 'yes',
     folder: '2014 mini cooper s',
     headline: '2014 Mini Cooper S - Only 23,000 Miles',
     year: '2014',
