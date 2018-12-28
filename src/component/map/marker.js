@@ -1,16 +1,12 @@
 import './_map.scss';
-
 import React from 'react';
 
-
-class Marker extends React.Component {
-  render(){
-    return(
-      <div>
-        <img className='marker' src={require('./marker.png')} />
-      </div>
-    );
-  }
-}
+const Marker = () => {
+  return(
+    <div>
+      <img className='marker' src={require('./marker.png')} />
+    </div>
+  );
+};
 
 export default Marker;
