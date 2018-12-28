@@ -3,12 +3,10 @@ import React from 'react';
 
 import Construction from '../construction';
 
-class Service extends React.Component {
-  render(){
-    return (
-      <Construction />
-    );
-  }
+let Service = () => {
+  return (
+    <Construction />
+  );
 }
 
 export default Service;

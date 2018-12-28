@@ -10,7 +10,6 @@ import Service from '../service';
 import About from '../about';
 import Contact from '../contact';
 import Construction from '../construction';
-import Test from '../test';
 
 import * as cars from '../../action/car.js';
 import * as photos from '../../action/photos.js';
