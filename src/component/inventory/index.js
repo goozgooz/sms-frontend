@@ -25,7 +25,7 @@ class Inventory extends React.Component {
   
   render(){
     let {inventory, photos} = this.props;
-    
+
     return (
       <React.Fragment>
         <Navbar />
