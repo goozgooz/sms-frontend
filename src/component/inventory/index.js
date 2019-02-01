@@ -3,6 +3,7 @@ import './_car.scss';
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Navbar from '../navbar';
 import Footer from '../footer';
@@ -25,7 +26,6 @@ class Inventory extends React.Component {
   
   render(){
     let {inventory, photos} = this.props;
-
     return (
       <React.Fragment>
         <Navbar />
@@ -58,6 +58,10 @@ class Inventory extends React.Component {
   }
 }
 
+Inventory.propTypes = ({
+  inventory: PropTypes.object.isRequired,
+  photos: PropTypes.object.isRequired,
+})
 
 let mapStateToProps = (state) => {
   return {
