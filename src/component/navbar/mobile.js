@@ -30,12 +30,12 @@ class MobileNav extends React.Component {
           <a href='https://www.google.com/maps/dir//Source+Motor+Sales,+13407+NE+20th+St+%233,+Bellevue,+WA+98005/'target='_blank'>
             <FontAwesomeIcon icon={faMapMarkerAlt} className='icon'/> 
           </a>
-        </div>
+        </div>s
         <Menu width={'100%'}>
           <Link className='menu-item' to='/'> Home </Link>
           <Link className='menu-item' to='/inventory'> Inventory </Link> 
           <Link className='menu-item' to='/service'> Service </Link> 
-          <Link className='menu-item' to='/about'> About </Link> 
+          {/* <Link className='menu-item' to='/about'> About </Link>  */}
           <Link className='menu-item' to='/contact'> Contact </Link> 
         </Menu>
       </div>
