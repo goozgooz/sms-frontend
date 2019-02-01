@@ -14,8 +14,8 @@ const Footer = () => {
         <span> | </span>
         <NavLink activeClassName='active' className='menu-item' to='/service'> Service </NavLink> 
         <span> | </span>
-        <NavLink activeClassName='active' className='menu-item' to='/about'> About </NavLink> 
-        <span> | </span>
+        {/* <NavLink activeClassName='active' className='menu-item' to='/about'> About </NavLink> 
+        <span> | </span> */}
         <NavLink activeClassName='active' className='menu-item' to='/contact'> Contact </NavLink>
       </div>
 

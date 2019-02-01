@@ -2,6 +2,7 @@ import './_app.scss';
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Landing from '../landing';
 import Admin from '../admin/inventory';
@@ -9,7 +10,7 @@ import Inventory from '../inventory';
 import Service from '../service';
 import About from '../about';
 import Contact from '../contact';
-import Construction from '../construction';
+// import Construction from '../construction';
 
 import * as cars from '../../action/car.js';
 import * as photos from '../../action/photos.js';
@@ -17,8 +18,6 @@ import * as photos from '../../action/photos.js';
 class App extends React.Component {
   constructor(props){
     super(props);
-    
-
   }
   
   componentDidMount() {
@@ -43,6 +42,13 @@ class App extends React.Component {
     );
   }
 }
+
+App.propTypes = ({
+  getCars: PropTypes.func.isRequired,
+  getPhotos: PropTypes.func.isRequired,
+  cars: PropTypes.object.isRequired,
+  photos: PropTypes.object.isRequired,
+});
 
 let mapStateToProps = (state) => {
   return {
